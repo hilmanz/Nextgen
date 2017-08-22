@@ -1,0 +1,113 @@
+{if $user->leaderdetail->type==1}
+<div id="theContainer" class="inboxPage">
+    <div class="theContainer">
+		<div class="head-title">
+			<h1 class="fl">This Page For Highest User Leveling Only.</h1>
+		</div>
+	</div>
+</div>
+{else}  
+<div id="theContainer2" class="galleryPage">
+    <div class="theContainer2">
+        <div class="theContent2">
+        	<div class="col-content">
+                <div class="rows3">
+                    <div class="rowShorter">
+						<form method="POST" action="{$basedomain}plan" id="shorter" class="planpickerform" >
+							<div class="fl">
+								
+								<span><input type="radio" class="styled" name="category" value='' {if !$category}checked{/if} /> All</span>
+								{*}
+								<span><input type="radio" class="styled" name="category" value='cocreation' {if $category=='cocreation'}checked{/if}  /> Co Creation</span>
+								
+								<span><input type="radio" class="styled" name="category" value='brands' {if $category=='brands'}checked{/if}  /> Brand Event</span>
+								{/*}
+								<span><input type="radio" class="styled" name="category" value='ba' {if $category=='ba'}checked{/if}  /> BA Plan</span>
+							</div>
+							<div class="input-append fr">
+								<input type="text" size="16" name="search" id="search" class="span2" onfocus="if(this.value=='Search...')this.value='';" onblur="if(this.value=='')this.value='Search...';" value="{if $search}{$search}{else}Search...{/if}">
+								<button type="submit" class="btn">Go!</button>
+							</div>
+						</form>
+                    </div><!-- /.rowShorter -->
+                </div> <!-- /.rows3 -->
+				<div class="widget-fullcalendar">	
+					<div class="widget-content">
+						<div id="calendar-holder"></div> <!-- /#calendar-holder -->
+					</div> <!-- /widget-content -->
+                    <div class="rows2">
+                        <div class="legends">
+						{*}
+                            <span class="box-green"></span>
+                            <span class="label">Co-Creation</span>
+                            <span class="box-blue"></span>
+                            <span class="label">Brand Event</span>
+						{/*}
+                            <span class="box-purple"></span>
+                            <span class="label">BA Plan</span>
+							 <span class="box-red"></span>
+							<span class="label">Expired</span>
+                        </div><!-- /legends -->
+						{*}
+                        {if $user->leaderdetail->type!=100 and $user->leaderdetail->type!=1}<a href="{$basedomain}plan/create" class="button fr"><span class="icons icon_pointer"></span><span>Add New Plan</span></a>
+						
+						
+						{/if}
+						{/*}
+						
+						<a href="{$basedomain}plan" class="button fr">Today</a>
+                    </div><!-- /rows2 -->
+				</div> <!-- /widget -->
+            </div><!-- /.col-content -->
+			
+            <div class="col-sidebar">
+				{include file="application/web/widgets/sidebar-widget.html"}
+            </div><!-- /.col-sidebar -->
+			
+        </div> <!-- /.theContent2 -->
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
+{/if}
+
+<script>
+var plandata = {$plandata.plan|@json_encode};
+	{literal}
+$(document).ready(function () {
+	
+	
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+		 
+					
+			$('#calendar-holder').fullCalendar({
+				header: {
+					left: 'prev, next',
+					center: 'title',
+					right: 'month,basicWeek,basicDay,'
+				},
+				events: plandata.posts
+			});
+		
+		 
+	/*
+	{
+	title: 'Long Event',
+	start: new Date(y, m, d-5),
+	end: new Date(y, m, d-2),
+	color: Beat.chartColors[2]
+	}
+
+	*/
+});
+</script>
+{/literal}
+
+{literal}
+<script>
+	$(document).on('click','.radio',function(){
+		$(".planpickerform").submit();
+	});
+</script>
+{/literal}

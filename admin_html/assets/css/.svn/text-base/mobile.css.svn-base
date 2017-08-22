@@ -1,0 +1,109 @@
+/*
+Theme Name:  BEAT ANDROID
+Version: 1.0
+Author: Acit Jazz 2013
+*/
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,400italic,700,600);
+/* 0.0 - Reset  */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+	font-family: 'Titillium Web',"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font: 14px/1.4em 'Titillium Web',"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background:url(../img/mobile/bg.jpg) #2e3742 repeat;
+	color:#838891;
+}
+a{
+	outline:none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#body-container{
+	width:80%;
+	margin:0 auto;
+	padding:30px;
+}
+#body{
+	background:url(../img/mobile/bg_dark.png) repeat;
+	max-width:600px;
+	margin:0 auto;
+	position:relative;
+	min-height:450px;
+}
+.andbg{
+	position:absolute;
+	width:100%;
+}
+#logo{
+	max-width:389px;
+	margin:0 auto;
+}
+#logo img{
+	width:100%;
+}
+#content{
+	max-width:600px;
+	position:absolute;
+	z-index:10;
+	width:80%;
+	padding:10%;
+}
+h3{
+	color:#0099ff;
+	font-size:20px;
+	margin:0 0 20px ;
+}
+.downloadBtn{
+	text-align:center;
+}
+.button,.downloadBtn a{
+	border:none;
+	background: rgb(0,173,238); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(0,173,238,1) 0%, rgba(0,140,193,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,173,238,1)), color-stop(100%,rgba(0,140,193,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,173,238,1) 0%,rgba(0,140,193,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,173,238,1) 0%,rgba(0,140,193,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,173,238,1) 0%,rgba(0,140,193,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,173,238,1) 0%,rgba(0,140,193,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00adee', endColorstr='#008cc1',GradientType=0 ); /* IE6-9 */
+	display:inline-block;
+	zoom: 1;
+	*display: inline;
+	height:30px;
+	line-height:30px;
+	padding:5px 30px;
+	text-align:center;
+	color:#005e8a;
+	text-shadow:0 0 1px #5cbce0;
+	font-size:18px;
+	border-radius:7px;
+	cursor:pointer;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	text-decoration:none;
+}
+.downloadBtn a:hover{
+	background:#a4c639;
+	color:#fff;
+}
+.container{
+	padding:40px 0;
+	border-top:solid 1px #454545;
+	border-bottom:solid 1px #454545;
+	margin:30px 0;
+}
+.container td{
+	padding:5px;
+}

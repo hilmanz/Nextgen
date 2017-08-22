@@ -1,0 +1,136 @@
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 215px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  215px;
+    height: 250px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 215px;
+    height: 250px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 0;
+}
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+	position: absolute;
+	top: 230px;
+	right: 0;
+	width:20px;
+	height: 25px;
+	cursor: pointer;
+	background: transparent url(next-horizontal.png) no-repeat -24px 0;
+	z-index:10;
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 230px;
+	left: 172px;
+	width: 20px;
+	height: 25px;
+	cursor: pointer;
+	background: transparent url(prev-horizontal.png) no-repeat 0 0;
+	z-index:10;
+}
+.jcarousel-skin-tango .jcarousel-prev-disabled,.jcarousel-skin-tango .jcarousel-next-disabled {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter: alpha(opacity=20);
+	-moz-opacity:0.2;
+	-khtml-opacity: 0.2;
+	opacity: 0.2;
+	cursor:text;
+}
+#prize .jcarousel-skin-tango .jcarousel-prev-disabled,#prize .jcarousel-skin-tango .jcarousel-next-disabled{
+	display:none;
+	visibility:hidden;
+}
+/**
+ *  Vertical Buttons
+ */
+ 
+
+.jcarousel-skin-tango .jcarousel-container-vertical {
+    width: 500px;
+    height: 50px;
+}
+.jcarousel-container-vertical .jcarousel-item{
+    width:  500px;
+    height: 50px;
+}
+.jcarousel-skin-tango .jcarousel-clip-vertical {
+    width:  500px;
+    height: 185px;
+}
+
+#listActivity .jcarousel-skin-tango .jcarousel-container-vertical {
+    width: 580px;
+    height: 50px;
+}
+#listActivity .jcarousel-container-vertical .jcarousel-item{
+    width:  580px;
+    height: 50px;
+}
+#listActivity .jcarousel-skin-tango .jcarousel-clip-vertical {
+    width:  580px;
+    height: 250px;
+}
+.jcarousel-skin-tango .jcarousel-item-vertical {
+    margin-bottom: 15px;
+}
+.jcarousel-skin-tango .jcarousel-prev-vertical{
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background: transparent url(arrow_updown.png) no-repeat -41px 0;
+	z-index:10;
+	margin:0 0 0 20px;
+}
+.jcarousel-skin-tango .jcarousel-prev-vertical:hover{
+	background: transparent url(arrow_updown.png) no-repeat -41px -36px;
+}
+.jcarousel-skin-tango .jcarousel-next-vertical{
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background: transparent url(arrow_updown.png) no-repeat 0 0;
+	z-index:10;
+	margin:0 0 0 -20px;
+}
+.jcarousel-skin-tango .jcarousel-next-vertical:hover{
+	background: transparent url(arrow_updown.png) no-repeat 0 -36px;
+}
+
+#listActivity .jcarousel-skin-tango .jcarousel-next-vertical,#listActivity .jcarousel-skin-tango .jcarousel-prev-vertical{
+	top: 260px;
+}

@@ -1,0 +1,109 @@
+<div id="ba-rank">
+<div id="theContainer2" class="homePage">
+    <div class="theContainer2">
+<form id="shorter" method="GET" action="" >
+    	<div class="shorter-menu">
+			<div class="short shortBArank fr">
+            				<label>Periode</label>
+                            <input type="text" class="half-width" id="from" name="startdate" value="{$startdate}">
+                            <span>to</span>
+                            <input type="text" class="half-width" id="to" name="enddate" value="{$enddate}">
+							<a href="javascript:void(0)" class="calendar" >Go</a>
+            </div><!-- /.short -->   
+           <div class="selectBrand fl">                 
+                    <select class=""  name="brandid" >
+						<option value="0"> - Brand - </option>
+						{section name=i loop=$getBrand}
+							<option value="{$getBrand[i].id}" {if $brandid==$getBrand[i].id}selected{/if}>{$getBrand[i].name|upper}  </option>
+						{/section}
+                    </select>                 
+                </div><!-- /.selectBrand -->
+				<div class="selectArea fl">                  
+						<select class="cityDrop"  name="areaid"> 
+						<option value="0"> - City - </option>
+							{section name=i loop=$getCity}
+							<option value="{$getCity[i].id}" {if $areaid==$getCity[i].id }selected{/if} > {$getCity[i].last_name|upper}</option>
+							{/section}
+						</select>                 
+				</div><!-- /.selectArea -->         	
+            <div class="selectActivity fl">
+                    <select class="" name="activity">
+                      <option value="" {if $activity==''}selected{/if} >- Activity -</option>
+                      <option value="checkin" {if $activity=='checkin'}selected{/if} >Check-in</option>
+                      <option value="entourage" {if $activity=='entourage'}selected{/if} >Entourage</option>
+                      <option value="posting" {if $activity=='posting'}selected{/if} >Posting</option>
+                      <option value="comment" {if $activity=='comment'}selected{/if} >Comment</option>
+                      <option value="emoticon" {if $activity=='emoticon'}selected{/if} >Emoticon</option>
+                    </select>
+                </div><!-- /.selectActivity -->
+<a href="{$basedomain}barank/barankReport/{$startdate}/{$enddate}" style=" float:right;position:relative">[ download report ]</a>
+        </div><!-- /.shorter-menu -->
+        <div class="theContent">
+        	<div class="ba-rankTable">
+            	<table class="gridtable">
+                	<tr>
+                    	<th>No</th>
+                        <th>Profile Picture</th>
+                        <th>Name</th>
+                        <th>Area</th>
+                        <th>Brand</th>
+                        <th>Activities</th>
+                    </tr>
+				{section name=i loop=$baRankList}
+                    <tr>
+                        <td>{$baRankList[i].no}</td>
+						
+							{if $baRankList[i].img != ''}
+								<td><img src="{$basedomainpath}public_assets/user/photo/{$baRankList[i].img}" style="width:60px;height:60px;"/></td>
+							{else}
+								<td><img src="{$basedomainpath}public_assets/user/photo/default.jpg" style="width:60px;height:60px;"/></td>
+							{/if}
+						
+						<td>{$baRankList[i].name} {$baRankList[i].last_name}</td>						
+                        <td>{$baRankList[i].city|capitalize:true}</td>
+                        <td>{$baRankList[i].brand_name|capitalize}</td>
+                        <td>{$baRankList[i].totalentourage}</td>
+                    </tr>
+				{/section}
+                 </table>
+            </div><!-- /.ba-rankTable -->
+           
+			
+			
+           	<ul class="pager" id="pagingbarank">
+                
+    		</ul>
+			
+			<script>
+			
+			getpaging(0,{$total},"pagingbarank","getbaranklist",10);
+			
+			</script>
+        </div> <!-- /.theContent -->
+</form>
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
+</div> <!-- /#ba-rank -->
+
+<script>
+
+		var sbaid = "{$sbaid}";
+		var areaid = "{$areaid}";
+		var brandid = "{$brandid}";
+		var activity = "{$activity}";
+		var startdate = "{$startdate}";
+		var enddate = "{$enddate}";
+ 
+{literal}
+
+	$(document).on('click', '.calendar', function(){
+		/*var from = $('#from').val();
+		var to = $('#to').val();
+		
+		window.location.href='?startdate='+from+'&enddate='+to;*/
+		
+		$("#shorter").submit();
+	});
+
+</script>
+{/literal}

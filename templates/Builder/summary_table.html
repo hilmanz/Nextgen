@@ -1,0 +1,52 @@
+
+    <form method="post" action="index.php">
+    <table width="600px" border="0" cellpadding="5">
+        <tr>
+            <td width="73">
+            <strong>Table</strong></td>
+            <td width="511"><strong>{$table_name|strtoupper}
+              <input name="table_name" type="hidden" id="table_name" value="{$table_name}">
+            </strong></td>
+        </tr>
+    </table>
+    &nbsp;
+<table width="600px" border="1">
+        <tr align="center" bgcolor="pink">
+            <td>Field</td>
+            <td>Type</td>
+            <td>Label</td>
+            <td>Hidden</td>
+        </tr>
+        {section name=i loop=$fields}
+        <tr align="center">
+        	<td>{$fields[i].name}</td>
+            <td>{$fields[i].Type}</td>
+            <td><input name="label_{$fields[i].name}" id="label_{$fields[i].name}" type="text" value="{$fields[i].name}"></td>
+            <td><input name="hidden_{$fields[i].name}" type="checkbox" id="hidden_{$fields[i].name}" value="1"></td>
+        </tr>
+        {/section}
+    </table>
+    &nbsp;
+    <table width="600px" border="1">
+        <tr>
+            <td width="150">
+                Component Name
+            </td>
+            <td width="434">
+                <input type="text" name="componentName" value="ComponentName" id="componentName" />
+            </td>
+        </tr>
+        <tr>
+            <td width="150">
+                Component ID
+            </td>
+            <td>
+                <input type="text" name="componentID" value="componentid" id="componentID" />
+            </td>
+        </tr>
+    </table>
+    	<input name="s" type="hidden" id="s" value="builder">
+        	<input name="do" type="hidden" id="do" value="generate">
+      <input type="submit" name="GENERATE" id="GENERATE" value="GENERATE">
+    </form>
+

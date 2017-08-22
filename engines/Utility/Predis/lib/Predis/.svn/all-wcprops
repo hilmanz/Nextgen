@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis
+END
+IReplyObject.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/IReplyObject.php
+END
+MonitorContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/MonitorContext.php
+END
+IConnectionParameters.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/IConnectionParameters.php
+END
+ClientException.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/ClientException.php
+END
+Autoloader.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Autoloader.php
+END
+IConnectionFactory.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/IConnectionFactory.php
+END
+Helpers.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Helpers.php
+END
+PredisException.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/PredisException.php
+END
+ResponseQueued.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/ResponseQueued.php
+END
+ResponseError.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/ResponseError.php
+END
+Client.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Client.php
+END
+IRedisServerError.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/IRedisServerError.php
+END
+ConnectionParameters.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/ConnectionParameters.php
+END
+CommunicationException.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/CommunicationException.php
+END
+ServerException.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/ServerException.php
+END
+NotSupportedException.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/NotSupportedException.php
+END
+ConnectionFactory.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/ConnectionFactory.php
+END

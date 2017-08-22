@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples
+END
+MultipleSetAndGet.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/MultipleSetAndGet.php
+END
+PipelineContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/PipelineContext.php
+END
+MultiExecTransactionsWithCAS.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/MultiExecTransactionsWithCAS.php
+END
+SimpleDebuggableConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/SimpleDebuggableConnection.php
+END
+MonitorContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/MonitorContext.php
+END
+CustomDistributionStrategy.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/CustomDistributionStrategy.php
+END
+KeyPrefixes.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/KeyPrefixes.php
+END
+ServerSideScripting.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/ServerSideScripting.php
+END
+DispatcherLoop.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/DispatcherLoop.php
+END
+MasterSlaveReplication.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/MasterSlaveReplication.php
+END
+SharedConfigurations.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/SharedConfigurations.php
+END
+PubSubContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/PubSubContext.php
+END
+MasterSlaveReplicationComplex.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/MasterSlaveReplicationComplex.php
+END
+SimpleSetAndGet.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/examples/SimpleSetAndGet.php
+END

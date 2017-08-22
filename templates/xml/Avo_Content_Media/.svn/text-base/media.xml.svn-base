@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<item>
+		<id>{$list.id}</id>
+		<title>{$list.title|stripslashes}</title>
+		<summary>{$list.summary|stripslashes}</summary>
+		<thumb>{$list.thumbnail}</thumb>
+		<fileLarge>{$list.file_large}</fileLarge>
+		<fileMedium>{$list.file_medium}</fileMedium>
+		<groupID>{$list.group_id}</groupID>
+		<contentType>{$list.content_type}</contentType>
+		<contributorID>{$list.contributor_id}</contributorID>
+		<date>{$list.created_date|date_format:"%d-%m-%Y, %T %p"}</date>
+		<mopUserId>{$list.mop_user_id}</mopUserId>
+		<description>{$list.description|stripslashes}</description>
+	</item>	
+</data>

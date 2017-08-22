@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	{section name=i loop=$list}
+	<item>
+		<id><![CDATA[{$list[i].id}]]></id>
+		<title><![CDATA[{$list[i].title|stripslashes}]]></title>
+		<summary><![CDATA[{$list[i].summary|stripslashes}]]></summary>
+		<content><![CDATA[{$list[i].content|stripslashes}]]></content>
+		<date>{$list[i].created_date|date_format:"%d-%m-%Y, %T %p"}</date>
+		<groupID>{$list[i].group_id}</groupID>
+		<contentType>{$list[i].content_type}</contentType>
+		<contributorID>{$list[i].contributor_id}</contributorID>
+		<mopUserId>{$list[i].mop_user_id}</mopUserId>
+	</item>	
+	{/section}
+</data>

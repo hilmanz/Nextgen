@@ -1,0 +1,24 @@
+/* 
+	LEVEL ONE
+*/
+ul.dropdown                         { position: relative; }
+ul.dropdown li                      { left:0; zoom: 1; }
+ul.dropdown li a                    { display: block; }
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                {  position: relative; }
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ width:180px; visibility: hidden; position: absolute; top: 100%; left: -70px; margin:10px 0 0 0; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ display:block; } 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }

@@ -1,0 +1,63 @@
+ 
+<div class="theContent">
+    {if $msg}<div class="notibar msgalert"><p>{$msg}</p></div>{/if}
+    <div class="theTitle">
+        <h2>Edit {$folder}</h2>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable inputable">
+        <tbody>
+       <form name="cal" method="post" action="" enctype="multipart/form-data" onsubmit="javascript: return validator();">
+			
+            <tr class="head">
+                <td ><strong>Code Name</strong></td>
+                <td colspan="2"><input type="text" id="CodeName" name="CodeName" style="width:200px;" value="{$CodeName}"/></td>
+            </tr>
+			<!--<tr class="head">
+                <td ><strong>Campaign</strong></td>
+                <td colspan="2"><input type="text" id="Campaign" name="Campaign" style="width:200px;" value="{$Campaign}"/></td>
+            </tr>
+            <tr class="head">
+                <td ><strong>Phase</strong></td>
+                <td colspan="2"><input type="text" id="Phase" name="Phase" style="width:200px;" value="{$Phase}"/></td>
+            </tr>
+            <tr class="head">
+                <td ><strong>Audience</strong></td>
+                <td colspan="2"><input type="text" name="Audience" id="Audience" style="width:200px" value="{$Audience}" /></td>
+            </tr>
+			<tr class="head">
+                <td ><strong>Media Category</strong></td>
+                <td colspan="2"><input type="text" name="MediaCategory" id="MediaCategory" style="width:200px" value="{$MediaCategory}" /></td>
+            </tr>
+			<tr class="head">
+                <td ><strong>Offer Category</strong></td>
+                <td colspan="2"><input type="text" name="OfferCategory" id="OfferCategory" style="width:200px" value="{$OfferCategory}" /></td>
+            </tr>-->
+			 <tr class="head">
+                <td ><strong>Offer Code</strong></td>
+                <td colspan="2"><input type="text" name="OfferCode" id="OfferCode" style="width:200px" value="{$OfferCode}" /></td>
+            </tr>
+			 <!--<tr class="head">
+                <td ><strong>CPAO Type</strong></td>
+                <td colspan="2"><input type="text" name="CPAOType" id="CPAOType" style="width:200px" value="{$CPAOType}" /></td>
+            </tr>-->
+			<tr class="head">
+                <td ><strong>Site ID</strong></td>
+                <td colspan="2"><input type="text" name="siteID" id="siteID" style="width:200px" value="{$siteID}" /></td>
+            </tr>
+            <tr class="head">
+				<input type="hidden" name="simpan" value="true" />
+				<input type="hidden" name="currentauthorid" value="{$authorid}" class="currentauthorid" />
+			    <td colspan="3"><input type="submit" value=" Save " class="stdbtn btn_orange">&nbsp;&nbsp; <input type="button" class="stdbtn btn_yellow" value="Cancel" onclick="javascript: window.location.href='index.php?s={$folder}' ;" /></td>
+            </tr>
+        </form>
+        </tbody>
+    </table>
+    <form id = "updateThumbPhotoForm" action="" method="POST" >
+        <input type="hidden" id="x" name="x" />
+        <input type="hidden" id="y" name="y" />
+        <input type="hidden" id="w" name="w" />
+        <input type="hidden" id="h" name="h" />
+        <input type="hidden" id="imageFilename" name="imageFilename"  value="{$image}" />
+        <input type="hidden" name="crop" value="1" />	
+    </form>
+</div><!--theContent--> 

@@ -1,0 +1,36 @@
+<div class="theContent">
+    <div class="theTitle">
+        <h2>System Wide Configuration</h2>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable inputable">
+        <tbody>
+        <form name="form1" method="post" action="">
+  	<tr>
+    <td> Enable Broadcast Message</td>
+     <td><input name="show_broadcast" type="radio" id="show_broadcast" value="1" {if $rs.show_broadcast eq '1'}checked{/if}><span>Yes</span>
+    <input name="show_broadcast" type="radio" id="show_broadcast" value="0" {if $rs.show_broadcast eq '0'}checked{/if}><span>No</span></td>
+	</tr>
+    <tr>
+        <td> Notification Text :</td>
+        <td>
+        <textarea name="broadcast_message" id="broadcast_message" cols="100" rows="5">{$rs.broadcast_message|stripslashes}</textarea>
+        </td>
+    </tr>
+    <tr>
+        <td> Maintenance Mode</td>
+        <td>
+         <input name="maintenance_mode" type="radio" id="maintenance_mode" value="1" {if $rs.maintenance_mode eq '1'}checked{/if}><span>Yes</span>
+        <input name="maintenance_mode" type="radio" id="maintenance_mode" value="0" {if $rs.maintenance_mode eq '0'}checked{/if}><span>No</span>
+        </td>
+    </tr>
+        <tr>
+            <td colspan="2">
+                <input name="s" type="hidden" id="s" value="system">
+                <input name="r" type="hidden" id="r" value="update">
+                <input type="submit" name="button" id="button" class="stdbtn btn_orange" value="SAVE">
+            </td>
+        </tr>
+    </form>
+    </tbody>
+</table>
+</div><!--theContent-->

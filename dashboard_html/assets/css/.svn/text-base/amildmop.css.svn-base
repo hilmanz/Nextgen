@@ -1,0 +1,181 @@
+ /*
+Theme Name: AMUSIC NETWORK MOP
+Version: 1.0.1
+Author: ACIT JAZZ - 2012
+*/
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,300,300italic);
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url('../font/bebasneue-webfont.eot');
+	src: url('../font/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../font/bebasneue-webfont.woff') format('woff'),  
+	     url('../font/bebasneue-webfont.ttf') format('truetype'),  
+	     url('../font/bebasneue-webfont.svg#BebasNeueRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/***** STANDARD FORM STYLES *****/
+/************************************/
+form input[type=text] { 
+	padding: 8px 5px; border: 1px solid #ccc; width: 85%; -moz-border-radius: 2px; -webkit-border-radius: 2px; 
+	border-radius: 2px; background: #fcfcfc; vertical-align: middle; -moz-box-shadow: inset 0 1px 3px #ddd; 
+	-webkit-box-shadow: inset 0 1px 3px #ddd; box-shadow: inset 0 1px 3px #ddd; color: #666;
+}
+form input:focus { 
+	background: #fff; -moz-box-shadow: inset 1px 1px 2px #eee; -webkit-box-shadow: inset 1px 1px 2px #eee; box-shadow: inset 1px 1px 2px #eee;
+}
+form textarea { 
+	padding: 6px 5px; border: 1px solid #ccc; width: 85%; -moz-border-radius: 2px; -webkit-border-radius: 2px; 
+	border-radius: 2px; -moz-box-shadow: inset 0 1px 3px #ddd; -webkit-box-shadow: inset 0 1px 3px #ddd;
+	box-shadow: inset 0 1px 3px #ddd; background: #fcfcfc; color: #666; 
+}
+form input[type=radio], .stdform input[type=checkbox] { width: auto; margin: 0; vertical-align: middle; }
+form input[type=submit] { 
+	width: auto; margin: 0; font-weight: bold; color: #eee; background: #E40404; border: 1px solid #c00; padding: 7px 10px; 
+	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; cursor: pointer; -moz-border-radius: 2px; -webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+form input[type=submit]:hover { background: #c00; border: 1px solid #c00; }
+form input[type=reset] {
+	width: auto; margin: 0; font-weight: bold; color: #666; border: 1px solid #ccc; background: #eee; padding: 7px 10px;	
+	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; margin-left: 5px; -moz-border-radius: 2px; -webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+form input[type=reset]:hover { background: #ddd; cursor: pointer; color: #333; }
+form select { 
+	border: 1px solid #ccc; padding: 10px 5px; background: #fcfcfc; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; 
+	-moz-box-shadow: inset 1px 1px 2px #ddd; -webkit-box-shadow: inset 1px 1px 2px #ddd; box-shadow: inset 1px 1px 2px #ddd; color: #666;
+}
+form textarea:focus, form select:focus { 
+	background: #fff; -moz-box-shadow: inset 1px 1px 2px #eee; -webkit-box-shadow: inset 1px 1px 2px #eee; box-shadow: inset 1px 1px 2px #eee; 
+}
+
+form button { border: 1px solid #f0882c; background: #fb9337; color: #fff; cursor: pointer; padding: 7px 10px; font-weight: bold; }
+form button.submit:hover { background: #485B79; border: 1px solid #3f526f; color: #fff; }
+form button:active { 
+	-moz-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3); -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3); 
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+input[type=radio],input[type=checkbox]{
+	margin:0 5px 0 0;
+}
+form input.smallinput, form textarea.smallinput { width: 40%; }
+form input.mediuminput, form textarea.mediuminput { width: 60%; }
+form input.longinput, form textarea.longinput { width: 85%; }
+form input.error { border: 1px solid #f00; }
+form textarea.error { border: 1px solid #f00; }
+form textarea.error { border: 1px solid #f00; }
+form select.error { border: 1px solid #f00; }
+form label.error { float: none; color: #f00; font-size: 11px; display: block; text-align: left; font-weight: bold; }
+
+/***** 4. LOGIN PAGE *****/
+/*************************/
+
+.loginpage { background: #fff url(../images_mop/bg_login.jpg) no-repeat center top; height:752px; width:927px; margin:0 auto; position:relative;}
+.loginbox { 
+	width: 350px; padding: 5px; 
+	position:absolute;
+	left:274px;
+	top:188px;
+}
+.loginboxinner { 
+	padding: 20px
+}
+.loginbox input[type=text],.loginbox input[type=password]{
+	background:none;
+}
+.loginbox .logo { text-align: center; background:url(../images_mop/logo.png) no-repeat; display:block; width:208px; height:54px; margin:0 auto; }
+.loginbox .logo h1 { 
+	font-family: 'RobotoCondensed', Arial, Helvetica, sans-serif; font-size: 32px; color: #666; border-bottom: 1px solid #fff; 
+	line-height: normal; margin-bottom: 5px;
+}
+.loginbox .logo h1 span { color: #d40303; }
+.loginbox .logo p { font-weight: bold; color: #eee; font-style: italic; }
+
+.loginbox form { display: block; margin-top: 20px; }
+.loginbox .username { 
+	background: #eee url(../images_mop/username.png) no-repeat 13px center; -moz-border-radius: 2px; -webkit-border-radius: 2px; 
+	border-radius: 2px; -moz-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2)  inset; -webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2) inset; 
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2)  inset; margin: 20px 0; overflow: hidden;
+}
+.loginbox .usernameinner { margin-left: 45px; border-left: 1px solid #ddd; }
+.loginbox .username input { 
+	padding: 15px 10px; border: 0; font-size: 14px; width: 243px; box-shadow: none; color: #666; 
+	font-family: 'RobotoCondensed', Arial, Helvetica, sans-serif;
+}
+.loginbox .password { 
+	background: #eee url(../images_mop/password.png) no-repeat 13px center; -moz-border-radius: 2px; -webkit-border-radius: 2px; 
+	border-radius: 2px; -moz-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2)  inset; -webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2) inset; 
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2)  inset; margin: 20px 0; overflow: hidden;
+}
+.icon_password {
+    background: url("../images_mop/password.png") no-repeat scroll 13px center #EEEEEE;
+    float: left;
+    height: 46px;
+    width: 47px;
+}
+.loginbox .passwordinner { margin-left: 45px; border-left: 1px solid #ddd; }
+.loginbox .password input { 
+	padding: 15px 10px; border: 0; font-size: 14px; width: 223px; box-shadow: none; color: #666; 
+	font-family: 'RobotoCondensed', Arial, Helvetica, sans-serif;
+}
+
+.loginbox button { 
+	background: #f0801d url(img/btngrad.png) repeat-x top left; border: 0; padding: 15px 0; text-align: center; 
+	font-family: 'RobotoCondensed', Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; width: 100%; text-transform: uppercase;  
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.4); 
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.4); box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+.loginbox button:hover { background-color: #f0721e; }
+.loginbox .keep { margin-top: 20px; font-weight: bold; color: #ccc; font-size: 11px; }
+.loginbox .loginmsg { 
+	background: #fffccc; color: #333; margin-bottom: 10px; padding: 5px; text-align: center; font-size: 11px; 
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;
+}
+.loginf { 
+	padding: 10px; background: #2e3e59; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; 
+	-moz-box-shadow: inset 0 1px 1px #23324b; -webkit-box-shadow: inset 0 1px 1px #23324b; box-shadow: inset 0 1px 1px #23324b;
+	border-bottom: 1px solid #475875;
+}
+
+.loginpage .nousername, .loginpage .nopassword { display: none; }
+.loginpage .nopassword { color: #fff; }
+.loginpage .nopassword .thumb { 
+	padding: 5px; background: #fff; display: inline-block; vertical-align: top; 
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;
+}
+.loginpage .nopassword .userlogged { display: inline-block; margin-left: 10px; font-weight: bold; }
+.loginpage .nopassword .userlogged h4 { font-size: 14px; font-family: 'RobotoCondensed', Arial, Helvetica, sans-serif; }
+.loginpage .nopassword .userlogged a { color: #f0801d; font-style: italic; }
+.loginpage .nopassword .userlogged a:hover { text-decoration: underline; }
+.loginpage .notibar { border: 0; }
+.loginbox #chaptcha img{
+	width:100px;
+	float:left;
+	opacity:0.4;
+}
+.loginbox #chaptcha{
+	clear:both;
+	background:#eee; -moz-border-radius: 2px; -webkit-border-radius: 2px; 
+	border-radius: 2px; -moz-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2)  inset; -webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2) inset; 
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2)  inset; margin: 20px 0; overflow: hidden;
+	overflow:hidden;
+	height:43px;
+}
+.loginbox #chaptcha input[type=text]{
+	width:198px;
+	float:right;
+	height:25px;
+}
+.loginbox input[type="submit"]{
+	width:100%;
+	text-align:center;
+	padding:5px 0;
+	margin:5px 0;
+	background:#d40303;
+	font-size:24px;
+	font-family: 'RobotoCondensed', Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	color:#fff;
+}

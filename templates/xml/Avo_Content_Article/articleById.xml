@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<item>
+		<id>{$list.id}</id>
+		<title>{$list.title|stripslashes}</title>
+		<summary>{$list.summary|stripslashes}</summary>
+		<content>{$list.content|stripslashes}</content>
+		<date>{$list.created_date|date_format:"%d-%m-%Y, %T %p"}</date>
+		<groupID>{$list.group_id}</groupID>
+		<contentType>{$list.content_type}</contentType>
+		<contributorID>{$list.contributor_id}</contributorID>
+		<mopUserId>{$list.mop_user_id}</mopUserId>
+	</item>	
+</data>

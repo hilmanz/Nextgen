@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/nextgen-reg-online/!svn/ver/32/trunk/com/dashboard/helper
+END
+uActivitiesHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/helper/uActivitiesHelper.php
+END
+uDemoHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/helper/uDemoHelper.php
+END
+webActivityHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/helper/webActivityHelper.php
+END
+userCategoryHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/helper/userCategoryHelper.php
+END
+userHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/32/trunk/com/dashboard/helper/userHelper.php
+END
+demographyHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/helper/demographyHelper.php
+END
+letterHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/helper/letterHelper.php
+END
+googleAnalyticHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/helper/googleAnalyticHelper.php
+END
+redeemHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/helper/redeemHelper.php
+END
+taskHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/helper/taskHelper.php
+END
+uCategoryHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/helper/uCategoryHelper.php
+END
+uRegMethodHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/helper/uRegMethodHelper.php
+END
+loginHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/nextgen-reg-online/!svn/ver/32/trunk/com/dashboard/helper/loginHelper.php
+END

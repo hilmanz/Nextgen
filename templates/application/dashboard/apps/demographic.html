@@ -1,0 +1,125 @@
+<div class="section">
+	<ul class="columns-content page-content clearfix">
+        <li class="col-main1">
+        	<div class="content-left">
+                <div class="the-title fl">
+                   <h2 class="red">Age</h2>
+                </div>
+                <div class="brand-box2 fl" id="ageGraph">
+                    <div class="diagram_chart" >
+                    </div>
+                </div><!--end.brand-box-->
+            </div><!--end.content-left-->
+            <div class="content-right">
+                <div class="the-title fl">
+                    <h2 class="red">Gender</h2>
+                </div>
+                <div class="brand-box2 fl" id="genderGraph">
+                    <div class="diagram_chart" >
+					</div>
+                </div><!--end.brand-box-->
+            </div><!--end.content-left-->
+             <div class="the-title fl clear">
+                <h2>Location</h2>
+            </div>
+            
+            <div class="boxBig_rounded">                           
+            <h3>Province</h3>
+            <div class="box_section">
+            	<div class="chart_section" id="provGraph">
+				</div>         
+            </div><!--end.acc_section-->
+            <h3>Cities</h3>
+            <div class="box_section">
+            	<div class="chart_section" id="citiesGraph">
+				</div>    
+            </div><!--end.acc_section-->
+			<h3>Brand Preference</h3>
+            <div class="box_section">
+            	<div class="chart_section" id="brandPrefGraph">
+				</div>         
+            </div><!--end.acc_section-->
+    	</div><!---end.boxBig_rounded-->
+        </li>
+        {*}
+        <li class="col-sidebar2">
+        	<div class="the-title fl">
+            	<h2 class="red">Brand Preference</h2>
+            </div>
+        	<div class="brand-box">
+				<div class="block-chart">
+					{foreach from=$brandPreference key=k item=v }
+						<div class="block_red" style="width: {math equation='female/maxs*100' female=$v.F maxs=$v.max}%" ><span>{$v.brandname}</span></div>
+						<div class="block_grey"  style="width: {math equation='male/maxs*100' male=$v.M maxs=$v.max}%" ><span>{$v.brandname}</span></div>
+					{/foreach}
+				</div>
+			</div>
+        </li>
+        {/*}
+    </ul><!---end.columns-content page-content clearfix-->
+</div><!--end.section-->
+
+<script type="text/javascript">
+
+	var genderData = {$genderData};
+	var ageData = {$ageData};
+	var province = {$province};
+	var cityData = {$cityData};
+	var brandPreference = {$brandPreference};
+{literal}	
+$(function () {
+
+	//console.log(brandPreference);
+	
+	var dataGen = new Array();
+	var labelGen = new Array();	
+
+	var dataAge = new Array();
+	var labelAge = new Array();
+	
+	var provinceData = new Array();
+	var provinceLabel = new Array();
+			
+	var cityCount = new Array();
+	var cityLabel = new Array();
+	
+	var brandData = new Array();
+	var brandLabel = new Array();
+	
+	// pie chart data format
+	// ['Firefox',   45.0]
+    for (var dataGender in genderData){	
+
+			dataGen.push( [ String(dataGender) , parseInt(genderData[dataGender]) ] ); 	
+		}
+	
+	for (var ageDataPie in ageData){
+			dataAge.push( [String(ageDataPie) , parseInt(ageData[ageDataPie])] );
+		}
+	
+	for (var dataProv in province){
+			provinceData.push(parseInt(province[dataProv].num));
+			provinceLabel.push(String(province[dataProv].provinceName));
+		}
+	
+	for (var dataCit in cityData){
+			cityCount.push(parseInt(cityData[dataCit].num));
+			cityLabel.push(String(cityData[dataCit].city));
+		}
+		
+	for (var prefBrand in brandPreference){
+			brandData.push(parseInt(brandPreference[prefBrand].max));
+			brandLabel.push(String(brandPreference[prefBrand].brandname))		
+		}
+	
+	gethighChart('pie','test Chart','ageGraph',dataAge,labelAge,1,true);
+	gethighChart('pie','test Chart','genderGraph',dataGen,labelGen,1,true);
+	gethighChart('column','test  Chart','provGraph',provinceData,provinceLabel,1,true,false,false,false);
+	gethighChart('column','test  Chart','citiesGraph',cityCount,cityLabel,1,true,false,false,false);
+	gethighChart('bar','test  Chart','brandPrefGraph',brandData,brandLabel,1,true,1700,false,false);
+	
+	//drillDownChart('column','test Chart','cont',dataCoba,cateActivityGroup,1 ,false);
+	});
+		
+</script>
+{/literal}

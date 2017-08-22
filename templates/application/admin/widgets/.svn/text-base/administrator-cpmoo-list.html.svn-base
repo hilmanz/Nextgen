@@ -1,0 +1,81 @@
+
+<div class="theContent">
+    <div class="theTitle">
+        <h2>CPMOO Code List</h2>
+        <a href="index.php?s={$folder}&act=add" class="btn btn_pencil"><span>Add CPMOO Code</span></a>
+    </div><!--contenttitle-->
+    <div class="tableoptions">        
+    <form>
+        <input type="text" name="search" value="{$search}">
+        <input type="hidden" name="s" value="{$folder}" />
+        <input type="hidden" name="cari" value="cari" />
+     
+       
+        <select name="article_type">
+            <option value=""> - Type - </option>
+            {section name=i loop=$typelist}
+            {if $typelist[i].id == $article_type}<option value="{$typelist[i].id}" selected>{$typelist[i].content_name}</option>
+            {else}<option value="{$typelist[i].id}">{$typelist[i].content_name}</option>
+            {/if}
+            {/section}
+        </select>
+       <span>Date Range</span>
+        <input type="text" name="startdate" value="{$startdate}" class="datepicker radius3" />
+       <span>s/d</span>
+        <input type="text" name="enddate" value="{$enddate}" class="datepicker radius3" />
+        <input type="submit" value="cari" class="stdbtn btn_orange" />
+    </form>
+    </div><!--tableoptions-->	
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+        <colgroup>
+            <col class="con0" style="width: 4%" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+            <col class="con0" />
+            <col class="con1" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="head0">No</th>
+                <th class="head0">Code Name</th>
+				<th class="head0">Campaign</th>
+                <th class="head1">Phase</th>
+                <th class="head0">Audience</th>
+                <th class="head1">Media Category</th>
+                <th class="head1">Offer Category</th>
+                <th class="head1">Offer Code</th>
+				 <th class="head1">CPAO Type</th>
+				 <th class="head1">Site ID</th>
+				 <th class="head1">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {section loop=$list name=i}
+            <tr>
+                <td width="10">{$list[i].id}&nbsp;</td>
+                <td>{$list[i].CodeName}</td>
+				<td>{$list[i].Campaign}</td>
+                <td><nobr>{$list[i].Phase}</nobr></td>
+                <td><nobr>{$list[i].Audience}</nobr></td>
+                <td><nobr>{$list[i].MediaCategory}</nobr></td>         
+				<td><nobr>{$list[i].OfferCategory}</nobr></td>  
+				<td><nobr>{$list[i].OfferCode}</nobr></td>  
+				<td><nobr>{$list[i].CPAOType}</nobr></td> 
+				<td><nobr>{$list[i].siteID}</nobr></td>
+				<td>
+                    <nobr>
+                   
+							 <a href="index.php?s={$folder}&act=edit&id={$list[i].id}" class="green"> update </a>
+                            |<a href="index.php?s={$folder}&act=hapus&id={$list[i].id}" class="red" onclick="return confirm('Are you sure you want to delete this?')">delete</a>
+                      
+                    </nobr>
+                </td>				
+            </tr>
+            {/section}
+        </tbody>
+    </table>
+    <div class="paging">
+    	{$paging}
+    </div>
+</div><!--theContent-->

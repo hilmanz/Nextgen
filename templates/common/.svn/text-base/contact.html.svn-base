@@ -1,0 +1,7 @@
+Judul Halaman : {$rs.judulHalaman}
+Email : {$rs.email}     
+
+SUBJECT : {$rs.subject}
+----------------------------------------
+
+{$rs.message}

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/PubSub
+END
+DispatcherLoop.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/PubSub/DispatcherLoop.php
+END
+PubSubContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/PubSub/PubSubContext.php
+END

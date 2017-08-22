@@ -1,0 +1,28 @@
+<div id="theContainer2" class="galleryPage">
+    <div class="theContainer2">
+        <div class="theContent2">
+        	<div class="col-content">
+                <div class="theBox">
+                    <div class="theBox-title">
+                        <h2 class="fl">LISTS USER PERMISSION </h2>
+                       
+                    </div><!-- /.theBox-title -->
+                    <div class="theBox-content">
+                        <div class="forms">
+							<table border="1px" width=100% >
+							<td><a class="Btn" href="{$basedomain}administrator/modulespermissionform" > add Modules </a></td>
+							<td><a class="Btn" href="{$basedomain}administrator/roles" > user permission </a></td>
+							</tr>
+							<tr><th>Module Name</th><th colspan='2' >Class</th></tr>
+							{foreach from=$modules key=k item=v}
+							<tr><th>{$v.module}</th><th>{$v.classcall}</th></tr>
+							{/foreach}
+							</table>
+                        </div> <!-- /.forms -->
+                    </div> <!-- /.theBox-content -->
+                </div> <!-- /.theBox -->
+            </div><!-- /.col-content -->
+          
+        </div> <!-- /.theContent2 -->
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->

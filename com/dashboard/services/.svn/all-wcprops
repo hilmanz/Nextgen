@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/services
+END
+facebook_service.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/services/facebook_service.php
+END
+example_service.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/services/example_service.php
+END
+twitter_service.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/nextgen-reg-online/!svn/ver/28/trunk/com/dashboard/services/twitter_service.php
+END

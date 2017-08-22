@@ -1,0 +1,23 @@
+
+<table width="600px">
+    <form method="post" action="index.php">
+        <tr>
+            <td> Table </td>
+            <td>
+                <select name="table_name" id="table_name">
+                    {section name=i loop=$tables}
+                    <option value="{$tables[i].name}">{$tables[i].name}</option>
+                    {/section}
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Next" />
+                <input name="s" type="hidden" id="s" value="builder">
+                <input name="do" type="hidden" id="do" value="configure">
+            </td>
+        </tr>
+    </form>
+</table>

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis
+END
+MonitorContextTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/MonitorContextTest.php
+END
+ClientExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/ClientExceptionTest.php
+END
+ClientTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/ClientTest.php
+END
+HelpersTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/HelpersTest.php
+END
+ConnectionParametersTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/ConnectionParametersTest.php
+END
+CommunicationExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/CommunicationExceptionTest.php
+END
+PredisExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/PredisExceptionTest.php
+END
+ServerExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/ServerExceptionTest.php
+END
+ResponseQueuedTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/ResponseQueuedTest.php
+END
+ConnectionFactoryTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/ConnectionFactoryTest.php
+END
+ResponseErrorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/ResponseErrorTest.php
+END

@@ -1,0 +1,71 @@
+<div class="theContent">
+    {if $msg}<div class="notibar msgalert"><p>{$msg}</p></div>{/if}
+    <div class="theTitle">
+        <h2>ADD MODULE</h2>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable inputable">
+        <tbody>
+            <form name="form1" method="post" action="">
+                <tr>
+                <tr>
+                  <td>Class Name</td>
+                  <td><input name="className" type="text" id="invoker" size="50" maxlength="255" value="{$editList.className}"> </td>
+                </tr>
+                  <td>Module Path</td>
+                  <td><input name="pluginPath" type="text" id="class" size="50" maxlength="255" value="{$editList.plugin_path}"> 
+                    example : applicationFolder/adminFolder/moduleFolder/</td>
+                </tr>
+                <tr>
+                  <td>Request ID</td>
+                  <td><input name="requestID" type="text" id="invoker" size="50" maxlength="255" value="{$editList.requestID}"> </td>
+                </tr>
+                 
+                <tr>
+                  <td>Status</td>
+                  <td><select name="status" id="status">
+                    <option value="1" {if $editList.is_enabled=='1'} selected {/if}>Active</option>
+                    <option value="0" {if $editList.is_enabled=='0'} selected {/if}>Disabled</option>
+                  </select></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>
+                  <input type="submit" name="button" id="button" class="stdbtn btn_orange" value="{if $editList}Update{else}Save{/if}">
+                  {if $editList}
+                    <input type="button" name="button" id="button" class="stdbtn btn_orange" value="New Module" onCLick="window.location='index.php?s=pluginBuilder'" ></a>
+                    <input name="id" type="hidden" id="idxID" value="{$editList.id}">
+                  {/if}
+                  <input name="s" type="hidden" id="s" value="pluginBuilder">
+                  <input name="do" type="hidden" id="do" value="{if $editList}updateModule{else}saveModule{/if}"></td>
+                </tr>
+		</form>
+        </tbody>
+    </table><br /><br />
+    <div class="theTitle">
+        <h2>DASHBOARD CONFIGURATION</h2>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+        <thead>
+            <tr>        
+                <th class="head0">Class Name</th>
+              <th class="head1">module Path</th>
+                <th class="head1">Request ID</th>
+                <th class="head0">Status</th>
+                <th class="head1">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+              {section name=i loop=$list}
+              <tr>
+                <td>{$list[i].className}</td>
+                <td>{$list[i].plugin_path}</td>
+                <td>{$list[i].requestID}</td>
+                <td>{if $list[i].is_enabled eq '1'} ACTIVE {else} DISABLED{/if}</td>
+                <td colspan="2">
+                <a class="btn btn_pencil" href="?s=pluginBuilder&do=editModule&id={$list[i].id}"><span>Edit</span></a> 
+                <a class="btn btn_cut" href="javascript:void(0)" ondblclick="window.location='?s=pluginBuilder&do=deleteModule&id={$list[i].id}' " ><span>Delete</span></a>
+              </tr>
+              {/section}
+        </tbody>
+    </table><br /><br />
+</div><!--theContent-->

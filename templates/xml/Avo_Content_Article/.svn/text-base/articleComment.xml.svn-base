@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	{section name=i loop=$list}
+	<item>
+		<articleID>{$list[i].article_id}</articleID>
+		<commentID>{$list[i].id}</commentID>
+		<mop_user_id>{$list[i].mop_user_id}</mop_user_id>
+		<date>{$list[i].created_date|date_format:"%d-%m-%Y, %T %p"}</date>
+		<comment>{$list[i].comment|stripslashes}</comment>
+	</item>	
+	{/section}
+</data>

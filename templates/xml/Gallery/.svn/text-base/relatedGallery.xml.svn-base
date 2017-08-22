@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	{section name=i loop=$list}
+	<item>
+		<id>{$list[i].id}</id>
+		<title>{$list[i].name|stripslashes}</title>
+		<groupID>{$list[i].group_id|stripslashes}</groupID>
+		<description>{$list[i].description|stripslashes}</description>
+		<date>{$list[i].created_date|date_format:"%d-%m-%Y, %T %p"}</date>
+	</item>	
+	{/section}
+</data>

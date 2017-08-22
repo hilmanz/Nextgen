@@ -1,0 +1,98 @@
+<div id="theContainer2" class="homePage">
+    <div class="theContainer2">
+        <div class="theContent">
+            <div class="darkBox">
+                <div class="short">
+                    <form method="GET" action="{$basedomain}dashboard/entourage" id="shorter">
+						<div class="date-range fl">
+							<div class="selectBA">
+								<select class="baperformanceselecttor styled" name="gamesid"  >
+									<option value="0" > Select GAMES </option>
+									 
+										<option  value="1" > games 1 </option>
+										<option  value="2" > games 2 </option>
+										<option  value="3" > games 3 </option>
+								 
+								</select>
+							</div><!-- /.selectBA -->
+							
+						</div>
+						<div class="date-range fl">
+							<div class="selectBA">
+								<select class="baperformanceselecttor styled" name="uid"  >
+									<option value="0" > Select SBA Name </option>
+									{foreach from=$badetail key=k item=v}
+										<option {if $uid==$v.id}selected{/if} value="{$v.id}" > {$v.names} </option>
+									{/foreach}	
+								</select>
+							</div><!-- /.selectBA -->
+							
+						</div>
+						<div class="date-range fl">
+								<div class="selectArea">
+                        <select class="cityDrop styled"  name="areaid"> 
+                        <option value="0"> Select SBA City </option>
+                            {section name=i loop=$getCity}
+                            <option value="{$getCity[i].id}" {if $areaid==$getCity[i].id }selected{/if} > {$getCity[i].city|upper}</option>
+                            {/section}
+                        </select>
+                    </div><!-- /.selectArea -->
+							
+						</div>
+						<div class="date-range fr">
+						 
+						<input type="text" class="half-width" name="startdate" id="datepicker" value="{$startdate}">
+						<span>to</span>
+						<input type="text" class="half-width" name="enddate" id="datepicker2" value="{$enddate}"><input type="submit" value="GO"/>
+						</div>
+							
+                    </form>
+                </div><!-- /.short -->
+                <div class="darkBox-title">
+					<div class="fl" >
+						<h1>{$totalentourage}</h1>
+						<div> total unique entourage </div>
+					</div>
+					
+					<div class="fl">
+						<h1>{$totalplay}</h1>
+						<div> total game played </div>
+					</div>					
+				
+					<div class="fl">
+						<h1>{$totalwin}</h1>
+						<div> total win </div>
+					</div>
+					
+					<div class="fl" >
+						<h1>{$totallose}</h1>
+						<div> total lose </div>
+					</div>
+                </div><!-- /.darkBox-title -->
+                
+            </div> <!-- /.darkBox -->
+            <div class="darkBox-content">
+					 <table>
+						<tr>
+							<th>NO</th>
+							<th>SBA NAME</th>
+							<th>TOTAL GAME PLAYED</th>
+							<th>TOTAL WIN</th>
+							<th>TOTAL LOSE</th>
+							<th>TIMESTAMP</th>
+						</tr>
+						{foreach from=$games key=k item=val  }
+						<tr>
+							<td>{$val.no}</td>
+							<td>{$val.names}</td>
+							<td>{$val.totalplay}</td>
+							<td>{$val.totalwin}</td>
+							<td>{$val.totallose}</td>
+							<td>{$val.datetimes}</td>
+						</tr>
+						{/foreach}
+					 </table>
+				</div> <!-- /.darkBox-content -->
+        </div> <!-- /.theContent2 -->
+</div> <!-- /#theContainer -->
+    </div> <!-- /.theContainer -->

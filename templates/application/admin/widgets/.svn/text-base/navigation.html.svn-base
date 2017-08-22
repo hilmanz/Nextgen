@@ -1,0 +1,127 @@
+ {if $user}
+	<div class="widget">
+    <div class="nav">
+		<ul id="menu" class="menu">			 
+			<li>
+				<a href="#">
+					<span>Users</span>
+				</a>
+                <ul>
+                    <li>
+                        <a href="{$basedomain}listuser"> 
+                            <span>User Management</span> 
+                        </a>	    				
+                    </li> 
+                    <li>
+                        <a href="{$basedomain}registrantManagement"> 
+                            <span>Registrant Management</span> 
+                        </a>	    				
+                    </li> 
+					<li>
+                        <a href="{$basedomain}aspiration"> 
+                            <span>Aspiration</span> 
+                        </a>	    				
+                    </li> 
+                </ul>	    				
+			</li>
+			{*}
+			<li>
+				<a href="#">
+					<span>News & Event</span>
+				</a>
+                <ul>
+                    <li>
+                        <a href="{$basedomain}news"> 
+                            <span>Update</span> 
+                        </a>	    				
+                    </li> 
+                    <li>
+                        <a href="{$basedomain}event"> 
+                            <span>Clues</span> 
+                        </a>	    				
+                    </li>
+                    <li>
+                        <a href="{$basedomain}shareandbrag"> 
+                            <span>challenge of the week</span> 
+                        </a>	    				
+                    </li>  
+                </ul>	    				
+			</li>			
+			<li>		
+				<a href="#">
+					<span>Badges Management</span>
+				</a>
+                 <ul>
+                	<li>		
+                        <a href="{$basedomain}badges"> 
+                            <span>Badges</span> 
+                        </a>	    	   				
+                    </li> 
+                	<li>		
+                        <a href="{$basedomain}generateCode"> 
+                            <span>Generate Code</span> 
+                        </a>	    	   				
+                    </li> 
+                	<li>		
+                        <a href="{$basedomain}yellowCode"> 
+                            <span>yellow cab and phone booth</span> 
+                        </a>	    	   				
+                    </li> 
+                	<li>		
+                        <a href="{$basedomain}badgesOffline"> 
+                            <span>offline enggagement</span> 
+                        </a>	    	   				
+                    </li>
+                </ul>	    	   				
+			</li>	 	   
+			<li>		
+				<a href="#">
+					<span>Merchandise</span>
+				</a>
+                <ul>
+                	<li>		
+                        <a href="{$basedomain}merchandise">
+                            <span>Merchandise Item</span>
+                        </a>	    	   				
+                    </li>
+                    <li>		
+                        <a href="{$basedomain}redeemItem"> 
+                            <span>Redeem Item</span> 
+                        </a>	    	   				
+                    </li> 
+                </ul>	    	   				
+			</li>
+            <li>		
+				<a href="#">
+					<span>Auction</span>
+				</a>
+                <ul>
+                	<li>		
+                        <a href="{$basedomain}auction">
+                            <span>Auction List</span>
+                        </a>	    	   				
+                    </li>
+                	<li>		
+                        <a href="{$basedomain}auctionWinner">
+                            <span>Auction Winner</span>
+                        </a>	    	   				
+                    </li>
+                </ul>	    	   				
+			</li>		
+{/*}			
+		</ul>
+    </div> <!-- /#nav -->
+    <div id="info-user">
+	{if $user}
+               <div class="nav">
+					<div style="font-weight: bold; font-size: 25px; position: absolute; top: -40px; left: 10px;" ><a href="#" >Hi, {$user->last_name} </a></div>
+					<ul  class="menu">			 
+						
+						<li><a   href="{$basedomain}administrator">Administrator</a></li>
+						<li><a   href="{$basedomain}logout.php">Log Out</a></li>
+					</ul>
+				</div> <!-- /#nva -->
+		{/if}
+    </div> <!-- /#info-user -->
+</div><!-- /.widget -->
+{/if}

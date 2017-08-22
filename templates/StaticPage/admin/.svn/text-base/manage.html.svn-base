@@ -1,0 +1,86 @@
+{literal}
+<style type="text/css">
+<!--
+.style1 {font-weight: bold}
+-->
+</style>
+{/literal}
+<table width="763" border="0" cellspacing="0" cellpadding="0" id="content">
+        <tr>
+          <td width="227" valign="top" style="background: #F0EDEF url(images/leftnavsubmenu-grad.gif) bottom no-repeat;"><table width="227" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="227" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="3" height="3" /></td>
+            </tr>
+            <tr>
+              <td><img src="images/leftnavtop.gif" width="227" height="8" /></td>
+            </tr>
+            <tr>
+              <td valign="top" bgcolor="#F0EDEF"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="1">
+                <tr>
+                  <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr style="background: url(images/rightnavsubbg.gif) repeat-x; font-weight:bold; color: #FFFFFF;">
+                      <td width="5%"><img src="images/leftnavsubmenu.gif" width="7" height="30" /></td>
+                      <td width="9%"><img src="images/admpanah.gif" width="16" height="30" /></td>
+                      <td width="83%">STATIC PAGE</td>
+                      <td width="3%"><div align="right"><img src="images/rightnavsubmenu.gif" width="7" height="30" /></div></td>
+                    </tr>
+                  </table></td>
+                  </tr>
+                <tr>
+                  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr bgcolor="#DFDCDE">
+                      <td width="5%"><img src="images/leftnavsubmenugrey.gif" width="7" height="30" /></td>
+                      <td width="9%">&nbsp;</td>
+                      <td width="83%"><a href="?s=page">Show Pages</a> </td>
+                      <td width="3%"><div align="right"><img src="images/rightnavsubmenugrey.gif" width="6" height="30" /></div></td>
+                    </tr>
+                  </table></td>
+                  </tr>
+               
+                <tr>
+                  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr bgcolor="#DFDCDE">
+                      <td width="5%"><img src="images/leftnavsubmenugrey.gif" width="7" height="30" /></td>
+                      <td width="9%">&nbsp;</td>
+                      <td width="83%"><a href="?s=page&r=group">Groupings</a></td>
+                      <td width="3%"><div align="right"><img src="images/rightnavsubmenugrey.gif" width="6" height="30" /></div></td>
+                    </tr>
+                  </table></td>
+                  </tr>
+                <tr>
+                  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr bgcolor="#DFDCDE">
+                      <td width="5%"><img src="images/leftnavsubmenugrey.gif" width="7" height="30" /></td>
+                      <td width="9%">&nbsp;</td>
+                      <td width="83%"><a href="index.php">Back to Dashboard</a></td>
+                      <td width="3%"><div align="right"><img src="images/rightnavsubmenugrey.gif" width="6" height="30" /></div></td>
+                    </tr>
+                  </table></td>
+                  </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  </tr>
+              </table></td>
+            </tr>
+            
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+            <p>&nbsp;</p>
+          <p>&nbsp;</p></td>
+          <td width="268" valign="top">&nbsp;</td>
+          <td width="268" valign="top"><table width="530" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="536"><img src="images/spacer.gif" width="3" height="3" /></td>
+            </tr>
+            <tr>
+              <td><img src="images/grafis.jpg" width="533" height="145" /></td>
+            </tr>
+          </table>
+            {$ADMIN_CONTENT}</td>
+        </tr>
+</table>

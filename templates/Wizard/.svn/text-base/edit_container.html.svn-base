@@ -1,0 +1,56 @@
+<script src="../Scripts/scriptaculous/src/accordion.js"></script>
+<script>
+    {literal}
+   var vacc = new accordion('#top_container', {
+    classNames : {
+        toggle : 'container_toggle',
+        toggleActive : 'container_toggle_active',
+        content : 'container_content'
+    },
+    defaultSize : {
+        width : 100%
+    },
+    direction : 'vertical'
+});
+   
+    {/literal}
+	
+</script>
+<style>
+#container_toggle{
+	
+}
+#container_toggle_active{
+	
+}
+#container_toggle{
+	
+}
+</style>
+
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="10" class="addlist zebra">
+        <tr class="head">
+            <td><strong>{$WIZARD_NAME|STRIPSLASHES}</strong></td>
+        </tr>
+        <tr bgcolor="#f2f2f2">
+            <td>{$WIZARD_DESCRIPTION}</td>
+        </tr>
+        <tr>
+            <td>
+            <h2 class="container_toggle">CONTENT 1</h2>
+            <div class="container_content">
+           	 <form action="" method="POST" enctype="multipart/form-data" id="wz_form">
+            	<div id="wz_error_msg" style="color:#cc0000;width:100%;background-color:#F99">{$WIZARD_ERROR_MSG}</div>
+                <div>{$CONTENT}</div>
+             </form>
+            </div>
+
+             </td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="button" id="button" value="SAVE" onclick="wizard_continue();return false;"></td>
+        </tr>
+    </table>
+
+

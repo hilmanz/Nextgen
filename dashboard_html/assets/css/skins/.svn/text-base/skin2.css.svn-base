@@ -1,0 +1,92 @@
+.jcarousel-skin-tango .jcarousel-container {
+}
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+	width:1000px;
+	padding: 0 0;
+}
+.jcarousel-skin-tango .jcarousel-clip {
+	overflow: hidden;
+}
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+	width:  1000px;
+	height: 600px;
+}
+.jcarousel-skin-tango .jcarousel-item {
+	width: 1000px;
+	height:60px;
+}
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+	margin-right: 10px;
+}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+	margin-right: 0;
+}
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+	background: #fff;
+	color: #000;
+}
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+	position: absolute;
+	top: 300px;
+	right: 0;
+	width:55px;
+	height: 32px;
+	cursor: pointer;
+	background: transparent url(next-horizontal.png) no-repeat -7px 0;
+	z-index:10;
+}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(prev-horizontal.png);
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 300px;
+	left: 0;
+	width: 55px;
+	height: 32px;
+	cursor: pointer;
+	background: transparent url(prev-horizontal.png) no-repeat 0 0;
+	z-index:10;
+}
+.jcarousel-skin-tango .jcarousel-prev-vertical{
+	position: absolute;
+	top: 240px;
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background: transparent url(arrow_updown.png) no-repeat -41px 0;
+	z-index:10;
+	margin:0 0 0 20px;
+}
+.jcarousel-skin-tango .jcarousel-prev-vertical:hover{
+	background: transparent url(arrow_updown.png) no-repeat -41px -36px;
+}
+.jcarousel-skin-tango .jcarousel-next-vertical{
+	position: absolute;
+	top: 240px;
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background: transparent url(arrow_updown.png) no-repeat 0 0;
+	z-index:10;
+	margin:0 0 0 -20px;
+}
+.jcarousel-skin-tango .jcarousel-next-vertical:hover{
+	background: transparent url(arrow_updown.png) no-repeat 0 -36px;
+}
+
+#listActivity .jcarousel-skin-tango .jcarousel-next-vertical,#listActivity .jcarousel-skin-tango .jcarousel-prev-vertical{
+	top: 300px;
+}

@@ -1,0 +1,4 @@
+<div class="messageBox">
+<h1>{$msg}</h1>
+<a href="{$YES_URL}" class="btn btn2 btn_cloud">Yes</a> <a class="btn btn2 btn_info" href="{$NO_URL}">No</a>
+</div>

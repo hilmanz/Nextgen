@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Distribution
+END
+EmptyRingExceptionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Distribution/EmptyRingExceptionTest.php
+END
+KetamaPureRingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Distribution/KetamaPureRingTest.php
+END
+HashRingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Distribution/HashRingTest.php
+END

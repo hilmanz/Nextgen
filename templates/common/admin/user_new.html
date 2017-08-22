@@ -1,0 +1,85 @@
+<div class="theContent">
+    <div class="theTitle">
+        <h2>ADMINISTRATIVE ACCOUNTS</h2>
+        <a href="?s=admin&amp;r=users" class="btn btn_link"><span>Back</span></a>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable inputable">
+        <tbody>
+            <form id="form1" name="form1" method="post" action="" enctype="multipart/form-data">
+                    <tr>
+                        <td class="head" colspan="2"><strong>Create Account</strong></td>
+                    </tr>
+                    <tr>
+                        <td width="150"><strong>Level</strong></td>
+                        <td>
+                            <select name="level" id="level">
+                            <option value="4">Pick admin level</option>
+                            {section name=i loop=$level}
+                            <option value="{$level[i].id}">{$level[i].level}</option>
+                            {/section}
+                            </select>
+                            <br />
+                        </td>
+                    </tr>
+					{*}
+                    <tr>
+                        <td><strong>Content Category</strong></td>
+                        <td>
+                            <select name="categoryid" style="width:200px;">
+                            <option value=""> - All Category - </option>
+                            {section name=i loop=$category}
+                            <option value="{$category[i].id}">{$category[i].category}</option>
+                            {/section}
+                            </select>
+                        </td>
+                    </tr>
+					{/*}
+                    <tr>
+                        <td><strong>Position</strong></td>
+                        <td><input name="position" type="text" id="position" value="{$rs.position}" />
+                        Max : 20 alphanumeric character(s) <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Full Name</strong></td>
+                        <td><input name="name" type="text" id="name" value="{$rs.name}" />
+                        Max : 50 alphanumeric character(s) <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email</strong></td>
+                        <td><input name="email" type="text" id="email" value="{$rs.email}" />
+                        mail format (example) : admin@kana.co.id <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Emblem</strong></td>
+                        <td><input type="file" name="emblem"/></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Username</strong></td>
+                        <td><input name="username" type="text" id="username" value="{$rs.username}" />
+                        Max : 20 alphanumeric character(s) <br />
+                        <span style="color:#FF0000;">{$rs.e1}</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Password</strong></td>
+                        <td><input type="password" name="password" id="password" /> 
+                        Max : 10 alphanumeric character(s) <br /></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Confirm Password</strong></td>
+                        <td><input type="password" name="confirm" id="confirm" /> 
+                        Max : 10 alphanumeric character(s) <br />
+                        <span style="color:#FF0000;">{$rs.e2}</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="button" id="button" class="stdbtn btn_orange" value="CREATE" />
+                        <input name="s" type="hidden" id="s" value="admin" />
+                        <input name="r" type="hidden" id="r" value="users" />
+                        <input name="do" type="hidden" id="do" value="add" /></td>
+                    </tr>
+            </form>
+        </tbody>
+            </table>
+</div><!--theContent-->

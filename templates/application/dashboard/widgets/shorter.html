@@ -1,0 +1,50 @@
+ <div class="clear">
+ <form method="GET" action="{$basedomain}{$pages}/entourage"  id="filterform">
+     <div class="col-lg-6">
+        <div class="shorter">
+             
+                <div class="rows">
+                <select class="styled submitter" name="uid" >
+                    <option value=''>Sort By SBA Name</option>
+                   {foreach from=$badetail key=k item=v}
+										<option {if $uid==$v.id}selected{/if} value="{$v.id}" > {$v.names} </option>
+					{/foreach}	
+                </select>
+                </div><!-- /.rows -->
+                <div class="rows">
+                <select class="styled submitter"   name="areaid" >
+                    <option value=''>Sort By SBA City</option>
+                     {section name=i loop=$getCity}
+                            <option value="{$getCity[i].id}" {if $areaid==$getCity[i].id }selected{/if} > {$getCity[i].city|upper}</option>
+                            {/section}
+                </select>
+                </div><!-- /.rows -->
+           
+        </div><!-- /.shorter -->
+     </div><!-- /.col-lg-6 -->
+     <div class="col-lg-6">
+        <div class="shorter">
+         
+                <div class="rows fr">
+                    <input type="text" class="datepicker submitter" name="startdate"  value="{$startdate}"  >
+                </div><!-- /.rows -->
+                <div class="rows fr">
+                    <input type="text" class="datepicker submitter"  name="enddate"   value="{$enddate}" >
+                </div><!-- /.rows -->
+           
+        </div><!-- /.shorter -->
+     </div><!-- /.col-lg-6 -->
+	  </form>
+  </div><!-- /.clear -->
+  
+  {literal}
+  
+	<script>
+	
+		$(document).on('change','.submitter', function(){
+		
+			$("#filterform").submit();
+		
+		})
+	</script>
+  {/literal}

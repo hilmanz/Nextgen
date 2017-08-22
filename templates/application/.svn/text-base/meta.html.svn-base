@@ -1,0 +1,82 @@
+<meta charset="utf-8">
+<title>BEAT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<!-- Styles -->
+<link href="{$assets_domain}css/bootstrap.css" rel="stylesheet">
+<link href="{$assets_domain}css/bootstrap-responsive.css" rel="stylesheet">
+<link href="{$assets_domain}css/bootstrap-overrides.css" rel="stylesheet">
+
+<link href="{$assets_domain}css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+
+<link href="{$assets_domain}js/plugins/msgGrowl/css/msgGrowl.css" rel="stylesheet">
+<link href="{$assets_domain}js/plugins/msgAlert/css/msgAlert.css" rel="stylesheet">
+<link href="{$assets_domain}js/plugins/timepicker/jquery.ui.timepicker.css" rel="stylesheet"> 
+<link href="{$assets_domain}js/plugins/lightbox/themes/evolution-dark/jquery.lightbox.css" rel="stylesheet">  
+<link href="{$assets_domain}js/plugins/colorpicker/css/colorpicker.css" rel="stylesheet">
+
+<link href="{$assets_domain}js/plugins/datatables/DT_bootstrap.css" rel="stylesheet">
+<link href="{$assets_domain}js/plugins/responsive-tables/responsive-tables.css" rel="stylesheet"> 
+<link href="{$assets_domain}js/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<link href="{$assets_domain}js/plugins/customform/file-input.css" rel="stylesheet">
+
+<link href="{$assets_domain}css/flexslider.css" rel="stylesheet">
+<link href="{$assets_domain}css/beat.css" rel="stylesheet">
+<link href="{$assets_domain}css/beat-responsive.css" rel="stylesheet"> 
+<link href="{$assets_domain}css/pages/ui-elements.css" rel="stylesheet">
+<link href="{$assets_domain}css/pages/calendar.css" rel="stylesheet">
+
+<!-- Javascript -->
+<script src="{$assets_domain}js/jquery-1.7.2.min.js"></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js'></script>
+<script src="{$assets_domain}js/jquery.ui.touch-punch.min.js"></script>
+<script src="{$assets_domain}js/bootstrap.js"></script>
+
+<script src="{$assets_domain}js/plugins/enhance/enhance.js"></script>
+<script src="{$assets_domain}js/plugins/msgGrowl/js/msgGrowl.js"></script>
+<script src="{$assets_domain}js/plugins/msgAlert/js/msgAlert.js"></script>
+<script src="{$assets_domain}js/plugins/timepicker/jquery.ui.timepicker.min.js"></script>
+<script src="{$assets_domain}js/plugins/colorpicker/js/bootstrap-colorpicker.js"></script>
+<script src="{$assets_domain}js/plugins/lightbox/jquery.lightbox.min.js"></script>
+
+
+
+<script src="{$assets_domain}js/plugins/excanvas/excanvas.min.js"></script>
+<script src="{$assets_domain}js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="{$assets_domain}js/plugins/customform/customform.js"></script>
+<script src="{$assets_domain}js/plugins/customform/jQuery.fileinput.js"></script>
+<script src="{$assets_domain}js/plugins/flexslider/jquery.flexslider-min.js"></script>
+
+<script src="{$assets_domain}js/lib/ui-elements.js"></script>
+
+<script src="{$assets_domain}js/highcharts2.js"></script>
+<!--script type="text/javascript" language="javascript" src="{$assets_domain}js/highchartHelper.js"></script-->	
+<script type="text/javascript" src="{$assets_domain}js/jquery.powertip.js"></script>
+
+<script type="text/javascript" src="{$assets_domain}js/kipagination.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/helper/userHelper.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/helper/contentHelper.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/highchartHelper.js"></script>
+
+<!-- jQloud -->
+<link rel="stylesheet" type="text/css" href="{$assets_domain}js/jQloud/jqcloud.css" />
+ 
+<script type="text/javascript" src="{$assets_domain}js/jQloud/jqcloud-1.0.4.js"></script>
+
+
+<script src="{$assets_domain}js/beat.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/fancybox/jquery.fancybox.js?v=2.1.4"></script>
+<link rel="stylesheet" type="text/css" href="{$assets_domain}js/fancybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+<script type="text/javascript" src="{$assets_domain}js/jquery.tablesorter.js"></script>
+<link rel="stylesheet" href="{$assets_domain}css/blue/style.css" type="text/css" media="print, projection, screen" />
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<script>
+	var basedomain = "{$basedomain}" ;
+	var basedomainpath = "{$basedomainpath}" ;
+	var pages = "{$pages}" ;
+	var locale = {$locale|@json_encode};
+</script>

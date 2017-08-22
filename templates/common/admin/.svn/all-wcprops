@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin
+END
+dashboard_config.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/dashboard_config.html
+END
+user_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/user_edit.html
+END
+message.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/message.html
+END
+exportTo.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/exportTo.html
+END
+default.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/default.html
+END
+user_manage.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/user_manage.html
+END
+dashboard.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/dashboard.html
+END
+user_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/user_new.html
+END
+permission.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/permission.html
+END
+admin.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/admin.html
+END
+dialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/dialog.html
+END
+login.dummy.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/login.dummy.html
+END
+broadcast.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/broadcast.html
+END
+config.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/config.html
+END
+paging.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/paging.html
+END
+dashboard_panel.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/dashboard_panel.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/login.html
+END
+edit_config.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/admin/edit_config.html
+END

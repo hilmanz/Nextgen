@@ -1,0 +1,4 @@
+<div align="center">
+  <p>{$msg}</p>
+  <p>[ <a href="{$url}">continue</a> ] </p>
+</div>

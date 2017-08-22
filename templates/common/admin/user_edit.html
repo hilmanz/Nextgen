@@ -1,0 +1,95 @@
+<div class="theContent">
+    <div class="theTitle">
+        <h2>EDIT ACCOUNTS</h2>
+        <a href="?s=admin&amp;r=users&amp;do=new" class="btn btn_pencil"><span>New User Account</span></a>
+        <a href="?s=admin&amp;r=users" class="btn btn_link"><span>Back</span></a>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable inputable">
+        <tbody>
+        	
+                <form id="form1" name="form1" method="post" action="" enctype="multipart/form-data">
+                        <tr>
+                            <td colspan="2"><strong>Username :</strong><span class="pink"> {$rs.username}</span>
+                            <input name="username" type="hidden" id="username" value="{$rs.username|stripslashes}" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="150"><strong>Change Password</strong></td>
+                            <td><input type="password" name="password" id="password" /> 
+                            Max : 10 alphanumeric character(s) <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Confirm Password</strong></td>
+                            <td><input type="password" name="confirm" id="confirm" /> 
+                            Max : 10 alphanumeric character(s) <br />
+                            <span style="color:#FF0000;">{$rs.e2}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Level</strong></td>
+                            <td>
+                                <select name="level" id="level">
+                                    <option value="4">Pick admin level</option>
+                                    {section name=i loop=$level}
+                                    {if $level[i].id == $rs.level}
+                                    <option value="{$level[i].id}" selected="selected">{$level[i].level}</option>
+                                    {else}
+                                    <option value="{$level[i].id}">{$level[i].level}</option>
+                                    {/if}
+                                    {/section}
+                                </select>
+                                <br/>
+                            </td>
+                        </tr>
+                        {*}
+						<tr>
+                            <td><strong>Content Category</strong></td>
+                            <td>
+                                <select name="categoryid" style="width:200px;">
+                                    <option value=""> - All Category - </option>
+                                    {section name=i loop=$category}
+                                    {if $level[i].id == $rs.level}	<option value="{$level[i].id}" selected="selected">{$level[i].level}</option>
+                                    {else}<option value="{$category[i].id}">{$category[i].category}</option>
+                                    {/if}
+                                    {/section}
+                                </select>
+                            </td>
+                        </tr>
+						{/*}
+                        <tr>
+                            <td><strong>Position</strong></td>
+                            <td><input name="position" type="text" id="position" value="{$rs.position}" />
+                            Max : 20 alphanumeric character(s) <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Full Name</strong></td>
+                            <td><input name="name" type="text" id="name" value="{$rs.name}" />
+                            Max : 50 alphanumeric character(s) <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Email</strong></td>
+                            <td><input name="email" type="text" id="email" value="{$rs.email}" />
+                            mail format (example) : admin@kana.co.id <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><strong>Emblem</strong></td>
+                            <td>
+                            <p><img src="{$baseurl}public_assets/emblem/{$rs.emblem}" id="previews"/></p><br />
+                            <p><input name="emblem" type="file" id="emblem"/></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input class="update" type="submit" name="button" id="button" class="stdbtn btn_orange" value="UPDATE" />
+                            <input name="s" type="hidden" id="s" value="admin" />
+                            <input name="r" type="hidden" id="r" value="users" />
+                            <input name="do" type="hidden" id="do" value="simpan" />
+                            <input name="id" type="hidden" id="id" value="{$rs.userID}" /></td>
+                        </tr>
+                </form>
+                </tbody>
+            </table>
+</div><!--theContent-->

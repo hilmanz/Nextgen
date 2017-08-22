@@ -1,0 +1,562 @@
+/*
+Theme Name: MARLBORO CONNECTIONS
+Version: 1.0.2
+Author: ACIT JAZZ - 2012
+*/
+@import url(https://fonts.googleapis.com/css?family=Coda);
+
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url('../font/bebasneue-webfont.eot');
+	src: url('../font/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../font/bebasneue-webfont.woff') format('woff'),  
+	     url('../font/bebasneue-webfont.ttf') format('truetype'),  
+	     url('../font/bebasneue-webfont.svg#BebasNeueRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'DINMediumRegular';
+    src: url('../font/din-webfont.eot');
+    src: url('../font/din-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/din-webfont.woff') format('woff'),
+         url('../font/din-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BlackoutMidnight';
+    src: url('../font/Blackout-Midnight-webfont.eot');
+    src: url('../font/Blackout-Midnight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Blackout-Midnight-webfont.woff') format('woff'),
+         url('../font/Blackout-Midnight-webfont.ttf') format('truetype'),
+         url('../font/Blackout-Midnight-webfont.svg#BlackoutMidnight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Blackout2AM';
+    src: url('../font/Blackout-2am-webfont.eot');
+    src: url('../font/Blackout-2am-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Blackout-2am-webfont.woff') format('woff'),
+         url('../font/Blackout-2am-webfont.ttf') format('truetype'),
+         url('../font/Blackout-2am-webfont.svg#Blackout2AM') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	background:url(../img/bg_white.jpg) repeat #eaeaea;
+	margin:0;
+	padding:0 0 120px 0;
+	font-family:'DINMediumRegular', 'Coda', cursive;
+	font-size:12px;
+	line-height:1.4;
+	color:#959595;
+}
+h1,h2,h3,h4,th{
+	font-weight:normal;
+	margin:0;
+}
+h1{
+	font-size:24px;
+}
+h2{
+	font-size:18px;
+}
+h3{
+	font-size:16px;
+}
+h4{
+	font-size:14px;
+}
+a{
+	color:#eda21e;
+}
+.current{
+	color:#e10020;
+	font-size:14px;
+}
+a:hover{
+	color:#ffcf33;
+}
+.f50{
+	font-size:50px;
+}
+.red{
+	color:#e10020;
+}
+.blue2{
+	color:#79a6dd;
+}
+.gold2{
+	color:#e6cf97;
+}
+.blue{
+	color:#1f6ac6;
+}
+.gold{
+	color:#e0a637;
+}
+.yellow{
+	color:#f9b300;
+}
+.mb20{
+	margin-bottom:20px;
+}
+.bt1{
+	border-top:solid 1px #d6d6d6;
+	padding:15px 0 0 0;
+	margin:10px 0 0 0;
+}
+.bb1{
+	border-bottom:solid 1px #d6d6d6;
+	padding:0 0 15px 0;
+	margin:0 0 10px 0;
+}
+.h220{
+	height:220px;
+}
+.h250{
+	height:250px;
+}
+#universal{
+	margin:0 auto;
+	width:858px; position:relative;
+}
+#header{
+	height:90px;
+	padding:30px 0 0 0;
+}
+#logo{
+	background:url(../img/logo.png) no-repeat;
+	width:277px; height:81px;
+	display:block;
+	text-decoration:none;
+	float:left;
+	position:relative;
+	left:30px;
+}
+#container{
+	background:url(../img/container.png) repeat-y;
+	width:858px; margin:0 auto;
+}
+.container{
+	background:url(../img/containerTop.png) no-repeat top;
+	padding:40px 48px 40px 40px;
+	width:770px;
+}
+#topnav{
+	float:right;
+	padding:40px 0 0 0 ;
+}
+#topnav .nav li a{
+	padding:0 20px 0 0;
+}
+#subnavigation{
+	padding:0 0 10px 0;
+	background:url(../img/border.gif) repeat-x bottom;
+	display:table;
+	width:100%;
+}
+.btnAdministration{
+	background:url(../img/administration.png) no-repeat;
+	width:139px; height:41px;
+	display:block;
+}
+.btnLogout{
+	background:url(../img/logout.png) no-repeat;
+	width:77px; height:41px;
+	display:block;
+}
+.nav{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.nav li{
+	margin:0;
+	padding:0;
+	float:left;
+}
+.nav li a{
+	padding:0 40px 0 0;
+	text-decoration:none;
+	color:#959595;
+	text-shadow:0 1px 1px #fff;
+}
+.nav li a:hover,.nav li a.current{
+	color:#ebad40;
+}
+ul.sub_menu{
+	list-style:none;
+	margin:0;
+	padding:5px;
+	background:#fff;
+	position:absolute;
+	border:solid 1px #eaeaea;
+	box-shadow:0 0 5px #ccc;
+	 z-index: 100;
+}
+ul.sub_menu li{
+	float:none;
+	text-align:center;
+}
+ul.sub_menu li a{
+	padding:5px 30px;
+	display:block;
+	text-shadow:none;
+}
+ul.sub_menu li a:hover{
+	background:#33c1eb;
+	color:#fff;
+
+}
+ul.sub_menu li#arrowMenu{
+	background:url(../img/arrow_menu.png) no-repeat;
+	width:21px; height:14px;
+	position:absolute;
+	top:-15px;
+	left:80px;
+}
+.head{
+	background:url(../img/border.gif) repeat-x bottom;
+	display:table;
+	width:100%;
+    font-family: 'BlackoutMidnight';
+	margin:0 0 10px 0;
+}
+.head h1{
+	font-size:45px;
+	margin:0;
+	line-height:80px;
+	text-shadow: 0 1px 1px #fff;
+}
+.titleChart{
+	color:#959595;
+}
+.title{
+	overflow:hidden;
+	height:40px;
+}
+.title h2{
+	float:left;
+	margin:0;
+	font-size:18px;
+	color:#959595;
+	line-height:40px;
+	padding:0 15px;
+}
+.whiteBox,.tableWhite{
+	background:#fff;
+	border:solid 1px #eaeaea;
+	box-shadow:0 0 5px #ccc;
+	padding:15px;
+	margin:10px 0 15px 0;
+	clear:both;
+}
+.tableWhite{
+	padding:0;
+}
+.col3{
+	clear:none;
+	float:left;
+	width:215px;
+	margin:0 14px 15px 0;
+}
+.col3a{
+	clear:none;
+	float:left;
+	width:245px;
+	margin:0 15px 15px 0;
+}
+.col2{
+	clear:none;
+	float:left;
+	width:377px;
+	margin:0 15px 15px 0;
+}
+.col2a{
+	width:476px;
+	float:left;
+	margin:0 14px 15px 0;
+}
+.col2b{
+	clear:none;
+	float:left;
+	width:510px;
+	margin:0 15px 15px 0;
+}
+.col2c{
+	clear:none;
+	float:left;
+	width:180px;
+	margin:0 15px 15px 0;
+}
+.col2d{
+	clear:none;
+	float:left;
+	width:570px;
+}
+.col2c .whiteBox,.col2d .whiteBox{
+	height:145px;
+}
+.clear{
+	clear:both;
+}
+.last{
+	margin:0 0 15px 0;
+}
+.ui-datepicker .ui-datepicker-header{
+	height:24px;
+}
+.table td{
+	padding:10px;
+}
+.tableWhite td,.tableWhite th{
+	padding:12px 15px;
+}
+.tableWhite thead th{
+	border-bottom:solid 1px #c2c2c2;
+	border-right:solid 1px #c2c2c2;
+	font-size:14px;
+}
+.tableWhite td{
+	border-right:solid 1px #c2c2c2;
+}
+.tableWhite td:last-child,.tableWhite th:last-child{
+	border-right:none;
+}
+input[type=text],
+input[type=password],
+input[type=mail]{
+	padding:5px 10px;
+	background:#fff;
+	border:solid 1px #eaeaea;
+	box-shadow:0 0 5px #ccc;
+}
+.selectDate{
+	float:left;
+}
+.selectDates{
+	background:url(../img/icon_cal.png) right no-repeat;
+	margin:7px 0 0 0;
+	float:right;
+	padding:0 40px 0 0;
+}
+.selectDates label{
+	padding:0 10px;
+}
+.selectDates input[type=text]{
+	width:80px;
+}
+.backTop{
+	background:url(../img/border.gif) repeat-x top;
+	display:table;
+	width:100%;
+	clear:both;
+	margin:30px 0 0 0;
+	padding:10px 0;
+}
+#backTop{
+	background:url(../img/arrow_top.png) no-repeat;
+	padding:0 0 0 30px;
+	display:block;
+	line-height:21px;
+	color:#9d9d9d;
+	text-decoration:none;
+	width:120px;
+}
+#backTop:hover{
+	color:#ebad40;
+}
+.graphBadges td span{
+	float:left;
+	line-height:25px;
+	display:block;
+	padding:0 5px;
+}
+.bar{
+	height:25px;
+	float:left;
+}
+.b1{
+	background:#6292cc;
+}
+.b2{
+	background:#9b9c9d;
+}
+.b3{
+	background:#ead303;
+}
+.b4{
+	background:#ffeb95;
+}
+.b5{
+	background:#4b7cb1;
+}
+.b6{
+	background:#df0020;
+}
+.b7{
+	background:#1e9ee9;
+}
+.b8{
+	background:#f4ef81;
+}
+.b9{
+	background:#e2a737;
+}
+.b10{
+	background:#ae75b2;
+}
+.b11{
+	background:#e6cf97;
+}
+.b12{
+	background:#ffc30e;
+}
+.b13{
+	background:#feef39;
+}
+.b14{
+	background:#f6861f;
+}
+.b15{
+	background:#0871bc;
+}
+.b16{
+	background:#00acce;
+}
+.bar span{
+	display:block;
+	width:40px; height:25px;
+	line-height:25px;
+	text-align:center;
+	color:#fff;
+}
+.thumbBadges{
+	width:40px;
+	float:left;
+	margin:0 10px 0 0;
+}
+.thumbBadges img{
+	width:40px;
+}
+#footer{
+	padding:20px 0;
+	text-align:center;
+}
+#footer a{
+	padding:0 10px;
+}
+#login{
+	width:300px;
+}
+#login label{
+	display:block;
+	line-height:20px;
+	padding:20px 0 5px 0;
+}
+#login input[type=submit]{
+	background:#666;
+	border:none;
+	height:30px;
+	padding:0 20px;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:30px;
+	margin:20px 0 0 0;
+	cursor:pointer;
+}
+#login h1{
+    font-family: 'BlackoutMidnight';
+	color:#C00;
+}
+/* ============ TOOLTIP =================*/
+.tip {
+    color: #fff;
+    background:#222;
+    display:none; /*--Hides by default--*/
+    padding:10px;
+	position:absolute;
+    z-index:1000;
+    font-size:11px;
+    text-shadow:none;
+	top:-90px;
+	width:100px;
+	left:30px;
+	text-align:center;
+}
+.tip p{
+	margin:0 0 5px 0;
+}
+.tip img{
+	background:#fff;
+}
+.tip .arrow {
+    display:block;
+    position:absolute;
+    background:url(../img/arrow_tip.png) no-repeat;
+    width:15px;
+    height:13px;
+    margin:0 0 -11px -8px;
+    left:8px;
+	bottom:0;
+}
+.tip_trigger{
+	position:relative;
+}
+
+.tip-yellow {
+	z-index:1000;
+	text-align:left;
+	padding:8px;
+	min-width:50px;
+	max-width:180px;
+	font-size:11px;
+	color:#fff;
+	background:#222;
+}
+.tip-yellow .tip-inner {
+	margin-top:-2px;
+	padding:0 3px 1px 3px;
+}
+
+/* Configure an arrow image - the script will automatically position it on the correct side of the tip */
+.tip-yellow .tip-arrow-top {
+	margin-top:-7px;
+	margin-left:15px;
+	top:0;
+	left:0;
+	width:16px;
+	height:10px;
+    background:url(../img/arrow_tip.png) no-repeat;
+}
+.tip-yellow .tip-arrow-right {
+	margin-top:-9px; /* approx. half the height to center it */
+	margin-left:-4px;
+	top:50%;
+	left:100%;
+	width:10px;
+	height:20px;
+    background:url(../img/arrow_tip.png) no-repeat;
+}
+.tip-yellow .tip-arrow-bottom {
+	margin-top:-6px;
+	margin-left:15px;
+	top:100%;
+	left:0;
+	width:16px;
+	height:13px;
+    background:url(../img/arrow_tip.png) no-repeat;
+}
+.tip-yellow .tip-arrow-left {
+	margin-top:-9px; /* approx. half the height to center it */
+	margin-left:-6px;
+	top:50%;
+	left:0;
+	width:10px;
+	height:20px;
+    background:url(../img/arrow_tip.png) no-repeat;
+}

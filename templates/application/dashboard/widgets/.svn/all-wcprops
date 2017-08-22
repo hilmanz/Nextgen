@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/32/trunk/templates/application/dashboard/widgets
+END
+genderAgeBrand-report.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/dashboard/widgets/genderAgeBrand-report.html
+END
+visit-page-report.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/dashboard/widgets/visit-page-report.html
+END
+engagement-report.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/dashboard/widgets/engagement-report.html
+END
+ba-rank-report.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/dashboard/widgets/ba-rank-report.html
+END
+shorter.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/nextgen-reg-online/!svn/ver/32/trunk/templates/application/dashboard/widgets/shorter.html
+END
+engagement-city-report.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/dashboard/widgets/engagement-city-report.html
+END
+popup-photo.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/dashboard/widgets/popup-photo.html
+END
+cumulative-engage-report.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/dashboard/widgets/cumulative-engage-report.html
+END
+popup-detail-engagement.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/dashboard/widgets/popup-detail-engagement.html
+END
+venue-report.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/dashboard/widgets/venue-report.html
+END

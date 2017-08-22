@@ -1,0 +1,84 @@
+<div class="home-page">
+	<div class="content-home col2s">
+    	<div class="home-list">
+    		<div class="head-title">
+            	<h1 class="fl"> <a href="{$basedomain}listuser"> Users </a></h1>
+            </div>{*}
+            <div class="recent-list">
+            	<h2>New list Upload Photo</h2>
+            	<table border="0">
+				
+					{foreach $newlistuploadphoto as $key => $val}
+                	<tr>
+                    	<td>{$val.no}</td>
+                        <td>{if $val.image_profile==''}<img height="70px" width="70px" src="{$basedomainpath}public_assets/profile/default.jpg" />{else}<img height="70px" width="70px" src="{$basedomainpath}public_assets/profile/{$valimage_profile}" />{/if}</td>
+                        <td>{$val.name}&nbsp{$val.last_name}</td>
+                        <td><span class="publish" >{if $val.photo_moderation == 0}Pending{else}Verified{/if}</span></td>
+                    </tr>
+					{/foreach}
+				{/*}
+                </table>
+            </div>
+        </div><!--end.Home-list-->
+		{*}
+        <div class="home-list">
+    		<div class="head-title">
+            	<h1 class="fl"> <a href="{$basedomain}news">News Event</a></h1>
+            </div>
+            <div class="recent-list">
+            	<h2>New list Event</h2>
+            	<table border="0">
+					{foreach $eventlist as $key => $val}
+                	<tr>
+                    	<td>{$val.no}</td>
+                        <td><img height="70px" width="70px" src="{$basedomainpath}public_assets/sharebrags/{$val.img}" /></td>
+                        <td>{$val.name} {$val.last_name}</td>
+                        <td>{$val.description}</td>
+                    </tr>
+					{/foreach}
+                </table>
+            </div>
+        </div><!--end.Home-list-->
+    </div><!--end.content-home-->
+    <div class="content-home col2s col2s-last ">
+    	<div class="home-list">
+    		<div class="head-title">
+            	<h1 class="fl"> <a href="#">BADGES</a></h1>
+            </div>
+            <div class="recent-list">
+            	<h2>New Enter Code by Users</h2>
+            	<table border="0">
+					{foreach $badgeslist as $key => $val}
+                	<tr>
+                    	<td>{$val.no}</td>
+                        <td><img height="70px" width="70px" src="{$basedomain}assets/images/badges/badges-{$val.badgesid}.png" ></td>
+                        <td>{$val.name}&nbsp{$val.last_name}</td>
+                        <td>{if $val.code==''}Unknown Code{else}{$val.code}{/if}</td>
+                    </tr>
+					{/foreach}
+                </table>
+            </div>
+        </div><!--end.Home-list-->
+        <div class="home-list">
+    		<div class="head-title">
+            	<h1 class="fl"> <a href="{$basedomain}redeemItem">Merchandise</a></h1>
+            </div>
+            <div class="recent-list">
+            	<h2>New Redeem by users</h2>
+            	<table border="0">
+				{foreach $redeemuserlist as $key => $val}
+                	<tr>
+                    	<td>{$val.no}</td>
+                        <!-- <td><img height="70px" width="70px" src="{$basedomain}assets/images/prizes/prizes1.png" ></td> -->
+                        <td>{$val.merchname}</td>
+                        <td>{$val.name} {$val.last_name}</td>
+                        <td>{$val.address}</td>
+                        <td>{$val.redeemdate}</td>
+                    </tr>
+				{/foreach}
+                </table>
+            </div>
+        </div><!--end.Home-list-->
+		{/*}
+    </div>				   				
+</div>

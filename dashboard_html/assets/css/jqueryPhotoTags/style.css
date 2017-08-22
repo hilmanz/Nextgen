@@ -1,0 +1,29 @@
+.clear { clear:both; }
+
+/* Auto Complete CSS */
+h3 { margin: 0px; padding: 0px; }
+.suggestionsBox { position:relative; left:30px; margin:10px 0px 0px 0px; width:200px; background-color:#212427; -moz-border-radius:7px; -webkit-border-radius:7px; border:2px solid #000; color:#fff; }
+.suggestionList { margin:0px; padding: 0px;}
+.suggestionList li { margin:0px 0px 3px 0px; padding:3px; cursor:pointer; }
+.suggestionList li:hover { background-color:#659CD8; }
+
+/* Image Map CSS */
+#map { margin:0; padding:0; background:url(map.jpg) top left no-repeat #fff; font-family:arial, helvetica, sans-serif; font-size:8pt; }
+#map li { margin:0; padding:0; list-style:none; }
+#map li a { position:absolute; display:block;
+/*
+   Specifying a background image
+   (a 1px by 1px transparent gif)
+   fixes a bug in older versions of
+   IE that causeses the block to not
+   render at its full dimensions.
+*/
+ background:url(blank.gif); text-decoration:none; color:#000; }
+#map li a span { display:none; }
+#map li a:hover span { position:relative; display:block; width:200px; left:20px; top:20px; border:1px solid #000; background:#fff; padding:5px; filter:alpha(opacity=80); opacity:0.8; }
+
+/* Form CSS */
+h1 span { font-size:50%; color:#F00; font-style:italic; }
+h1 { }
+h2 { margin:20px 0 -7px; }
+.send { position:absolute; left:5px; top:755px; }

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/nextgen-reg-online/!svn/ver/32/trunk/templates/application/dashboard
+END
+login_message.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/nextgen-reg-online/!svn/ver/28/trunk/templates/application/dashboard/login_message.html
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/nextgen-reg-online/!svn/ver/28/trunk/templates/application/dashboard/footer.html
+END
+meta.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/32/trunk/templates/application/dashboard/meta.html
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/nextgen-reg-online/!svn/ver/32/trunk/templates/application/dashboard/header.html
+END
+home.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/28/trunk/templates/application/dashboard/home.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/nextgen-reg-online/!svn/ver/28/trunk/templates/application/dashboard/login.html
+END
+master.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/nextgen-reg-online/!svn/ver/28/trunk/templates/application/dashboard/master.html
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Options
+END
+ClientOptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Options/ClientOptions.php
+END
+ClientPrefix.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Options/ClientPrefix.php
+END
+ClientProfile.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Options/ClientProfile.php
+END
+ClientCluster.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Options/ClientCluster.php
+END
+IOption.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Options/IOption.php
+END
+CustomOption.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Options/CustomOption.php
+END
+IClientOptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Options/IClientOptions.php
+END
+ClientConnectionFactory.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Options/ClientConnectionFactory.php
+END
+ClientReplication.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Options/ClientReplication.php
+END
+Option.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Options/Option.php
+END

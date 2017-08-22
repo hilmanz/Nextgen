@@ -1,0 +1,33 @@
+{if $isLogin}
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="navbar-header">
+{if $pages=='breakdoubt'}<a class="navbar-brand" href="{$basedomain}{$pages}{$acts}"><img src="{$basedomain}assets/images/logo_breakdoubt.png"/></a>{/if}
+{if $pages=='findwhatmissing'}<a class="navbar-brand" href="{$basedomain}{$pages}{$acts}"><img src="{$basedomain}assets/images/logo_find-what-missing.png"/></a>{/if}
+{if $pages=='facemaker'}<a class="navbar-brand" href="{$basedomain}{$pages}{$acts}"><img src="{$basedomain}assets/images/logo_facemaker.png"/></a>{/if}
+</div>
+<div class="page-title">
+	<h1><span class="icon-house icons">&nbsp;</span><a  href="{$basedomain}" > Dashboard</a></h1>
+</div>
+<a class="logoutBtn boxBtn" href="{$basedomain}logout.php"><span class="icons icon-lock">&nbsp;</span></a>
+<a class="downloadBtn boxBtn" href="javascript:void(0)" onclick="downloadreport()" ><span class="icons icon-download">&nbsp;</span></a>
+<a class="boxBtn boxBtn2  {if $pages=='facemaker'}active{/if} " href="{$basedomain}facemaker">Facemaker</a>
+<a class="boxBtn boxBtn2 {if $pages=='breakdoubt'}active{/if}" href="{$basedomain}breakdoubt">Break Doubt</a>
+<a class="boxBtn boxBtn2  {if $pages=='findwhatmissing'}active{/if}" href="{$basedomain}findwhatmissing">Find What Missing</a>
+</nav>
+{/if}
+
+ {literal}
+ <script>
+	function downloadreport(){
+		if(window.location.search==''){
+			window.location = window.location.href+'?download=report';		
+		}else{
+			if(window.location.search.match(/download=report/)){
+				window.location =window.location.reload();
+			}else{			 
+				window.location =window.location.href+'&download=report';
+			}
+		}
+	}
+ </script>
+ {/literal}

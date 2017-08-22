@@ -1,0 +1,1176 @@
+{literal}
+ <style>
+
+ 
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 4px;
+}
+.ui-widget-content {
+    background: repeat-x scroll 50% 50% #FFFFFF;
+    border: 1px solid #AAAAAA;
+    color: #222222;
+}
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+}
+.ui-menu {
+    display: block;
+    list-style: none outside none;
+    margin: 0;
+    outline: medium none;
+    padding: 2px;
+}
+.ui-autocomplete {
+    cursor: default;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.ui-front {
+    z-index: 100;
+}
+body {
+    font-family: "Trebuchet MS","Helvetica","Arial","Verdana","sans-serif";
+    font-size: 62.5%;
+}
+</style>
+{/literal}
+<div id="theContainer2" class="homePage performance-page">
+ <form id="shorter" method="GET" action="" >
+    <div class="theContainer2">
+        <div class="shorter-menu">
+            <div class="selectBrand fl">
+                 
+                    <select class=""  name="brandid" >
+						<option value="0"> - Brand - </option>
+						{section name=i loop=$getBrand}
+							<option value="{$getBrand[i].id}" {if $brandid==$getBrand[i].id}selected{/if}>{$getBrand[i].name|upper}</option>
+						{/section}
+                    </select>
+                 
+                </div><!-- /.selectBrand -->
+            <div class="selectArea fl">
+                  
+                    <select class="cityDrop"  name="areaid"> 
+					<option value="0"> - Area - </option>
+						{section name=i loop=$getCity}
+						<option value="{$getCity[i].id}" {if $areaid==$getCity[i].id }selected{/if} > {$getCity[i].last_name|upper}</option>
+						{/section}
+                    </select>
+                 
+                </div><!-- /.selectArea -->
+				 
+            <div class="selectBA fl">
+				
+            	         
+                    <select class="baDrop" name="sbaid">
+						<option value="0"> - Select Ba - </option>
+						{foreach from=$getSba key=k item=v}
+						<option value="{$v.ownerid}" {if $sbaid==$v.ownerid }selected{/if}  >{$v.name}</option>
+						{/foreach}
+                    </select>
+                 
+                </div><!-- /.selectBA -->
+                <div class="shortDate dateKPI">
+                   
+                            <label>Periode</label>
+                            <input type="text" class="half-width" id="from" name="startdate" value="{$startdate}">
+                            <span>to</span>
+                            <input type="text" class="half-width" id="to" name="enddate" value="{$enddate}">
+							<a href="javascript:void(0)" class="calendar" >Go</a>
+                   
+                </div><!-- /.short -->
+    
+        </div>
+        <div class="theContent">
+        	 <div class="darkBox-title">
+                <h2 class="fl">Weekly Achievement VS. KPI</h2>
+				<a class="icons icon_report normalTip"  title="Download Report" href="{$basedomain}home/wavskpireport/{$startdate}/{$enddate}"></a>
+            </div><!-- /.darkBox-title --> 
+            <div class="darkBox">
+                <div class="darkBox-content" id="weeklyAchievement">
+                    <!-- <img src="{$assets_domain}content/line_chart.png" style="width:100%" /> -->
+                </div> <!-- /.darkBox-content -->
+            </div> <!-- /.darkBox -->
+            <div class="rows2">
+                 <div class="darkBox-title monthly">
+                <h2 class="fl">Cumulative Weekly Achievement VS. KPI</h2>
+				<a class="icons icon_report normalTip"  title="Download Report" href="{$basedomain}home/cumulativevskpireport/{$startdate}/{$enddate}" ></a>
+                <div class="short  fr">
+                    <div class="selectMonth fl">
+                    <select class="" name="monthdate" >
+                      <option value="0" {if $monthdate==''}selected{/if} >Month</option>
+                      <option value="1" {if $monthdate=='1'}selected{/if} >Januari</option>
+                      <option value="2" {if $monthdate=='2'}selected{/if} >February</option>
+                      <option value="3" {if $monthdate=='3'}selected{/if} >Maret</option>
+                      <option value="4" {if $monthdate=='4'}selected{/if} >April</option>
+                      <option value="5" {if $monthdate=='5'}selected{/if} >Mei</option>
+                      <option value="6" {if $monthdate=='6'}selected{/if} >Juni</option>
+                      <option value="7" {if $monthdate=='7'}selected{/if} >July</option>
+                      <option value="8" {if $monthdate=='8'}selected{/if} >Agustus</option>
+                      <option value="9" {if $monthdate=='9'}selected{/if} >September</option>
+                      <option value="10" {if $monthdate=='10'}selected{/if} >Oktober</option>
+                      <option value="11" {if $monthdate=='11'}selected{/if} >November</option>
+                      <option value="12" {if $monthdate=='12'}selected{/if} >Desember</option>
+                    </select>
+                   </div>
+                   <a href="javascript:void(0)" class="calendar" >Go</a>
+                </div><!-- /.short -->
+                <label class="fr">Sort By:</label>
+            </div><!-- /.darkBox-title -->
+            <div class="darkBox">
+                <div class="darkBox-content" id="cumulativeAchievement">
+                    <!-- <img src="{$assets_domain}content/line_chart.png" style="width:100%" /> -->
+                </div> <!-- /.darkBox-content -->
+            </div> <!-- /.darkBox -->
+            </div><!-- /.rows2 -->
+            <div class="rows2">
+            	<div class="col3s">
+                	<div class="darkBox-title2">
+                        <h3>Age Relevancy</h3>
+                    </div><!-- /.darkBox-title -->
+                    <div class="darkBox relative">
+                        <div class="darkBox-content" id="ageRelevancy">
+                            <!-- <img src="{$assets_domain}content/pie1.png" /> -->
+                        </div> <!-- /.darkBox-content -->
+                        {*}
+                        <div class="legend-info">
+                            <ul>
+                                <li><span class="blue2-box"></span><span class="legendSpan">18 - 24</span></li>
+                                <li><span class="reds-box"></span><span class="legendSpan">25 - 29</span></li>
+                                <li><span class="greens-box"></span><span class="legendSpan">+30</span></li>
+                             </ul>
+                        </div><!-- /.legend-info -->
+                        {/*}
+                    </div> <!-- /.darkBox -->
+                </div><!-- /.col3s -->
+                <div class="col3s">
+                	 <div class="darkBox-title2">
+                        <h3>Brand Preference Relevancy</h3>
+                    </div><!-- /.darkBox-title -->
+                    <div class="darkBox relative">
+                        <div class="darkBox-content" id="brandRelevancy">
+                            <!-- <img src="{$assets_domain}content/pie2.png" /> -->
+                        </div> <!-- /.darkBox-content -->
+                    </div> <!-- /.darkBox -->
+                </div><!-- /.col3s -->
+                <div class="col3s col3s-last">
+                	 <div class="darkBox-title2">
+                        <h3 class="fl">Gender</h3>
+                        <a class="icons icon_report normalTip fr"  title="Download Report" href="{$basedomain}home/genderAgeBrandReport/{$startdate}/{$enddate}"></a>  
+                    </div><!-- /.darkBox-title -->
+                    <div class="darkBox relative"> 
+                        <div class="darkBox-content" id="pieGender">
+                            <!-- <img src="{$assets_domain}content/pie3.png" /> -->
+                      
+                        </div> <!-- /.darkBox-content -->
+                        {*}
+                        <div class="legend-info">
+                            <ul>
+                                <li><span class="blue-box"></span><span class="legendSpan">Male</span></li>
+                                <li><span class="purple-box"></span><span class="legendSpan">Female</span></li>
+                             </ul>
+                        </div><!-- /.legend-info -->
+                        {/*}
+                    </div> <!-- /.darkBox -->
+                </div><!-- /.col3s -->
+            </div><!-- /.rows2 -->
+            <div class="rows2">
+                 <div class="darkBox-title">
+                <h2 class="fl">Engagement Performance</h2>
+				<a class="icons icon_report normalTip"  title="Download Report" href="{$basedomain}home/engengereport/{$startdate}/{$enddate}"></a>
+            </div><!-- /.darkBox-title -->
+            <div class="darkBox">
+                <div class="darkBox-content" id="engagePerform">
+                    <!--img src="{$assets_domain}content/line_balok.png" style="width:100%" /-->
+                </div> <!-- /.darkBox-content -->
+            </div> <!-- /.darkBox -->
+            </div><!-- /.rows2 -->
+            <a class="button margin-button showPopup fr" href="{$basedomain}userDetailEngage">See Detail</a>
+            <div class="rows2">
+                 <div class="darkBox-title">
+                <h2 class="fl">Engagement Performance by City</h2>
+				<a class="icons icon_report normalTip"  title="Download Report" href="{$basedomain}home/engengecityreport/{$startdate}/{$enddate}"></a>
+                	<div class="short fr">
+                    	<div class="searchCity fr"> 
+                        	<label>Search:</label>                 
+                           <input type="text" value="{$cityname}" name="searchCity" id="searchCity" class="half-widthSearch autocompletecity">
+                           <a class="calendar" href="javascript:void(0)">Go</a>
+            			</div><!-- /.selectArea -->
+                    </div>
+            </div><!-- /.darkBox-title -->
+            <div class="darkBox">
+                <div class="darkBox-content" id="engagePerformCity">
+                    <!--img src="{$assets_domain}content/line_balok.png" style="width:100%" /-->
+                </div> <!-- /.darkBox-content -->
+            </div> <!-- /.darkBox -->
+            </div><!-- /.rows2 -->
+           
+        </div> <!-- /.theContent2 -->
+    </div> <!-- /.theContainer -->
+</form>
+</div> <!-- /#theContainer -->
+{*}
+{include file="application/dashboard/widgets/popup-detail-engagement.html"}
+{/*}
+<script type="text/javascript">
+	var weekAchievmentKpi = {$weekAchievmentKpi|@json_encode};	
+	var weeklyCumulativeEngage = {$weeklyCumulativeEngage|@json_encode};	
+	var agePref = {$agePref|@json_encode};	
+	var brandPref = {$brandPref|@json_encode};	
+	var genderPref = {$genderPref|@json_encode};	
+	
+{literal}	
+$(function () {
+	
+	var onlineData = new Array();
+	var onlineDate = new Array();
+	var onlineKPI = new Array();
+	
+	var cumulativeData = new Array();
+	var cumulativeDate = new Array();
+	var cumulativeKPI = new Array();
+	
+	var ageData = new Array();
+	var ageDate = new Array();
+	
+	var brandData = new Array();
+	var brandDate = new Array();
+	
+	var genderData = new Array();
+	var genderDate = new Array();
+	
+	for (var weekachiev in weekAchievmentKpi){
+		onlineData.push(parseInt(weekAchievmentKpi[weekachiev].num));
+		onlineDate.push(String(weekAchievmentKpi[weekachiev].dd));
+		onlineKPI.push(20);
+	}
+	
+	var onlineDataFinal = [{
+					name: "Achievment",
+					data: onlineData
+			},{
+				name: "KPI",
+				data:onlineKPI
+			}];
+	
+	for (var cumulative in weeklyCumulativeEngage){
+		cumulativeData.push(parseInt(weeklyCumulativeEngage[cumulative].num));
+		cumulativeDate.push(String(weeklyCumulativeEngage[cumulative].dd));
+		cumulativeKPI.push(20);
+	}
+	
+	var cumulativeFinal = [{
+					name: "Achievment",
+					data: cumulativeData
+			},{
+				name: "KPI",
+				data:cumulativeKPI
+			}];
+			
+	for (var agevar in agePref){
+		ageData.push( [String(agevar) , parseInt(agePref[agevar])] );
+	}
+	
+	for (var brandvar in brandPref){
+		brandData.push( [String(brandPref[brandvar].brand_name) , parseInt(brandPref[brandvar].num)] );
+	}
+	
+	for (var gendervar in genderPref){
+		genderData.push( [String(genderPref[gendervar].sex) , parseInt(genderPref[gendervar].num)] );
+	}
+	
+	gethighChart('line','test Chart','onlineField',onlineDataFinal,onlineDate,1,true,false,false,false,{type:'multyline'});
+	gethighChart('line','test Chart','cumulativeField',cumulativeFinal,cumulativeDate,1,true,false,false,false,{type:'multyline'});
+	gethighChart('pie','test Chart','ageField',ageData,ageDate,1,true);
+	gethighChart('pie','test Chart','brandField',brandData,brandDate,1,true);
+	gethighChart('pie','test Chart','genderField',genderData,genderDate,1,true);
+	
+	//drillDownChart('column','test Chart','cont',dataCoba,cateActivityGroup,1 ,false);
+	
+	});
+	
+	$(document).on('click', '.calendar', function(){
+		/*
+		var from = $('#from').val();
+		var to = $('#to').val();
+		
+		window.location.href='?startdate='+from+'&enddate='+to;
+		*/
+		
+		$("#shorter").submit();
+	})	
+	
+		
+</script>
+{/literal}
+
+<script type="text/javascript">
+	
+	var weekAchievmentKpi = {$weekAchievmentKpi|@json_encode};	
+
+{literal}
+
+$(function () {
+
+	onlineData = new Array();
+	onlineLabel = new Array();
+	onlineKPI = new Array();
+
+	for (var weekachiev in weekAchievmentKpi){
+		onlineData.push(parseInt(weekAchievmentKpi[weekachiev].num));
+		onlineLabel.push(String(weekAchievmentKpi[weekachiev].dd));
+		onlineKPI.push(20);
+	}	
+	
+        $('#weeklyAchievement').highcharts({
+            chart: {
+                type: 'line',
+                marginRight: 0,
+                marginBottom: 50,
+				backgroundColor: '#ffffff'
+            },
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text:false,            },
+            xAxis: {
+                categories: onlineLabel
+            },
+            yAxis: {
+                title: {
+                    text:false,
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+    
+            legend: {
+				itemStyle: {
+                	color: '#666666'
+            	},
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+                x: 0,
+                y: 10,
+                borderWidth: 0,
+            },
+            series: [{
+                name: 'KPI',
+				color:'#00a9e8',
+                data: onlineKPI
+            }, {
+                name: 'Achievement',
+				color:'#35bf07',
+                data: onlineData
+            }]
+        });
+    });
+    
+{/literal}
+		</script>
+<script type="text/javascript">
+
+	var weeklyCumulativeEngage = {$weeklyCumulativeEngage|@json_encode};
+	
+{literal}
+	
+$(function () {
+
+	cumulativeData = new Array();
+	cumulativeLabel = new Array();
+	cumulativeKPI = new Array();
+	
+	for(var cumulative in weeklyCumulativeEngage){
+		cumulativeData.push(parseInt(weeklyCumulativeEngage[cumulative].num));
+		cumulativeLabel.push(String(weeklyCumulativeEngage[cumulative].dd));
+		cumulativeKPI.push(20);
+	
+	}
+	
+        $('#cumulativeAchievement').highcharts({
+            chart: {
+                type: 'line',
+                marginRight: 0,
+                marginBottom: 50,
+				backgroundColor: '#ffffff'
+            },
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text:false,            },
+            xAxis: {
+                categories: cumulativeLabel
+            },
+            yAxis: {
+                title: {
+                    text:false,
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+    
+            legend: {
+				itemStyle: {
+                	color: '#666666'
+            	},
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+                x: 0,
+                y: 10,
+                borderWidth: 0,
+            },
+            series: [{
+                name: 'KPI',
+				color:'#00a9e8',
+                data: cumulativeKPI
+            }, {
+                name: 'Achievement',
+				color:'#35bf07',
+                data: cumulativeData
+            }]
+        });
+    });
+    
+{/literal}
+		</script>
+
+<script type="text/javascript">
+
+	var agePref = {$agePref|@json_encode};	
+
+{literal}
+$(function() {
+
+	var ageData = new Array();
+	var ageLabel = new Array();
+	
+	for (var agevar in agePref){
+		ageData.push( [String(agevar) , parseInt(agePref[agevar])] );
+	}
+
+		   	Highcharts.setOptions({
+     colors: ['#00acec', '#f7941d', '#05a73e']
+    });
+        // Create the chart
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'ageRelevancy',
+                type: 'pie',
+				backgroundColor: '#ffffff',
+				marginRight: 0,
+                marginBottom: 50
+            },
+            title: {
+                text:false
+            },
+            yAxis: {
+                title: {
+                    text: false
+                }
+            },
+			credits: {
+            	enabled: false
+        	},
+            plotOptions: {
+               pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: true,
+						color: '#FFFFFF',
+						connectorColor: '#000000',
+						format: '<b> {point.percentage:.0f} %',
+						distance: -50
+					}
+				}
+            },
+			legend: {
+				itemStyle: {
+                	color: '#666666'
+            	},
+				layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'bottom',
+                borderWidth: 0
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.point.name +'</b>: '+ this.y +'';
+                }
+            },
+			 
+            series: [{
+                name: 'Browsers',
+                data: ageData,
+                size: '100%',
+                innerSize: '40%',
+                showInLegend:true,
+                dataLabels: {
+                    enabled: true
+                }
+            }]
+        });
+    });
+		</script>
+{/literal}
+
+<script type="text/javascript">
+
+	var brandPref = {$brandPref|@json_encode};	
+
+{literal}
+$(function() {
+
+	brandData = new Array();
+	brandLabel = new Array();
+	
+	for(var brandRelev in brandPref){
+		brandData.push( [String(brandRelev) , parseInt(brandPref[brandRelev])] );
+	}
+	
+		   	Highcharts.setOptions({
+     colors: ['#ed1c24', '#00aeef', '#c7b299']
+    });
+        // Create the chart
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'brandRelevancy',
+                type: 'pie',
+				backgroundColor: '#ffffff',
+				marginRight: 0,
+                marginBottom: 50
+            },
+            title: {
+                text:false
+            },
+            yAxis: {
+                title: {
+                    text: false
+                }
+            },
+			credits: {
+            	enabled: false
+        	},
+             plotOptions: {
+               pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: true,
+						color: '#FFFFFF',
+						connectorColor: '#000000',
+						format: '<b> {point.percentage:.0f} %',
+						distance: -50
+					}
+				}
+            },
+			legend: {
+				itemStyle: {
+                	color: '#666666'
+            	},
+				layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'bottom',
+                borderWidth: 0
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.point.name +'</b>: '+ this.y +'';
+                }
+            },
+            series: [{
+                name: 'Browsers',
+                data: brandData,
+                size: '100%',
+                innerSize: '40%',
+                showInLegend:true,
+                dataLabels: {
+                    enabled: true
+                }
+            }]
+        });
+    });
+		</script>
+{/literal}
+
+<script type="text/javascript">
+
+	var genderPref = {$genderPref|@json_encode};	
+
+{literal}
+$(function() {
+	
+	genderData = new Array();
+	genderLabel = new Array();
+	
+	for (var gendervar in genderPref){
+		genderData.push( [String(genderPref[gendervar].sex) , parseInt(genderPref[gendervar].num)] );
+	}
+	
+	
+	
+   	Highcharts.setOptions({
+     colors: ['#00acec', '#f06eaa']
+    });
+        // Create the chart
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'pieGender',
+                type: 'pie',
+				backgroundColor: '#ffffff',
+				marginRight: 0,
+                marginBottom: 50
+            },
+            title: {
+                text:false
+            },
+            yAxis: {
+                title: {
+                    text: false
+                }
+            },
+			credits: {
+            	enabled: false
+        	},
+              plotOptions: {
+               pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: true,
+						color: '#FFFFFF',
+						connectorColor: '#000000',
+						format: '<b> {point.percentage:.0f} %',
+						distance: -50
+					}
+				}
+            },
+			legend: {
+				itemStyle: {
+                	color: '#666666'
+            	},
+				layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'bottom',
+                borderWidth: 0
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.point.name +'</b>: '+ this.y +' ';
+                }
+            },
+            series: [{
+                name: 'Browsers',
+                data: genderData,
+                size: '100%',
+                innerSize: '40%',
+                showInLegend:true,
+                dataLabels: {
+                    enabled: true
+                }
+            }]
+        });
+    });
+		</script>
+{/literal}
+
+
+	<script type="text/javascript">
+/*		var engagemenentpreformance = {$engagemenentpreformance|@json_encode};	
+{literal}	
+$(function () {
+	eperformancedata = new Array();
+	eperformancelabel = new Array();
+ 
+	
+	for(var dataperforme in engagemenentpreformance){
+		var engagelist =  parseInt(dataperforme,10)+1;
+		eperformancedata.push(parseInt(engagemenentpreformance[dataperforme]));
+		eperformancelabel.push(String("Engagement "+engagelist));
+		 
+	}
+    Highcharts.setOptions({
+     colors: ['#ff9933', '#009933','#0099ff','#ff3333','#bdb299']
+    });
+        var colors = Highcharts.getOptions().colors,
+            categories = eperformancelabel,
+            name = false,
+            data = eperformancedata;
+    
+        function setChart(name, categories, data, color) {
+			chart.xAxis[0].setCategories(categories, false);
+			chart.series[0].remove(false);
+			chart.addSeries({
+				name: false,
+				data: data,
+				color: color 
+			}, false);
+			chart.redraw();
+        }
+    
+        var chart = $('#engagePerform').highcharts({
+            chart: {
+                type: 'column',
+				backgroundColor: '#ffffff'
+            },
+            title: {
+                text:false
+            },
+            subtitle: {
+                text:false
+            },
+			credits: {
+            	enabled: false
+        	},
+            xAxis: {
+                categories: categories
+            },
+            yAxis: {
+                title: {
+                    text:false,
+                }
+            },
+
+            tooltip: {
+                formatter: function() {
+                    var point = this.point,
+                        s = '<b>'+this.x +'</b>: '+ this.y +' <br/>';
+                     
+                    return s;
+                }
+            },
+            series: [{
+                name: name,
+                data: data,          
+				showInLegend:false
+            }],
+            exporting: {
+                enabled: false
+            }
+        })
+        .highcharts(); // return chart
+    });
+    */
+
+		</script>
+
+{/literal}
+<script type="text/javascript">
+
+	var engagemenentpreformance = {$engagemenentpreformance|@json_encode};	
+	
+{literal}
+$(function () {
+
+	engagelabel = new Array();
+	engagedata = new Array();
+	
+	for(var dataperforme in engagemenentpreformance){
+		var engagelist =  parseInt(dataperforme,10)+1;
+		engagedata.push(parseInt(engagemenentpreformance[dataperforme]));
+		engagelabel.push(String("Engagement "+engagelist));
+		 
+	}
+	
+		var colors= ['#FF8C00', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
+		var datas = [];
+		var dataser = [];
+	 	var dataarr = new Object();
+		var dataarrempty = new Array();
+		var nColor = 0;
+		var nIdxColors = colors.length;
+		
+		for(var idxData in engagemenentpreformance){
+			for(var idxData2 in engagemenentpreformance){
+				if(idxData==idxData2) dataarrempty.push(engagemenentpreformance[idxData]);
+				else dataarrempty.push(0);				 
+			}
+			 dataarr[idxData] = dataarrempty;
+			 var dataarrempty = new Array();
+		}
+	 
+		//console.log(dataarr);
+		for(var idxData in engagemenentpreformance){
+				
+				
+			 
+				var dataWithColor = { name:engagelabel[idxData], data : dataarr[idxData] , color:colors[idxData] };
+			
+				datas.push(dataWithColor);
+				
+				
+			 
+				if(nIdxColors > nColor) nColor++;
+				else nColor=0;
+			 
+				
+		}
+	
+	engagedata =  datas;
+	
+    Highcharts.setOptions({
+     colors: ['#ff9933', '#009933','#0099ff','#ff3333','#bdb299']
+    });
+        var colors = Highcharts.getOptions().colors,
+            categories = engagelabel,
+            name = false,
+            data = engagedata;
+    
+        function setChart(name, categories, data, color) {
+			chart.xAxis[0].setCategories(categories, false);
+			chart.series[0].remove(false);
+			chart.addSeries({
+				name: false,
+				data: data,
+				color: color 
+			}, false);
+			chart.redraw();
+        }
+	
+        $('#engagePerform').highcharts({
+            chart: {
+                type: 'column',
+				marginBottom:85
+            },/*
+			legend: {
+				align: 'center',
+				verticalAlign: 'bottom',
+				x: 0,
+				y: 30
+        	},*/
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text: false,
+            },
+            xAxis: {
+                categories: engagelabel
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text:false
+                }
+            },
+            tooltip: {
+              
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    grouping: false,
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+             series:data,
+        });
+    });
+</script>
+
+{/literal}
+
+	<script type="text/javascript">
+	
+		var engagemenentpreformancebycity = {$cityEngagementPerformance|@json_encode};	
+{literal}	
+$(function () {
+	eperformancedata = new Array();
+	eperformancelabel = new Array();
+ 
+	
+	for(var dataperforme in engagemenentpreformancebycity){
+		var engagelist =  parseInt(dataperforme,10)+1;
+		eperformancedata.push(parseInt(engagemenentpreformancebycity[dataperforme]));
+		eperformancelabel.push(String("Engagement "+engagelist));
+		 
+	}
+	
+		var colors= ['#FF8C00', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
+		var datas = [];
+		var dataser = [];
+	 	var dataarr = new Object();
+		var dataarrempty = new Array();
+		var nColor = 0;
+		var nIdxColors = colors.length;
+		
+		for(var idxData in eperformancedata){
+			for(var idxData2 in eperformancedata){
+				if(idxData==idxData2) dataarrempty.push(eperformancedata[idxData]);
+				else dataarrempty.push(0);				 
+			}
+			 dataarr[idxData] = dataarrempty;
+			 var dataarrempty = new Array();
+		}
+	 
+		//console.log(dataarr);
+		for(var idxData in eperformancedata){
+				
+				
+			 
+				var dataWithColor = { name:eperformancelabel[idxData], data : dataarr[idxData] , color:colors[idxData] };
+			
+				datas.push(dataWithColor);
+				
+				
+			 
+				if(nIdxColors > nColor) nColor++;
+				else nColor=0;
+			 
+				
+		}
+	eperformancedata = datas;
+	
+    Highcharts.setOptions({
+     colors: ['#ff9933', '#009933','#0099ff','#ff3333','#bdb299']
+    });
+        var colors = Highcharts.getOptions().colors,
+            categories = eperformancelabel,
+            name = false,
+            data = eperformancedata;
+    
+        function setChart(name, categories, data, color) {
+			chart.xAxis[0].setCategories(categories, false);
+			chart.series[0].remove(false);
+			chart.addSeries({
+				name: false,
+				data: data,
+				color: color 
+			}, false);
+			chart.redraw();
+        }
+    
+        $('#engagePerformCity').highcharts({
+            chart: {
+                type: 'column',
+				marginBottom:85
+            },
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text: false,
+            },
+            xAxis: {
+                categories: eperformancelabel
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text:false
+                }
+            },
+            tooltip: {
+                 
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    grouping: false,
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series:   data 
+        });
+    });
+/*		var engagemenentpreformance = {$engagemenentpreformance|@json_encode};	
+{literal}	
+$(function () {
+	eperformancedata = new Array();
+	eperformancelabel = new Array();
+ 
+	
+	for(var dataperforme in engagemenentpreformance){
+		var engagelist =  parseInt(dataperforme,10)+1;
+		eperformancedata.push(parseInt(engagemenentpreformance[dataperforme]));
+		eperformancelabel.push(String("Engagement "+engagelist));
+		 
+	}
+    Highcharts.setOptions({
+     colors: ['#ff9933', '#009933','#0099ff','#ff3333','#bdb299']
+    });
+        var colors = Highcharts.getOptions().colors,
+            categories = eperformancelabel,
+            name = false,
+            data = eperformancedata;
+    
+        function setChart(name, categories, data, color) {
+			chart.xAxis[0].setCategories(categories, false);
+			chart.series[0].remove(false);
+			chart.addSeries({
+				name: false,
+				data: data,
+				color: color 
+			}, false);
+			chart.redraw();
+        }
+    
+        var chart = $('#engagePerformCity').highcharts({
+            chart: {
+                type: 'column',
+				backgroundColor: '#ffffff'
+            },
+            title: {
+                text:false
+            },
+            subtitle: {
+                text:false
+            },
+			credits: {
+            	enabled: false
+        	},
+            xAxis: {
+                categories: categories
+            },
+            yAxis: {
+                title: {
+                    text:false,
+                }
+            },
+
+            tooltip: {
+                formatter: function() {
+                    var point = this.point,
+                        s = '<b>'+this.x +'</b>: '+ this.y +' <br/>';
+                   
+                    return s;
+                }
+            },
+            series: [{
+                name: name,
+                data: data ,
+				showInLegend:false
+            }],
+            exporting: {
+                enabled: false
+            }
+        })
+        .highcharts(); // return chart
+    });
+    
+*/
+
+ 
+</script>
+
+{/literal}
+
+
+<script>  
+
+
+{literal}
+ var availableTags = '';
+$( ".autocompletecity" ).autocomplete({
+	  
+	 source: function( request, response ) {
+					
+					$.post(basedomain+'home/cityref',{cityname:request.term},function(data){
+						   response(data);
+					 
+					},"JSON");
+					 
+				}
+	
+});
+
+ 
+		</script>
+
+{/literal}
+
+
+<script>
+    var sbaid = "{$sbaid}";
+{literal}
+     var badgeCol = {};
+    $(document).ready(function(){
+        var selected_brand = $("select[name='brandid'] option:selected").val();
+        var selected_area = $("select[name='areaid'] option:selected").val();
+        badgeCol.area = selected_area;
+        badgeCol.brand = selected_brand;
+        loadDefaultBA();
+       
+        $("select[name='areaid']").on('change',function(){
+            badgeCol.area = $(this).val();
+            $.post(basedomain+'home/ajax_load_ba',badgeCol,function(response){
+                var str='<option value="0"> - Select Ba - </option>';
+                $.each(response,function(k,v){
+                    str+='<option value="'+v.id+'">'+v.name+' '+v.last_name+'</option>';
+                });
+                $("select[name='sbaid']").html(str);
+            },'json');
+        });
+        $("select[name='brandid']").on('change',function(){
+            badgeCol.brand = $(this).val();
+            $.post(basedomain+'home/ajax_load_ba',badgeCol,function(response){
+                var str='<option value="0"> - Select Ba - </option>';
+                $.each(response,function(k,v){
+                    str+='<option value="'+v.id+'">'+v.name+' '+v.last_name+'</option>';
+                });
+                $("select[name='sbaid']").html(str);
+            },'json');
+        });
+    });
+    function loadDefaultBA(){
+         $.post(basedomain+'home/ajax_load_ba',badgeCol,function(response){
+            var str='<option value="0"> - Select Ba - </option>';
+            $.each(response,function(k,v){
+                if(sbaid == v.id){
+                    str+='<option value="'+v.id+'" selected>'+v.name+' '+v.last_name+'</option>';
+                }else{
+                    str+='<option value="'+v.id+'">'+v.name+' '+v.last_name+'</option>';
+                }                
+            });
+            $("select[name='sbaid']").html(str);
+        },'json');
+    }
+{/literal}
+</script>
+{literal}
+<script type="text/javascript">
+	$(function(){ 
+		$('a.normalTip').aToolTip();
+	}); 
+</script>
+{/literal}

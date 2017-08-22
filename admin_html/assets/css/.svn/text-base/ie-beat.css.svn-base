@@ -1,0 +1,59 @@
+/*--------IE css-------*/
+.ie7 #navigation li.active a,
+.ie7 #navigation li a{
+	height:50px;
+}
+.ie7 #navigation li.active a.button{
+	height:30px;
+}
+.ie7 #navigation .icons{
+	top:5px;
+}
+.ie7 input.hasDatepicker[type="text"]{
+	width:70px;
+}
+.ie7 .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container,
+.ie8 .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container{
+	width:1180px;
+}
+.ie7 .span9,
+.ie8 .span9
+{
+	width:870px;
+}
+.ie7 .col3s{
+	margin-right:1%;
+}
+.ie7 .col3{
+	padding-right:3%;
+}
+.ie8 input.hasDatepicker[type="text"]{
+	width:20%;
+}
+.ie7 .login-actions .button{
+	width:150px;
+	padding-right:0;
+}
+.ie7 .head-title{
+	border-bottom:dotted 1px #999;
+	background-image:none;
+}
+.ie7 .icon-remove{
+	background-position: -456px 0;
+	background-image:url(../img/glyphicons-halflings.png) !important;
+	width:15px;
+}
+.ie7 .span3,
+.ie8 .span3
+{
+	width:270px;
+}
+.ie7 .date-range input[type="submit"]{
+	padding:0 10px;
+}
+.ie7 #baperformance-pages .date-range input[type="submit"]{
+	margin:0;
+}
+.ie8 #baperformance-pages .date-range input[type="submit"]{
+	margin:0 0 0 3px;
+}

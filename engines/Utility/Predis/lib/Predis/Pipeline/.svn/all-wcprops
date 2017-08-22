@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Pipeline
+END
+PipelineContext.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Pipeline/PipelineContext.php
+END
+IPipelineExecutor.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Pipeline/IPipelineExecutor.php
+END
+SafeExecutor.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Pipeline/SafeExecutor.php
+END
+FireAndForgetExecutor.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Pipeline/FireAndForgetExecutor.php
+END
+SafeClusterExecutor.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Pipeline/SafeClusterExecutor.php
+END
+StandardExecutor.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Pipeline/StandardExecutor.php
+END

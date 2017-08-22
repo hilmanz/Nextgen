@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	{section name=i loop=$list}
+	<item>
+		<id>{$list[i].id}</id>
+		<groupName>{$list[i].group_name|stripslashes}</groupName>
+	</item>	
+	{/section}
+</data>

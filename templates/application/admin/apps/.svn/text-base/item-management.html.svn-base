@@ -1,0 +1,47 @@
+<div id="theContainer" class="brandPage">
+    <div class="theContainer">
+        <div class="head-title">
+            <h1 class="fl">Brand Page</h1>
+            <a class="fr icons icon_create" href="{$basedomain}brand/create">&nbsp;</a>
+        </div> <!-- /.head-title -->
+        <div class="short2">
+            <form method="POST" action="{$basedomain}{$pages}" id="shorter">
+                <div class="date-range fl">
+                <label>Timespan</label>
+                <input type="text" class="half-width" id="datepicker" name="startdate" value="{$startdate}"/>
+                <span>to</span>
+                <input type="text" class="half-width" id="datepicker2" name="enddate" value="{$enddate}"/>
+                </div>
+                <div class="input-append fr">
+                    <input type="text" size="16" id="search" name="search" class="span2" onfocus="if(this.value=='Search...')this.value='';" onblur="if(this.value=='')this.value='Search...';" value="{if $search}{$search}{else}Search...{/if}"/>
+                    <input type="hidden" name="filter" value="searchform"/>
+                    <button type="submit" class="btn">Go!</button>
+                </div>
+            </form>
+        </div><!-- /.short -->
+        <div class="theContent">
+        {if $brand}
+            {section loop=$brand name=i}
+                <div class="rows">
+                    <div class="entries-full">
+                        <h3 class="username fl">{$brand[i].title}</h3>
+                        <span class="date fr">{$brand[i].posted_date}</span>
+                        <p>{$brand[i].brief}</p>
+                    </div> <!-- /.entries -->
+                    {*}<a class="icons icon_tool" href="{$basedomain}brand/detail/{$brand[i].id}">&nbsp;</a>{/*}
+                    <a href="{$basedomain}brand/edit/{$brand[i].id}" class="icons icon_expand">&nbsp;</a>
+                    <a class="icons icon_delete" href="{$basedomain}brand/unpublish/{$brand[i].id}" onclick="return confirm('This Brands will be gone forever. Confirm deletion?')">&nbsp;</a>
+                </div><!-- /.rows -->
+            {/section}
+        {/if}
+        </div> <!-- /.theContent -->
+        <div class="paging" id="pagingbrand"></div> <!-- END .paging -->
+            <script>
+                var startdate = "{$startdate}";
+                var enddate = "{$enddate}";
+                var search = "{$search}";
+                var userid = "{$user->id}";
+                getpaging(0,{$total},"pagingbrand","paging_ajax_brand",10);
+            </script>
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->

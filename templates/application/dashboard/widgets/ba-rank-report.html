@@ -1,0 +1,15 @@
+<table border=1>
+	<th colspan=2>BA RANK REPORT</th>
+	<tr>
+		<td>Name</td> 		
+		<td>Area</td>	
+		<td>Brand</td>	
+	</tr>			
+	{section name=i loop=$baRankList}
+	<tr>
+		<td>{$baRankList[i].name}</td>
+		<td>{$baRankList[i].city}</td>
+		<td>{$baRankList[i].brand_name}</td>
+	</tr>
+	{/section}
+</table>

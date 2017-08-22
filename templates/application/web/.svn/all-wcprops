@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/nextgen-reg-online/!svn/ver/23/trunk/templates/application/web
+END
+login_message.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/web/login_message.html
+END
+landing.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/web/landing.html
+END
+edit-plan.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/web/edit-plan.html
+END
+forgotpassword.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/web/forgotpassword.html
+END
+register.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/web/register.html
+END
+message.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/web/message.html
+END
+meta.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/web/meta.html
+END
+plan-pages.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/web/plan-pages.html
+END
+home.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/23/trunk/templates/application/web/home.html
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/22/trunk/templates/application/web/header.html
+END
+master.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/22/trunk/templates/application/web/master.html
+END
+moderation-pages.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/web/moderation-pages.html
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/web/footer.html
+END
+entourage-list.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/templates/application/web/entourage-list.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/nextgen-reg-online/!svn/ver/21/trunk/templates/application/web/login.html
+END

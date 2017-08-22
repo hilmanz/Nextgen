@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/nextgen-reg-online/!svn/ver/2/trunk/templates/StaticPage/admin
+END
+group_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/2/trunk/templates/StaticPage/admin/group_edit.html
+END
+list_by_group.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/templates/StaticPage/admin/list_by_group.html
+END
+edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/2/trunk/templates/StaticPage/admin/edit.html
+END
+group_new.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/nextgen-reg-online/!svn/ver/2/trunk/templates/StaticPage/admin/group_new.html
+END
+group_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/2/trunk/templates/StaticPage/admin/group_list.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/nextgen-reg-online/!svn/ver/2/trunk/templates/StaticPage/admin/index.html
+END
+manage.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/2/trunk/templates/StaticPage/admin/manage.html
+END
+new.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/2/trunk/templates/StaticPage/admin/new.html
+END
+list.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/2/trunk/templates/StaticPage/admin/list.html
+END

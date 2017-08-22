@@ -1,0 +1,126 @@
+.jspContainer {
+	overflow:hidden;
+	position:relative
+}
+.jspPane {
+	position:absolute
+}
+.jspVerticalBar {
+	position:absolute;
+	top:0;
+	right:-1px;
+	width:7px;
+	height:100%;
+	background:red
+}
+.jspHorizontalBar {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:16px;
+	background:red
+}
+.jspVerticalBar *, .jspHorizontalBar * {
+	margin:0;
+	padding:0
+}
+.jspCap {
+	display:none
+}
+.jspHorizontalBar .jspCap {
+	float:left
+}
+.jspTrack {
+	background:#cacaca;
+	position:relative
+}
+.entryDetail .jspTrack, .entryDetail .jspVerticalBar {
+	width:4px
+}
+.entryDetail .jspDrag {
+	left:0;
+	width:4px;
+	padding:0
+}
+.jspDrag {
+	background:#7a1878;
+	position:relative;
+	top:0;
+	left:-3px;
+	padding:0 4px;
+	cursor:pointer;
+	width:5px
+}
+.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag {
+	float:left;
+	height:100%
+}
+.jspArrow {
+	background:#50506d;
+	text-indent:-20000px;
+	display:block;
+	cursor:pointer
+}
+.jspArrow.jspDisabled {
+	cursor:default;
+	background:#80808d
+}
+.jspVerticalBar .jspArrow {
+	height:16px
+}
+.jspHorizontalBar .jspArrow {
+	width:16px;
+	float:left;
+	height:100%
+}
+.jspVerticalBar .jspArrow:focus {
+	outline:none
+}
+.jspCorner {
+	background:#eeeef4;
+	float:left;
+	height:100%
+}
+* html .jspCorner {
+	margin:0 -3px 0 0
+}
+.scrollbar{
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+}
+.wide1 {
+	width:410px
+}
+.tall1 {
+	height:150px
+}
+.wide2 {
+	width:320px
+}
+.tall2 {
+	height:220px;
+	overflow:auto;
+}
+.wide3 {
+	width:492px
+}
+.tall3 {
+	height:480px
+}
+.wide4 {
+	width:350px
+}
+.wide5 {
+	width:288px
+}
+.tall5 {
+	height:108px
+}
+.wide6 {
+	width:450px
+}
+.tall6 {
+	height:280px
+}

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/nextgen-reg-online/!svn/ver/2/trunk/config
+END
+config.inc.live.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/nextgen-reg-online/!svn/ver/2/trunk/config/config.inc.live.php
+END
+routes_putra.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/nextgen-reg-online/!svn/ver/2/trunk/config/routes_putra.php
+END
+config.sample.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/nextgen-reg-online/!svn/ver/2/trunk/config/config.sample.inc.php
+END
+email.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/nextgen-reg-online/!svn/ver/2/trunk/config/email.inc.php
+END
+routes.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/nextgen-reg-online/!svn/ver/2/trunk/config/routes.php
+END
+config.dashboard.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/nextgen-reg-online/!svn/ver/2/trunk/config/config.dashboard.inc.php
+END
+config.inc.local.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/nextgen-reg-online/!svn/ver/2/trunk/config/config.inc.local.php
+END
+locale.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/nextgen-reg-online/!svn/ver/2/trunk/config/locale.inc.php
+END

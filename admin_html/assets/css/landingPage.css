@@ -1,0 +1,347 @@
+/*
+Theme Name: AMUSIC NETWORK MOP
+Version: 1.0
+Author: ACIT JAZZ - 2012
+*/
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,300,300italic);
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url('../font/BebasNeue-webfont.eot');
+	src: url('../font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../font/BebasNeue-webfont.woff') format('woff'),  
+	     url('../font/BebasNeue-webfont.ttf') format('truetype'),  
+	     url('../font/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'BebasNeueRegular','Oswald', "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#000;
+	font-size:16px;
+	height:100%;
+	line-height:1.4;
+	margin:0;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.headerLanding {
+    padding: 20px 30px;
+	overflow:hidden;
+}
+.logo {
+	padding:20px;
+	float:left;
+	width: 200px;
+	height:54px;
+	border-right:#cccbcb solid 1px;
+}
+.topRight{
+	float:left;
+	width:620px;
+	height:auto;
+	padding:0 0 0 20px;
+	padding:10px 0 0 30px
+}
+.topRight p{
+	color:#999999;
+}
+.red{
+	color:#e40404;
+}
+.slide_tittle{
+	margin-top: -97px;
+    padding: 12px 20px;
+    position: absolute;
+	background:url(../images/tr_white.png) repeat;
+	width:912px;
+}
+.slide_tittle p {
+    font-size: 14px;
+    padding: 0px 0 0 47px;
+    width: 100%;
+	color:#E40404;
+	font-family: 'Open Sans', sans-serif;
+}
+.titleSlide {
+    display: block;
+    font-weight: bold;
+}
+.smSubmit{
+	background: none repeat scroll 0 0 transparent;
+	padding:30px 0;
+	border-top:dotted 1px #c2c2c2;
+	border-bottom:dotted 1px #c2c2c2;
+}
+#linkReg{
+	background: none repeat scroll 0 0 #CC0000;
+    color: #FFFFFF;
+    display: block;
+    height: 25px;
+    padding-top: 4px;
+    text-decoration: none;
+	text-align:center;
+    width: 197px;
+	margin:0 auto;
+}
+#linkReg:hover{
+	background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	font-family: 'BebasNeueRegular','Oswald', "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+a {
+	outline:none;
+	color:#C00;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
+}
+.intro h1,.intro h2,.intro p{
+	margin:0;
+}
+.intro h1,.intro h2{
+	font-size:50px;
+}
+.footer {
+	text-align:center;
+	padding:50px 0;
+	color:#999;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+}
+.footer .text {
+	font-size:12px;
+	margin:30px 0;
+}
+
+.footer p{
+	margin:0;
+}
+.footer .navigation{
+	margin:0;
+}
+.footer ul {
+	list-style:none;
+	margin:15px 0;
+	padding:0;
+}
+.footer ul li {
+	padding:0;
+	display:inline;
+}
+.footer ul li a {
+	color:#000;
+	font-size:12px;
+	text-decoration:none;
+	padding:0 7px;
+}
+.footer ul li a:hover {
+	color:#C00;
+}
+.submit {
+	background:none;
+}
+fieldset, .r3UploadSection, .r3FaxSection {
+	margin:20px 0;
+	background:#fff;
+	border:none;
+	box-shadow:0px 2px 5px 3px rgba(0,0,0,0.2);
+	padding:0;
+}
+fieldset h2, .r3UploadSection h2, .r3FaxSection h2 {
+	line-height:50px;
+	font-size:24px;
+	text-transform:uppercase;
+	color:#fff;
+	padding:0 20px;
+	margin:0;
+	background:#C00;
+}
+fieldset.spareSections h2 p {
+	color:#343434;
+	padding-left:200px;
+}
+fieldset.spareSections .row .error {
+	position:relative;
+}
+fieldset.spareSections .row .error #lblErrorSpareText5 {
+	display: block;
+	padding-top: 30px;
+}
+fieldset h2 p, .r3UploadSection h2 p, .r3FaxSection h2 p {
+	margin:0;
+}
+.r3FaxSection ol {
+	padding:0;
+	margin:0;
+	list-style:decimal;
+	color:#666;
+}
+.r3FaxSection ol li {
+	margin-left:40px;
+	padding:10px 0;
+}
+#Form1 .row, p.r3UploadSection, p.r3FaxSection, #phUploadingID p {
+	display:block;
+	clear:both;
+	padding:15px 25px;
+	color:#666;
+	font-size:16px;
+	background:url(../images_mop/darkdots.png) bottom repeat-x;
+	margin:0;
+	overflow:hidden;
+}
+.row label, .col_left, .fullWidthLabel {
+	display:inline-block;
+	width:40%;
+	float:left;
+	margin:0;
+}
+#ReferFriend span {
+	display:inline-block;
+	width:200px;
+	margin:0;
+}
+.row label.radio {
+	width:60px;
+}
+.row table td {
+	text-align:center;
+}
+.row table td input[type=radio] {
+	margin:0;
+}
+.row table {
+	display:inline-block;
+}
+input[type=radio] {
+	margin:0 20px 0 0;
+}
+input[type=text],input[type=password] {
+	background: #f7f7f7;
+	border: #d4d8d9 1px solid;
+	font-size: 12px;
+	padding: 10px 7px 10px 7px;
+	color: #222;
+	width:50%;
+}
+select{
+	width:52%;
+}
+input.dob {
+	width:50px;
+}
+input[type=text]:focus, input[type=password]:focus, input.text:focus, input.title:focus, textarea:focus, select:focus {
+	border:solid 1px #C00;
+}
+input[type=submit]:focus {
+	border:solid 1px #C00;
+}
+.navigation{
+	margin:10px 0;
+}
+.navigation ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.navigation ul li {
+	display:inline;
+}
+.navigation ul li a {
+	padding:0 50px 0 0;
+	text-decoration:underline;
+	color:#999999;
+}
+.error {
+	margin:0;
+	color:#F00;
+	font-size:10px;
+}
+#ConfirmAbove18 {
+	display: table;
+	padding: 0 0 0 10px;
+	width: auto;
+}
+.phoneGroup, .example {
+	display: inline-block;
+}
+.contactDetails .checkboxLabel {
+	display:inline-block;
+	width:193px;
+	margin:0;
+}
+.contactDetails label.checkbox {
+	display:inline-block;
+	width:71px;
+	margin:0;
+}
+.contactDetails input[type=checkbox] {
+	display:inline-block;
+	width:12px;
+	margin:0;
+}
+.style1 {
+	margin:10px 0;
+	font-size:14px;
+	color:#999999;
+}
+/* Button */
+
+#UpdateProfileChange a#lnkSubmitBtn {
+	color: white;
+	background: #C00;
+	width: 52px;
+	height: 22px;
+	padding: 8px 1px 1px 11px;
+	text-decoration: none;
+	display: block;
+}
+#UpdateProfileChange a:hover#lnkSubmitBtn {
+	background: #F00;
+}
+#LightBox {
+	background-color: White;
+	display: block;
+	height: 420px;
+	left: 30%;
+	margin: 0 auto;
+	position: absolute;
+	top: 20%;
+	width: 740px;
+	z-index: 3001;
+}
+#LightBox #lbClose {
+	height: 7%;
+	width: 100%;
+}
+#LightBox #lbClose a {
+	background-color: #000;
+	color: white;
+	display: inline-block;
+	float: right;
+	font-weight: bold;
+	height: 24px;
+	padding-top: 5px;
+	text-align: center;
+	text-decoration: none;
+	width: 29px;
+}
+#ContentID {
+	height: 93%;
+	margin-left: 18px;
+	margin-right: 20px;
+	width: auto;
+}
+#phRadBtn{
+	font-size:24px;
+	padding:10px 20px;
+	display:block;
+}

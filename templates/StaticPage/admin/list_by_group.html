@@ -1,0 +1,45 @@
+
+<table width="533" border="0" cellspacing="0" cellpadding="0" id="content">
+<tr>
+  <td height="34"><a href="index.php">Dashboard</a> - <a href="?s=page">Static Page</a> - <a href="?s=page&amp;r=group">Groupings</a> - List</td>
+</tr>
+        <tr>
+          
+          <td width="533" valign="top"><table width="533" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td colspan="3"><img src="images/spacer.gif" width="3" height="3" /></td>
+              </tr>
+              <tr>
+                <td width="9" valign="top"><img src="images/contentbrdr1.gif" width="9" height="9" /></td>
+                <td style="background:url(images/contentbrdrlinetop.gif) repeat-x top"><img src="images/spacer.gif" width="1" height="1" /></td>
+                <td width="11" valign="top"><img src="images/contentbrdr2.gif" width="9" height="9" /></td>
+              </tr>
+              <tr>
+                <td height="126" style="background:url(images/contentbrdrlineleft.gif) repeat-y left">&nbsp;</td>
+                <td valign="top"><p><strong>{$rs.groupName|strtoupper} </strong><br />
+                  </p>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                    <tr>
+                      <td><strong>Page(s)</strong></td>
+                      <td width="17%"><strong>Status</strong></td>
+                    </tr>
+                    {section name=i loop=$list}
+                    <tr>
+                      <td><a href="?s=page&amp;r=edit&amp;id={$list[i].id}">{$list[i].title}</a></td>
+                      <td>{if $list[i].status eq '1'}Published{else}Draft{/if}</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><hr size="1" /></td>
+                    </tr>
+                    {/section}
+                </table></td>
+                <td width="11" style="background:url(images/contentbrdrlineright.gif) repeat-y right">&nbsp;</td>
+              </tr>
+              <tr style="background:url(images/contentbrdr3-grad-bottom.gif) repeat-x bottom">
+                <td height="56" valign="bottom"><div align="left"><img src="images/contentbrdr4-grad.gif" width="8" height="80" /></div></td>
+                <td valign="top" >&nbsp;</td>
+                <td width="11" valign="bottom"><div align="right"><img src="images/contentbrdr3-grad.gif" width="8" height="80" /></div></td>
+              </tr>
+            </table>          </td>
+        </tr>
+</table>

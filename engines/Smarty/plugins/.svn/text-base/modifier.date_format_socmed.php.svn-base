@@ -1,0 +1,41 @@
+<?php
+/**
+ * Smarty plugin
+ * @package Smarty
+ * @subpackage plugins
+ */
+
+/**
+ * Smarty date_format_socmed modifier plugin
+ *
+ * Type:     modifier<br>
+ * Name:     date_format_socmed<br>
+ * Purpose:  format datestamps via strftime<br>
+ * Input:<br>
+ *         - string: input date string
+ *         - format: strftime format for output
+ *         - default_date: default date if $string is empty
+ * @link http://smarty.php.net/manual/en/language.modifier.date.format.php
+ *          date_format (Smarty online manual)
+ * @author   @cendekiapp
+ * @param string
+ * @param string
+ * @param string
+ * @return string|void
+ * @uses smarty_make_timestamp()
+ */
+function smarty_modifier_date_format_socmed($tgl)
+{
+	if($tgl){
+		$tempDay = substr($tgl,8,2);
+		$tempMonth = substr($tgl,5,2);
+		$tempYear = substr($tgl,0,4);
+		$tempTime = substr($tgl,11,8);
+			
+		return $tempDay.'/'.$tempMonth.'/'.$tempYear.' '.$tempTime;
+	}
+}
+
+/* vim: set expandtab: */
+
+?>

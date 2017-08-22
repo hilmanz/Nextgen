@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network
+END
+ConnectionBase.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/ConnectionBase.php
+END
+IConnectionCluster.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/IConnectionCluster.php
+END
+IConnectionSingle.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/IConnectionSingle.php
+END
+StreamConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/StreamConnection.php
+END
+IConnectionComposable.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/IConnectionComposable.php
+END
+WebdisConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/WebdisConnection.php
+END
+ConnectionException.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/ConnectionException.php
+END
+ComposableStreamConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/ComposableStreamConnection.php
+END
+MasterSlaveReplication.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/MasterSlaveReplication.php
+END
+IConnectionReplication.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/IConnectionReplication.php
+END
+PhpiredisConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/PhpiredisConnection.php
+END
+IConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/IConnection.php
+END
+PredisCluster.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Network/PredisCluster.php
+END

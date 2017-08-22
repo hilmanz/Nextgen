@@ -1,0 +1,549 @@
+
+<div id="web-activities">
+<div id="theContainer2" class="homePage">
+    <div class="theContainer2">
+	  <form id="shorter" method="GET" action="" >
+    	<div class="shorter-menu">
+        	<div class="darkBox-title">
+                <div class="short dateKPI fr">
+                  
+                            <label>Periode</label>
+                            <input type="text" class="half-width" id="from" name="startdate" value="{$startdate}">
+                            <span>to</span>
+                            <input type="text" class="half-width" id="to" name="enddate" value="{$enddate}">
+							<a href="javascript:void(0)" class="calendar" >Go</a>
+                  
+                </div><!-- /.short -->
+            </div><!-- /.darkBox-title -->
+        </div><!-- /.shorter-menu -->
+        <div class="theContent">
+        	  <div class="darkBox-title">
+                    <h2 class="fl">Top 5 Visited Page</h2>
+					
+<a class="icons icon_report normalTip"  title="Download Report" href="{$basedomain}activities/visitPageReport/{$startdate}/{$enddate}"></a>
+              </div>
+            <div class="darkBox">
+                <div class="darkBox-content" id="topVisited">
+                    <!-- <img src="{$assets_domain}content/line_balok.png" style="width:100%" /> -->
+                </div> <!-- /.darkBox-content -->
+            </div> <!-- /.darkBox -->
+            
+            <div class="rows2">
+                <div class="darkBox-title">
+                    <h2 class="fl">Top 10 Venue</h2>
+					<a class="icons icon_report normalTip"  title="Download Report" href="{$basedomain}activities/venueReport/{$startdate}/{$enddate}"></a>
+
+                    <div class="short labelOption fr">
+                    
+                    	<label>Based On:</label>
+                        <div class="searchCity fl" style="margin-right:10px;"> 
+								<label>Search:</label>                 
+							   <input type="text" value="{$cityname}" name="searchCity" id="searchCity" class="half-widthSearch autocompletecity">
+							</div><!-- /.selectArea -->
+                        <div class="searchRate fr">
+								<select class="" name="rateType" >
+                                  <option value="" {if $rateType==''}selected{/if} > - Select Base -</option>
+                                  <option value="rating" {if $rateType=='rating'}selected{/if} >Rating</option>
+                                  <option value="prize" {if $rateType=='prize'}selected{/if} >Price</option>
+                                  <option value="smoking" {if $rateType=='smoking'}selected{/if} >Smoking</option>
+                                  <option value="wifi" {if $rateType=='wifi'}selected{/if} >Wifi</option>
+                                </select>
+							
+                             	<a href="javascript:void(0)" class="calendar" >Go</a>
+                        </div><!-- /.selectActivity -->
+                        						
+                    </div><!-- /.short -->
+                </div><!-- /.darkBox-title -->
+                <div class="darkBox">
+                    <div class="darkBox-content" id="topVenue">
+                        <!-- <img src="{$assets_domain}content/line_balok.png" style="width:100%" /> -->
+                    </div> <!-- /.darkBox-content -->
+                </div> <!-- /.darkBox -->
+                <a href="{$basedomain}topVenue" class="button margin-button fr see-detail">See Detail ></a>
+            </div><!-- /.rows2 -->
+			<div class="rows2">
+            	<div class="col2s">
+                	<div class="darkBox-title2">
+                        <h3>User Post </h3>
+                    </div><!-- /.darkBox-title -->
+                    <div class="darkBox">
+                    <div class="darkBox-content">
+                        <div id="wordclouder" style="width: 450px; height: 326px; margin:0 auto "></div>
+                    </div> <!-- /.darkBox-content -->
+				   </div> <!-- /.darkBox -->
+                </div>
+                <div class="col2s col2s-last">
+                	<div class="darkBox-title2">
+                        <h3>User Comment</h3>
+                    </div><!-- /.darkBox-title -->
+                    <div class="darkBox"  style="width:540px;float:left;" >
+                              <div class="darkBox-content">
+                                <div id="wordcloudercomment" style="width: 450px; height: 326px; margin:0 auto "></div>
+                         </div> <!-- /.darkBox-content -->
+                      </div> <!-- /.darkBox -->
+                </div>
+			</div><!-- /.rows2 -->
+            {*}
+            <div class="rows2">
+                <div class="darkBox-title">
+                    <h2 class="fl">Top 5 Content Searched</h2>
+                    <div class="short labelOption fr">
+                    	<label>Based On:</label>
+                         <div class="selectRating fr">
+                          
+                                <select class="">
+                                  <option value="rating">Rating</option>
+                                  <option value="pricce">Price</option>
+                                  <option value="smoking">Smoking</option>
+                                  <option value="wifi">Wifi</option>
+                                </select>
+                             
+                        </div><!-- /.selectRating -->
+                    </div><!-- /.short -->
+                </div><!-- /.darkBox-title -->
+                <div class="darkBox">
+                    <div class="darkBox-content">
+                        <img src="{$assets_domain}content/line_balok.png" style="width:100%" />
+                    </div> <!-- /.darkBox-content -->
+                </div> <!-- /.darkBox -->
+            <a class="button margin-button  fr" href="#">See Detail</a>
+            </div><!-- /.rows2 -->
+		
+            <div class="rows2">
+                <div class="darkBox-title">
+                    <h2 class="fl">Top 5 Redeemed Merchandise</h2>
+                </div><!-- /.darkBox-title -->
+                <div class="darkBox">
+                    <div class="darkBox-content" id="topRedeem">
+                        
+                    </div> <!-- /.darkBox-content -->
+                </div> <!-- /.darkBox -->
+            </div><!-- /.rows2 -->
+        </div> <!-- /.theContent -->
+			{/*}
+		</form>
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
+</div> <!-- /#ba-rank -->
+
+<script type="text/javascript">
+	var startdate = "{$startdate}";
+	var enddate = "{$enddate}";
+	var topVisitedPage = {$topVisitedPage|@json_encode};	
+	var top10venue = {$top10venue|@json_encode};	
+	
+{literal}	
+$(function () {
+	
+	var visitData = new Array();
+	var visitDate = new Array();
+	
+	var venueData = new Array();
+	var venueDate = new Array();
+	
+	for (var visitvar in topVisitedPage){
+		visitData.push(parseInt(topVisitedPage[visitvar].num));
+		visitDate.push(String(topVisitedPage[visitvar].action_value));
+	}
+	
+	for (var venuevar in top10venue){
+		venueData.push(parseInt(top10venue[venuevar].total));
+		venueDate.push(String(top10venue[venuevar].venuename));
+	}
+			
+	gethighChart('column','test Chart','visitPageField',visitData,visitDate,1,true);
+	gethighChart('column','test Chart','venueField',venueData,venueDate,1,true);
+	
+	//drillDownChart('column','test Chart','cont',dataCoba,cateActivityGroup,1 ,false);
+	
+	});
+	
+	$(document).on('click', '.calendar', function(){
+		/*
+		var from = $('#from').val();
+		var to = $('#to').val();
+		
+		window.location.href='?startdate='+from+'&enddate='+to;
+		*/
+		
+		$("#shorter").submit();
+	})
+	
+	
+		
+</script>
+{/literal}
+
+<script>
+{literal}
+ var availableTags = '';
+$( ".autocompletecity" ).autocomplete({
+	  
+	 source: function( request, response ) {
+					
+					$.post(basedomain+'home/cityref',{cityname:request.term},function(data){
+						   response(data);
+					 
+					},"JSON");
+					 
+				}
+	
+});
+
+</script>
+{/literal}
+<script type="text/javascript">
+	var topVisitedPage = {$topVisitedPage|@json_encode};	
+
+{literal}
+	
+	var visitData = new Array();
+	var visitLabel = new Array();
+
+	
+	for (var visitvar in topVisitedPage){
+		visitData.push(parseInt(topVisitedPage[visitvar].num));
+		visitLabel.push(String(topVisitedPage[visitvar].action_value));
+	}
+		
+		var colors= ['#FF8C00', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
+		var datas = [];
+		var dataser = [];
+	 	var dataarr = new Object();
+		var dataarrempty = new Array();
+		var nColor = 0;
+		var nIdxColors = colors.length;
+		
+		for(var idxData in visitData){
+			for(var idxData2 in visitData){
+				if(idxData==idxData2) dataarrempty.push(visitData[idxData]);
+				else dataarrempty.push(0);				 
+			}
+			 dataarr[idxData] = dataarrempty;
+			 var dataarrempty = new Array();
+		}
+	 
+		//console.log(dataarr);
+		for(var idxData in visitData){
+				
+				
+			 
+				var dataWithColor = { name:visitLabel[idxData], data : dataarr[idxData] , color:colors[idxData] };
+			
+				datas.push(dataWithColor);
+				
+				
+			 
+				if(nIdxColors > nColor) nColor++;
+				else nColor=0;
+			 
+				
+		}
+	 
+		var visitData = datas;
+	
+		
+$(function () {
+		
+        $('#topVisited').highcharts({
+            chart: {
+                type: 'column',
+				marginBottom:85
+            },
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text: false,
+            },
+            xAxis: {
+                categories: visitLabel
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text:false
+                }
+            },
+            tooltip: {
+                /* headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y} </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true, */
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    grouping: false,
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series:  visitData
+        });
+    });
+</script>
+{/literal}
+
+
+<script type="text/javascript">
+
+var top10venue = {$top10venue|@json_encode};	
+
+{literal}
+$(function () {
+
+	venueData = new Array();
+	venueLabel = new Array();
+
+	for (var venuevar in top10venue){
+		venueData.push(parseInt(top10venue[venuevar].total));
+		venueLabel.push(String(top10venue[venuevar].venuename));
+	}
+		
+		var colors= ['#FF8C00', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
+		var datas = [];
+		var dataser = [];
+	 	var dataarr = new Object();
+		var dataarrempty = new Array();
+		var nColor = 0;
+		var nIdxColors = colors.length;
+		
+		for(var idxData in venueData){
+			for(var idxData2 in venueData){
+				if(idxData==idxData2) dataarrempty.push(venueData[idxData]);
+				else dataarrempty.push(0);				 
+			}
+			 dataarr[idxData] = dataarrempty;
+			 var dataarrempty = new Array();
+		}
+	 
+		//console.log(dataarr);
+		for(var idxData in venueData){
+				
+				
+			 
+				var dataWithColor = { name:venueLabel[idxData], data : dataarr[idxData] , color:colors[idxData] };
+			
+				datas.push(dataWithColor);
+				
+				
+			 
+				if(nIdxColors > nColor) nColor++;
+				else nColor=0;
+			 
+				
+		}
+		venueData  = datas;
+		
+        $('#topVenue').highcharts({
+            chart: {
+                type: 'column',
+				marginBottom:120
+            },
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text: false,
+            },
+            xAxis: {
+                categories: venueLabel
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text:false
+                }
+            },
+            tooltip: {
+              /*  headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,*/
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    grouping: false,
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: venueData    
+          
+        });
+    });
+</script>
+{/literal}
+
+ <script type="text/javascript">
+	 var word_list = {$cloud};
+	 var word_list_comment = {$commentcloud};
+
+		{literal}		 
+	 
+ 
+      $(function() {
+        $("#wordclouder").jQCloud(word_list);
+        $("#wordcloudercomment").jQCloud(word_list_comment);
+      });
+	  
+	  
+			
+		$(document).on("click",".showpopupcontent",function(){
+			var wordpopup = $(this).children("a").attr("href");
+		 
+			
+						 
+			$.post(basedomain+"content/ajax",{words:wordpopup,needs:"popwordcloud"},function(data){
+				if(data){
+					var htmls ="";
+					$.each(data,function(i,e){
+						htmls += "<div style='padding:15px;border-bottom:#999 1px solid;' ><div>"+e.title+"</div> </div>";
+					
+					});
+					$(".containerContent").html(htmls);
+				 
+					$( '#bg-popups' ).fadeIn();
+					$( '#popup-message' ).fadeIn();
+					 
+				}
+					
+				
+			},"JSON");
+			
+			 
+		 
+			
+		});	
+		 
+		
+    </script>
+	
+	
+<script>
+$( document ).ready(function() {
+	
+
+	$(document).on('click','.closePopup',function(event) {
+	event.preventDefault();
+	$( '#bg-popups' ).fadeOut();
+	$( '#popup-message' ).fadeOut();
+	});
+});
+</script>
+{/literal}
+<div id="popup-message">
+<a class="closePopup" href="#" style="text-shadow: 0px 0px 1px rgb(255, 255, 255);">X</a>
+ 
+ 
+ <div class="containerContent" > 
+ 
+ </div>
+ 
+</div>
+<div id="bg-popups"></div>
+
+<script type="text/javascript">
+
+var topRedeemMerch = {$topRedeemMerch|@json_encode};	
+console.log(topRedeemMerch);
+{literal}
+$(function () {
+
+	redeemData = new Array();
+	redeemLabel = new Array();
+
+	for (var venuevar in topRedeemMerch){
+		redeemData.push(parseInt(topRedeemMerch[venuevar].num));
+		redeemLabel.push(String(topRedeemMerch[venuevar].name));
+	}
+		
+		var colors= ['#FF8C00', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
+		var datas = [];
+		var dataser = [];
+	 	var dataarr = new Object();
+		var dataarrempty = new Array();
+		var nColor = 0;
+		var nIdxColors = colors.length;
+		
+		for(var idxData in redeemData){
+			for(var idxData2 in redeemData){
+				if(idxData==idxData2) dataarrempty.push(redeemData[idxData]);
+				else dataarrempty.push(0);				 
+			}
+			 dataarr[idxData] = dataarrempty;
+			 var dataarrempty = new Array();
+		}
+	 
+		//console.log(dataarr);
+		for(var idxData in redeemData){
+				
+				
+			 
+				var dataWithColor = { name:redeemLabel[idxData], data : dataarr[idxData] , color:colors[idxData] };
+			
+				datas.push(dataWithColor);
+				
+				
+			 
+				if(nIdxColors > nColor) nColor++;
+				else nColor=0;
+			 
+				
+		}
+		redeemData  = datas;
+		
+        $('#topRedeem').highcharts({
+            chart: {
+                type: 'column',
+				marginBottom:120
+            },
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text: false,
+            },
+            xAxis: {
+                categories: redeemLabel
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text:false
+                }
+            },
+            tooltip: {
+              /*  headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,*/
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    grouping: false,
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: redeemData    
+          
+        });
+    });
+</script>
+{/literal}

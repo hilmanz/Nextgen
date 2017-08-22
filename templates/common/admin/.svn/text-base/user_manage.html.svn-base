@@ -1,0 +1,43 @@
+<div class="theContent">
+    <div class="theTitle">
+        <h2>ADMINISTRATIVE ACCOUNTS</h2>
+        <a href="?s=admin&amp;r=users&amp;do=new" class="btn btn_pencil"><span>New User Account</span></a>
+        <a href="?s=module" class="btn btn_pencil"><span>Admin Module List</span></a>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+        <thead>
+            <tr>        
+                <th class="head0" width="10">No</th>
+                <th class="head1" width="100">Username</th>
+                <th class="head0">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+              {section name=i loop=$list}
+              <tr>
+                <td>1</td>
+                <td>{$list[i].username|stripslashes}</td>
+                <td>
+                <a class="btn btn_lock" href="?s=admin&r=permission&id={$list[i].userID}"><span>Set Permissions</span></a> 
+                <a class="btn btn_pencil" href="?s=admin&amp;r=users&amp;do=edit&amp;id={$list[i].userID}"><span>Edit</span></a> 
+                <a class="btn btn_cut" href="#" onClick="doConfirm('{$list[i].userID}');return false;"><span>Delete</span></a>
+                </td>
+              </tr>
+              {/section}
+        </tbody>
+    </table>
+</div><!--theContent-->
+<script>
+{literal}
+function doConfirm(id){
+	if(confirm("Are you sure to delete this account permanently ?")){
+	{/literal}
+		var s = "?s=admin&r=users&do=delete&id="+id;
+{literal}
+		document.location=s;
+	}else{
+		return false;
+	}
+}
+{/literal}
+</script>

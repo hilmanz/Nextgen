@@ -1,0 +1,119 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="{$assets_domain}images/favicon.ico" type="image/x-icon">
+
+<title>Dashboard - GAME</title>
+<!-- Add CSS here -->
+<link href="{$assets_domain}css/dashboard-game.css" rel="stylesheet">
+<!-- Page Specific CSS -->
+<link rel="stylesheet" href="{$assets_domain}css/morris-0.4.3.min.css">
+
+<!-- JavaScript -->
+<script src="{$assets_domain}js/jquery-1.10.2.js"></script>
+<script src="{$assets_domain}js/jquery-ui.js"></script>
+<script src="{$assets_domain}js/customform.js"></script>
+<script src="{$assets_domain}js/bootstrap.js"></script>
+<script src="{$assets_domain}js/dashboard-game.js"></script>
+
+<!-- Page Specific Plugins -->
+<script src="{$assets_domain}js/tablesorter/jquery.tablesorter.js"></script>
+<script src="{$assets_domain}js/tablesorter/tables.js"></script>
+
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script type="text/javascript" src="{$assets_domain}js/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JS library -->
+<script>
+	var basedomain = "{$basedomain}" ;
+	var pages = "{$pages}" ;
+	var locale = {$locale|@json_encode};
+</script>
+<script type="text/javascript" src="{$assets_domain}js/jquery.form.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/jquery.Jcrop.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/kipagination.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/helper/contentHelper.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/helper/userHelper.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/helper/cropperHelper.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/views/contentviews.js"></script> 
+
+<script type="text/javascript" src="{$assets_domain}js/chart/highcharts.js"></script> 
+
+<script type="text/javascript" src="{$basedomain}admin/jscripts/tiny_mce/tiny_mce.js"></script>
+
+
+<!--- END ---->
+
+{literal}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#datepicker").datepicker({dateFormat:"yy-mm-dd"});	
+	});
+{/literal}
+
+</script>
+{literal}
+<script type="text/javascript">
+jQuery(document).ready(function($) {  
+	if( $('#loginBeat').length > 0){
+		$('#loginBeat').validate({
+			invalidHandler: function(form, validator) {
+				var errors = validator.numberOfInvalids();
+				if (errors) {
+					$( "#loginBeat" ).effect('shake', {times: 2, distance: 7}, 50);
+				}
+			}
+		});
+	}
+  
+});
+</script>
+{/literal}
+
+
+
+
+{literal}
+<script>
+	
+	
+	$(document).on("click",".closecontentair",function(){
+		$(".contentair-content").html("");
+		$(".contentairmaster").fadeOut();
+		$(".background-popup").fadeOut();
+		
+	});
+	
+	$(document).on("click",".opencontentair",function(){
+	 
+		$(".contentairmaster").fadeIn();
+		$(".background-popup").fadeIn();
+		
+	});
+	
+	$(document).on("click",".arkPopupImages", function(){
+		var popupsrc = $(this).attr('call');
+		$(".contentair-content").html("<img src='"+popupsrc+"' />")
+		$(".opencontentair").trigger("click");
+	
+	});	
+	
+	$(document).on("click",".arkPopupForm", function(){
+		var popupsrc = $(this).attr('call');
+		$(".contentair-content").html($("."+popupsrc).html());
+		$(".opencontentair").trigger("click");
+	
+	});
+	 
+	 $(document).on("click",".arkPopupTnc", function(){
+		var popupsrc = $(this).attr('call');
+	 	$(".contentair-content").html($("."+popupsrc).html());
+		$(".opencontentair").trigger("click");
+	
+	});
+	 
+</script>	 
+{/literal}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<setting>
+	<!--target Time Text, year-month-date-hour-min-sec-->
+	<targetTimeText>2011-06-25-00-00-00</targetTimeText>
+	<!--target Time Zone, GMT-->
+	<targetTimeZone>0</targetTimeZone>
+	<!--bg Shadow Alpha, 1~100 -->
+	<bgShadowAlpha>100</bgShadowAlpha>
+	<!--textColor, 0x000000~0xFFFFFF-->
+	<textColor>0xFFFFFF</textColor>
+	<!--textColor, 0x000000~0xFFFFFF-->
+	<bgColor>0x262626</bgColor>
+</setting>

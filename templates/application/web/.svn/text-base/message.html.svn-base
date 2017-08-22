@@ -1,0 +1,8 @@
+
+<div class="loaders">
+<img src="{$basedomain}assets/images/loader.png">
+{if $msg}
+<div><p>{$locale.msg.sabarya}</p></div>
+{/if}
+</div>
+

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/auth
+END
+apiOAuth.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/auth/apiOAuth.php
+END
+apiAuth.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/auth/apiAuth.php
+END
+apiAuthNone.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/auth/apiAuthNone.php
+END
+apiOAuth2.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/auth/apiOAuth2.php
+END
+apiSigner.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/auth/apiSigner.php
+END
+apiP12Signer.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/auth/apiP12Signer.php
+END
+apiVerifier.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/auth/apiVerifier.php
+END
+apiLoginTicket.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/auth/apiLoginTicket.php
+END
+apiPemVerifier.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/auth/apiPemVerifier.php
+END

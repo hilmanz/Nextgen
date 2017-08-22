@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	{section name=i loop=$list}
+	<item>
+		<id>{$list[i].id}</id>
+		<title><![CDATA[{$list[i].title|stripslashes}]]></title>
+		<summary>
+			<![CDATA[{$list[i].summary|stripslashes}]]>
+		</summary>
+		<thumb><![CDATA[contents/media/{if $list[i].thumbnail}{$list[i].thumbnail|stripslashes}{else}noimg.jpg{/if}]]></thumb>
+		<is_event>false</is_event>
+		<external_link><![CDATA[{$list[i].external_link}]]></external_link>
+	</item>
+	{/section}
+</data>

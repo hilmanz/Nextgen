@@ -1,0 +1,15 @@
+<div class="paging">
+                     <ul id="pagination">
+                      {if $isPrev}<li class="previous-off">&nbsp;&laquo;&nbsp;<a href="javascript:openUrl('{if $base_url <> ""}{$base_url}&st={$begin}{else}?st={$begin}{/if}','{$html_part}');">Sebelumnya&nbsp;</a></li>{/if}
+                       {section name=l loop=$page}
+                        {if $curr_page eq $page[l].no}
+                        <li class="active">{$page[l].no}</li>
+                        {else}
+                        <li><a href="javascript:openUrl('{if $base_url <> ""}{$base_url}&st={$page[l].start}{else}?st={$page[l].start}{/if}','{$html_part}');">{$page[l].no}</a></li>
+                        {/if}
+                        {/section}
+                      {if $isNext}
+                        <li class="next"><a href="javascript:openUrl('{if $base_url <> ""}{$base_url}&st={$last}{else}?st={$last}{/if}','{$html_part}');;">&nbsp;Berikutnya &raquo;&nbsp;</a></li>
+                        {/if}
+                    </ul>
+                   </div>

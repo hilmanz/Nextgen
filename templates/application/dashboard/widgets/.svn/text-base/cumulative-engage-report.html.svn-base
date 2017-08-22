@@ -1,0 +1,13 @@
+<table border=1>
+	<th colspan=2>Cumulative Weekly Achievement VS. KPI</th>
+	<tr>
+		<td>Total</td> 		
+		<td>Date</td>	
+	</tr>			
+	{section name=i loop=$weeklyCumulativeEngageReport}
+	<tr>
+		<td>{$weeklyCumulativeEngageReport[i].num}</td>
+		<td>{$weeklyCumulativeEngageReport[i].dd}</td>
+	</tr>
+	{/section}
+</table>

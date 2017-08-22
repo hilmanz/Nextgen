@@ -1,0 +1,37 @@
+<div id="recentActivity">
+   
+  <table border="0" cellpadding="5" cellspacing="0" width="100%" class="addlist zebra">
+    <tbody>
+     {section name=i loop=$plugins}
+      {if $plugins[i].slot eq '1'}
+       <tr class="head">
+        <td><h2>{$plugins[i].name|stripslashes}</h2></td>
+      </tr>
+	 <tr>
+        <td>{$plugins[i].html}</td>
+      </tr>
+      {/if}
+      {/section}
+      </tbody>
+      
+  </table>
+</div>
+<div id="dashboardRight">
+<div id="statistic">
+<table class="addlist zebra" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+   
+    </tr>
+    {section name=i loop=$plugins}
+    {if $plugins[i].slot eq '2'}
+  <tr class="head">
+    <td>{$plugins[i].name|stripslashes}</td>
+    </tr>
+  <tr>
+    <td>{$plugins[i].html}</td>
+  </tr>
+  {/if}
+ {/section}
+</table>
+
+</div>

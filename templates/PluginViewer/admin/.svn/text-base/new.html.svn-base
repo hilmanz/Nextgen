@@ -1,0 +1,52 @@
+<form action="index.php" method="post" enctype="application/x-www-form-urlencoded">
+    NEW ITEM
+    <table width="600px">
+                <tr>
+            <td>
+                plugin_name
+            </td>
+            <td>
+                <input type="text" name="plugin_name" />
+            </td>
+        </tr>
+                <tr>
+            <td>
+                plugin_path
+            </td>
+            <td>
+                <input type="text" name="plugin_path" />
+            </td>
+        </tr>
+                <tr>
+            <td>
+                requestID
+            </td>
+            <td>
+                <input type="text" name="requestID" />
+            </td>
+        </tr>
+                <tr>
+            <td>
+                className
+            </td>
+            <td>
+                <input type="text" name="className" />
+            </td>
+        </tr>
+                <tr>
+            <td>
+                is_enabled
+            </td>
+            <td>
+                <input type="text" name="is_enabled" />
+            </td>
+        </tr>
+                <tr>
+            <td colspan="2">
+                <input type="submit" name="btn" id="btn" value="SAVE">
+                <input name="s" type="hidden" id="s" value="plugin">
+                <input name="r" type="hidden" id="r" value="add">
+            </td>
+        </tr>
+    </table>
+</form>

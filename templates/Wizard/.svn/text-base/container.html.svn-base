@@ -1,0 +1,49 @@
+<script>
+    {literal}
+    function wizard_continue(){
+        document.getElementById('wz_action').value="continue";
+        document.getElementById('wz_form').submit();
+    }
+	function wizard_save(){
+        document.getElementById('wz_action').value="save";
+        document.getElementById('wz_form').submit();
+    }
+    function wizard_skip(){
+        document.getElementById('wz_action').value="skip";
+        document.getElementById('wz_form').submit();
+    }
+    function wizard_finish(){
+        document.getElementById('wz_action').value="finish";
+        document.getElementById('wz_form').submit();
+    }
+    {/literal}
+</script>
+<form action="" method="POST" enctype="multipart/form-data" id="wz_form">
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="10" class="addlist zebra">
+        <tr class="head">
+            <td><strong>{$WIZARD_NAME|STRIPSLASHES}</strong></td>
+        </tr>
+        <tr bgcolor="#f2f2f2">
+            <td>{if $WIZARD_NAVIGATION eq ""}Step {$WIZARD_STEP} - {$WIZARD_STEP_DESCRIPTION}{/if}</td>
+        </tr>
+        <tr>
+            <td>{if $WIZARD_ERROR_MSG <> ""}{if $WIZARD_NOTIFY}<div id="wz_error_msg" style="color:#333333;width:100%;padding:5px;background-color:#6C0;">{else}<div id="wz_error_msg" style="color:#cc0000;width:100%;background-color:#f99;padding:5px;">{/if}{$WIZARD_ERROR_MSG}</div>{/if}
+              <div>{$CONTENT}</div>
+              {if $WIZARD_SAVE_WITHOUT_CONTINUE}
+              <div><input type="submit" name="button" id="button" value="SAVE CHANGES" onclick="wizard_save();return false;"></div>
+              {/if}
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="button" id="button" value="CONTINUE" onclick="wizard_continue();return false;">
+                <input type="submit" name="button" id="button" value="SKIP" onclick="wizard_skip();return false;"> <input type="submit" name="button" id="button" value="FINISH" onclick="wizard_finish();return false;">
+                <input id="wz_action" name="wz_action" type="hidden" value="">
+                <input id="s" name="s" type="hidden" value="{$requestID}">
+                <input id="step" name="step" type="hidden" value="{$step}">
+                <input id="do" name="do" type="hidden" value="{$do}">
+            </td>
+        </tr>
+    </table>
+</form>
+

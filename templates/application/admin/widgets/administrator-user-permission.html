@@ -1,0 +1,50 @@
+<div id="theContainer2" class="galleryPage">
+    <div class="theContainer2">
+        <div class="theContent2">
+        	<div class="col-content">
+                <div class="theBox">
+                    <div class="theBox-title">
+                        <h2 class="fl">LISTS USER PERMISSION </h2>
+                       
+                    </div><!-- /.theBox-title -->
+                    <div class="theBox-content">
+                        <div class="forms">
+							<table border="1px" width=100% >
+							<tr><td><a class="Btn" href="{$basedomain}administrator/roles" > back </a></td>
+							<td><a class="Btn" href="{$basedomain}administrator/addpermissionuser/{$pagetype}" > add Permission </a></td>
+							
+						
+							<tr><th>module name</th><th>pages name</th><th>acts name</th><th colspan='2' >status</th></tr>
+							{foreach from=$users key=k item=v}
+							<tr><td>{$v.module}</td><td>{$v.classcall}</td><td>{$v.acts}</td>
+							
+							<td>
+							<input type="radio" name="{$v.classcall}_{$v.id}" value="1" {if $v.have==1}checked{/if}  class='checkperm' pagetype="{$pagetype}" moduleid="{$v.moduleid}" acts="{$v.acts}" n_status="1" />on 
+							<input type="radio" name="{$v.classcall}_{$v.id}" value="0" {if $v.have==0}checked{/if}  class='checkperm' pagetype="{$pagetype}" moduleid="{$v.moduleid}" acts="{$v.acts}" n_status="0"  />off 
+							</td>
+							
+							</tr>
+							{/foreach}
+							</table>
+                        </div> <!-- /.forms -->
+                    </div> <!-- /.theBox-content -->
+                </div> <!-- /.theBox -->
+            </div><!-- /.col-content -->
+          
+        </div> <!-- /.theContent2 -->
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
+
+{literal}
+	<script>
+		$(document).on('click','.checkperm',function(){
+			var pagetype = $(this).attr('pagetype');
+			var moduleid = $(this).attr('moduleid');
+			var n_status = $(this).attr('n_status');
+			var acts = $(this).attr('acts');
+			$.post(basedomain+'administrator/addthispermission',{pagetype:pagetype,moduleid:moduleid,acts:acts,n_status:n_status,addpermission:1},function(data){
+					//console.log(data);
+			},"JSON");		
+		});
+	</script>
+{/literal}

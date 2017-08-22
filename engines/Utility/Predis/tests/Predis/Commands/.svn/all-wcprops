@@ -1,0 +1,833 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands
+END
+KeyRandomTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyRandomTest.php
+END
+ServerConfigTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerConfigTest.php
+END
+ZSetCountTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetCountTest.php
+END
+ConnectionEchoTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ConnectionEchoTest.php
+END
+ServerBackgroundRewriteAOFTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerBackgroundRewriteAOFTest.php
+END
+StringSetExpireTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringSetExpireTest.php
+END
+ListPopLastPushHeadTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListPopLastPushHeadTest.php
+END
+ListIndexTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListIndexTest.php
+END
+StringBitOpTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringBitOpTest.php
+END
+StringGetBitTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringGetBitTest.php
+END
+ServerClientTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerClientTest.php
+END
+KeyKeysV12xTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyKeysV12xTest.php
+END
+SetDifferenceTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetDifferenceTest.php
+END
+ServerInfoV26xTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerInfoV26xTest.php
+END
+StringSetMultiplePreserveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringSetMultiplePreserveTest.php
+END
+ListLengthTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListLengthTest.php
+END
+PrefixHelpersTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/PrefixHelpersTest.php
+END
+HashIncrementByTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashIncrementByTest.php
+END
+ZSetReverseRangeByScoreTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetReverseRangeByScoreTest.php
+END
+ServerDatabaseSizeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerDatabaseSizeTest.php
+END
+KeyExpireAtTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyExpireAtTest.php
+END
+PubSubSubscribeByPatternTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/PubSubSubscribeByPatternTest.php
+END
+ZSetAddTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetAddTest.php
+END
+TransactionMultiTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/TransactionMultiTest.php
+END
+ZSetRemoveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetRemoveTest.php
+END
+KeyPreciseTimeToLiveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyPreciseTimeToLiveTest.php
+END
+StringIncrementByTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringIncrementByTest.php
+END
+HashDeleteTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashDeleteTest.php
+END
+StringIncrementTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringIncrementTest.php
+END
+HashSetPreserveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashSetPreserveTest.php
+END
+ZSetUnionStoreTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetUnionStoreTest.php
+END
+CommandTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/CommandTest.php
+END
+TransactionDiscardTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/TransactionDiscardTest.php
+END
+KeyPreciseExpireTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyPreciseExpireTest.php
+END
+ServerBackgroundSaveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerBackgroundSaveTest.php
+END
+ListSetTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListSetTest.php
+END
+KeyTimeToLiveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyTimeToLiveTest.php
+END
+ServerScriptTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerScriptTest.php
+END
+StringDecrementTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringDecrementTest.php
+END
+ListPushHeadTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListPushHeadTest.php
+END
+StringSetRangeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringSetRangeTest.php
+END
+KeySortTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeySortTest.php
+END
+ConnectionQuitTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ConnectionQuitTest.php
+END
+SetAddTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetAddTest.php
+END
+KeyPreciseExpireAtTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyPreciseExpireAtTest.php
+END
+KeyDeleteTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyDeleteTest.php
+END
+TransactionUnwatchTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/TransactionUnwatchTest.php
+END
+ZSetIncrementByTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetIncrementByTest.php
+END
+ServerSaveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerSaveTest.php
+END
+ListPushHeadXTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListPushHeadXTest.php
+END
+PubSubPublishTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/PubSubPublishTest.php
+END
+ListRangeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListRangeTest.php
+END
+ServerFlushDatabaseTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerFlushDatabaseTest.php
+END
+HashGetMultipleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashGetMultipleTest.php
+END
+ZSetRankTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetRankTest.php
+END
+ServerShutdownTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerShutdownTest.php
+END
+SetUnionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetUnionTest.php
+END
+ZSetCardinalityTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetCardinalityTest.php
+END
+HashSetMultipleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashSetMultipleTest.php
+END
+TransactionWatchTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/TransactionWatchTest.php
+END
+ConnectionPingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ConnectionPingTest.php
+END
+KeyMoveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyMoveTest.php
+END
+ZSetScoreTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetScoreTest.php
+END
+StringGetMultipleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringGetMultipleTest.php
+END
+SetDifferenceStoreTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetDifferenceStoreTest.php
+END
+HashLengthTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashLengthTest.php
+END
+TransactionExecTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/TransactionExecTest.php
+END
+KeyRenamePreserveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyRenamePreserveTest.php
+END
+ServerObjectTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerObjectTest.php
+END
+StringStrlenTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringStrlenTest.php
+END
+StringSetMultipleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringSetMultipleTest.php
+END
+ZSetReverseRangeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetReverseRangeTest.php
+END
+SetIntersectionStoreTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetIntersectionStoreTest.php
+END
+ZSetRangeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetRangeTest.php
+END
+SetRemoveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetRemoveTest.php
+END
+ServerLastSaveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerLastSaveTest.php
+END
+SetPopTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetPopTest.php
+END
+ServerMonitorTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerMonitorTest.php
+END
+SetCardinalityTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetCardinalityTest.php
+END
+StringSetBitTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringSetBitTest.php
+END
+SetUnionStoreTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetUnionStoreTest.php
+END
+ConnectionAuthTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ConnectionAuthTest.php
+END
+SetIntersectionTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetIntersectionTest.php
+END
+HashGetTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashGetTest.php
+END
+KeyKeysTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyKeysTest.php
+END
+ServerTimeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerTimeTest.php
+END
+ServerSlaveOfTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerSlaveOfTest.php
+END
+ZSetRangeByScoreTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetRangeByScoreTest.php
+END
+PubSubUnsubscribeByPatternTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/PubSubUnsubscribeByPatternTest.php
+END
+HashSetTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashSetTest.php
+END
+KeyPersistTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyPersistTest.php
+END
+PubSubSubscribeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/PubSubSubscribeTest.php
+END
+HashValuesTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashValuesTest.php
+END
+StringGetTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringGetTest.php
+END
+ZSetRemoveRangeByScoreTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetRemoveRangeByScoreTest.php
+END
+StringSubstrTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringSubstrTest.php
+END
+ServerEvalTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerEvalTest.php
+END
+HashKeysTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashKeysTest.php
+END
+StringSetTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringSetTest.php
+END
+StringGetRangeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringGetRangeTest.php
+END
+StringDecrementByTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringDecrementByTest.php
+END
+ListRemoveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListRemoveTest.php
+END
+StringAppendTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringAppendTest.php
+END
+ConnectionSelectTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ConnectionSelectTest.php
+END
+KeyExpireTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyExpireTest.php
+END
+PubSubUnsubscribeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/PubSubUnsubscribeTest.php
+END
+StringPreciseSetExpireTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringPreciseSetExpireTest.php
+END
+ListPopFirstBlockingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListPopFirstBlockingTest.php
+END
+StringBitCountTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringBitCountTest.php
+END
+SetIsMemberTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetIsMemberTest.php
+END
+PrefixableCommandTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/PrefixableCommandTest.php
+END
+StringGetSetTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringGetSetTest.php
+END
+ServerInfoTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerInfoTest.php
+END
+HashExistsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashExistsTest.php
+END
+ListPushTailTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListPushTailTest.php
+END
+ListPopLastBlockingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListPopLastBlockingTest.php
+END
+ZSetRemoveRangeByRankTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetRemoveRangeByRankTest.php
+END
+ZSetIntersectionStoreTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetIntersectionStoreTest.php
+END
+KeyTypeTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyTypeTest.php
+END
+StringIncrementByFloatTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/StringIncrementByFloatTest.php
+END
+ZSetReverseRankTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ZSetReverseRankTest.php
+END
+ListInsertTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListInsertTest.php
+END
+ServerFlushAllTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerFlushAllTest.php
+END
+ListPopFirstTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListPopFirstTest.php
+END
+SetMembersTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetMembersTest.php
+END
+ListTrimTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListTrimTest.php
+END
+ListPopLastPushHeadBlockingTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListPopLastPushHeadBlockingTest.php
+END
+HashIncrementByFloatTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashIncrementByFloatTest.php
+END
+ServerEvalSHATest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerEvalSHATest.php
+END
+HashGetAllTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/HashGetAllTest.php
+END
+ScriptedCommandTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ScriptedCommandTest.php
+END
+ServerSlowlogTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ServerSlowlogTest.php
+END
+ListPushTailXTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListPushTailXTest.php
+END
+ListPopLastTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/ListPopLastTest.php
+END
+KeyRenameTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyRenameTest.php
+END
+SetMoveTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetMoveTest.php
+END
+SetRandomMemberTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/SetRandomMemberTest.php
+END
+KeyExistsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Commands/KeyExistsTest.php
+END

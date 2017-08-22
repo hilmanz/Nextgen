@@ -1,0 +1,168 @@
+
+<script type="text/javascript">
+
+	var totalUserEngage = {$totalUserEngage|@json_encode};	
+	{literal}
+	
+$(function () {
+		var userEngageData = new Array();
+		var userEngageLabel = new Array();
+		
+		for (var userEngage in totalUserEngage){
+			userEngageData.push(parseInt(totalUserEngage[userEngage].baengagement));
+			userEngageLabel.push(String(totalUserEngage[userEngage].dd));
+		}
+	
+	
+        $('#totalUSerEngage').highcharts({
+            chart: {
+                type: 'line'
+            },
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text: false,
+            },
+            xAxis: {
+                categories:  userEngageLabel
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text:false
+                }
+            },
+			legend : false,
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y}  </b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    grouping: false,
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: 'Engagement',
+				color:'#35bf07',
+                data: userEngageData 
+            }]
+        });
+    });
+</script>
+{/literal}
+
+<div id="user-engagement">
+<form id="shorter" method="GET" action="" >
+<div id="theContainer2" class="homePage">
+    <div class="theContainer2">
+    	<div class="shorter-menu">
+        	<div class="darkBox-title">
+                <div class="short dateKPI fr">
+                   
+                            <label>Periode</label>
+                            <input type="text" class="half-width" id="from" name="startdate" value="{$startdate}">
+                            <span>to</span>
+                            <input type="text" class="half-width" id="to" name="enddate" value="{$enddate}">
+							<a href="javascript:void(0)" class="calendar" >Go</a>
+                   
+                </div><!-- /.short -->
+                <div class="short labelOption fr">
+  					<label class="fl">City:</label> 
+				<div class="selectArea fl">                  
+						<select class="cityDrop"  name="areaid"> 
+						<option value="0"> - Pick One - </option>
+							{section name=i loop=$getCity}
+							<option value="{$getCity[i].id}" {if $areaid==$getCity[i].id }selected{/if} > {$getCity[i].last_name|upper}</option>
+							{/section}
+						</select>                 
+				</div><!-- /.selectArea -->
+               </div><!-- /.darkBox-title -->
+            </div><!-- /.darkBox-title -->
+    	</div><!-- /.shorter-menu-->
+        <div class="theContent">
+        	<div class="darkBox-title">
+                <h2 class="fl">Total User Engagement</h2>
+            </div>
+        	
+            <div class="darkBox">
+                <div class="darkBox-content" id="totalUSerEngage">
+                    <!-- <img src="{$assets_domain}content/line_balok.png" style="width:100%" /> -->
+                </div> <!-- /.darkBox-content -->
+            </div> <!-- /.darkBox -->
+            
+           
+            <div class="rows2 engagement-number">
+                <div class="col2s">
+                	<div class="darkBox-title2">
+                        <h3>Total Personal Plan</h3>
+                    </div><!-- /.darkBox-title -->
+                    <div class="darkBox">
+                        <div class="darkBox-content">
+                            <h1>{$personalPlant[0].num}</h1>
+                        </div> <!-- /.darkBox-content -->
+                    </div> <!-- /.darkBox -->
+                </div><!-- /.col3s -->
+                <div class="col2s col2s-last">
+                	<div class="darkBox-title2">
+                        <h3>Total Personal Engagement</h3>
+                    </div><!-- /.darkBox-title -->
+                    <div class="darkBox">
+                        <div class="darkBox-content">
+                            <h1>{$personalEngagement[0].num}</h1>
+                        </div> <!-- /.darkBox-content -->
+                    </div> <!-- /.darkBox -->
+                </div><!-- /.col3s -->
+            </div><!-- /.rows2 -->
+        </div> <!-- /.theContent -->
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
+</form>
+</div> <!-- /#ba-rank -->
+
+<script type="text/javascript">
+		var startdate = "{$startdate}";
+		var enddate = "{$enddate}";
+	var totalUserEngage = {$totalUserEngage|@json_encode};	
+	
+{literal}	
+$(function () {
+	
+	var userEngageData = new Array();
+	var userEngageDate = new Array();
+	
+	for (var userEngage in totalUserEngage){
+		userEngageData.push(parseInt(totalUserEngage[userEngage].num));
+		userEngageDate.push(String(totalUserEngage[userEngage].action_value));
+	}
+	
+	gethighChart('column','test Chart','totalUserEngageField',userEngageData,userEngageDate,1,true);
+	
+	//drillDownChart('column','test Chart','cont',dataCoba,cateActivityGroup,1 ,false);
+	
+	});
+	
+	
+	$(document).on('click', '.calendar', function(){
+		/*
+		var from = $('#from').val();
+		var to = $('#to').val();
+		
+		window.location.href='?startdate='+from+'&enddate='+to;
+		*/
+		
+		$("#shorter").submit();
+	})	
+		
+</script>
+{/literal}

@@ -1,0 +1,42 @@
+<table border=1>
+	<th colspan=2>Brand</th>
+	<tr>
+		<td>Total</td> 		
+		<td>Date</td>	
+	</tr>			
+	{section name=i loop=$brandPrefReport}
+	<tr>
+		<td>{$brandPrefReport[i].num}</td>
+		<td>{$brandPrefReport[i].Brand1_ID}</td>
+	</tr>
+	{/section}
+</table>
+
+<table border=1>
+	<th colspan=2>Gender</th>
+	<tr>
+		<td>Total</td> 		
+		<td>Date</td>	
+	</tr>			
+	{section name=i loop=$genderPrefReport}
+	<tr>
+		<td>{$genderPrefReport[i].num}</td>
+		<td>{$genderPrefReport[i].sex}</td>
+		<td>{$genderPrefReport[i].dd}</td>
+	</tr>
+	{/section}
+</table>
+
+<table border=1>
+	<th colspan=2>Age</th>
+	<tr>
+		<td>Total</td> 		
+		<td>Date</td>	
+	</tr>			
+	{section name=i loop=$agePrefReport}
+	<tr>
+		<td>{$agePrefReport[i].num}</td>
+		<td>{$agePrefReport[i].sex}</td>
+	</tr>
+	{/section}
+</table>

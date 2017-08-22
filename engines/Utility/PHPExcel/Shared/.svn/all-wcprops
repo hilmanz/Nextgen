@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared
+END
+Escher.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/Escher.php
+END
+Drawing.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/Drawing.php
+END
+OLERead.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/OLERead.php
+END
+PasswordHasher.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/PasswordHasher.php
+END
+XMLWriter.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/XMLWriter.php
+END
+Date.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/Date.php
+END
+ZipStreamWrapper.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/ZipStreamWrapper.php
+END
+File.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/File.php
+END
+OLE.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/OLE.php
+END
+Excel5.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/Excel5.php
+END
+Font.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/Font.php
+END
+String.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/String.php
+END
+CodePage.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Shared/CodePage.php
+END

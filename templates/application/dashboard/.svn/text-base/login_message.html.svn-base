@@ -1,0 +1,4 @@
+
+<div class="loaders">
+<img src="{$basedomain}assets/images/loader.gif">
+</div>

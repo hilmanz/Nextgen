@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/io
+END
+apiCacheParser.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/io/apiCacheParser.php
+END
+apiRPC.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/io/apiRPC.php
+END
+cacerts.pem
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/io/cacerts.pem
+END
+apiIO.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/io/apiIO.php
+END
+apiHttpRequest.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/io/apiHttpRequest.php
+END
+apiCurlIO.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/io/apiCurlIO.php
+END
+apiREST.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/gplus/io/apiREST.php
+END

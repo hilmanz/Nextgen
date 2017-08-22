@@ -1,0 +1,22 @@
+<form action="index.php" method="post" enctype="application/x-www-form-urlencoded">
+    EDIT ITEM
+    <table width="600px">
+        {section name=i loop=$visible_fields}
+        <tr>
+            <td>
+                {$visible_fields[i].label}
+            </td>
+            <td>
+                <input type="text" name="{$visible_fields[i].name}" value="{literal}{$rs.{/literal}{$visible_fields[i].name}{literal}}{/literal}"/>
+            </td>
+        </tr>
+        {/section}
+        <tr>
+            <td colspan="2">
+                <input type="submit" name="btn" id="btn" value="SAVE">
+                <input name="s" type="hidden" id="s" value="{$componentID}">
+                <input name="r" type="hidden" id="r" value="update">
+            </td>
+        </tr>
+    </table>
+</form>

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility
+END
+PHPExcelWrapper.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcelWrapper.php
+END
+FileUploader.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/FileUploader.php
+END
+SessionManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/SessionManager.php
+END
+CSVPrinter.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/CSVPrinter.php
+END
+Mobile_Detect.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Mobile_Detect.php
+END
+CaptchaUtil.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/CaptchaUtil.php
+END
+WordCloud.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/WordCloud.php
+END
+Thumbnail.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Thumbnail.php
+END
+RequestManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/RequestManager.php
+END
+Browser.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Browser.php
+END
+Debugger.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Debugger.php
+END
+PHPExcel.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel.php
+END
+Paginate.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Paginate.php
+END

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html dir="ltr" lang="en-US" class="ie6"> <![endif]-->
+<!--[if IE 7]>    <html dir="ltr" lang="en-US" class="ie7"> <![endif]-->
+<!--[if IE 8]>    <html dir="ltr" lang="en-US" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html dir="ltr" lang="en-US"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Dashboard Marlboro Pursuit</title>
+<!--Stylesheets-->
+<link rel="stylesheet" href="{$basedomain}assets/css/style.css" type="text/css"  media="all" />
+<link rel="stylesheet" href="{$basedomain}assets/css/colours/red.css" type="text/css"  media="all" />
+<link rel="stylesheet" href="{$basedomain}assets/css/jquery-ui-datepicker.css" type="text/css"  media="all" />
+<!--Favicon-->
+<!--link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+<!--JavaScript-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js'></script>
+<script type="text/javascript" src="{$basedomain}assets/js/superfish.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/jquery.effect.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/organictabs.jquery.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/customform.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/scripts.js"></script>
+<script type="text/javascript" src="{$basedomain}assets/js/fancybox/jquery.fancybox.js?v=2.1.4"></script>
+<link rel="stylesheet" type="text/css" href="{$basedomain}assets/js/fancybox/jquery.fancybox.css?v=2.1.4" media="screen" />
+</head>
+<body>
+<div id="mainContainer">
+	<div id="body" class="wrapper">
+    <div class="loginpage">
+    <div class="loginbox">
+    	<div class="loginboxinner">
+            <div class="logo_login">
+            </div>
+            <!--logo-->
+           <form name="Form2" method="POST" action="{$basedomain}login/local" id="Form2">
+                <div class="username">
+                	<div class="usernameinner">
+						<input name="username" type="text" id="username" maxlength="20"/> 
+                    </div>
+                </div>
+                <div class="password">
+                	<div class="passwordinner">
+						<input name="password" type="password" id="password" maxlength="20" />
+                    </div>
+                </div>
+                <div id="chaptcha">
+                    <img src="{$basedomain}captcha.php"/>
+                    <input type="text" class="chaptcha" name="captcha"/>
+                </div>
+               <input id="button" type="submit" name="Submit" value="LOGIN" />
+            
+			<input type="hidden" name="login" value="1" />
+			</form>	
+        </div><!--loginboxinner-->
+    </div><!--loginbox-->
+    </div>
+	</div><!-- END .wrapper -->
+</div>	
+</body>
+</html>

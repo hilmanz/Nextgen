@@ -1,0 +1,71 @@
+
+    <table>
+        {if $listOrders} <!-- purchase order export to excel  -->
+        <tr>
+            <td class="head" width="17%"><strong>Order ID</strong></td>
+            <td width="20%" class="head">
+                <strong>Create Date</strong>
+            </td>
+            <td width="26%" class="head">
+                <strong>Status</strong>
+            </td>
+
+        </tr>
+        {section name=i loop=$listOrders}
+        <tr>
+            <td><a href="?s=purchaseOrder&r=edit&id={$list[i].id}">'{$listOrders[i].OrderID}</a></td>
+            <td>{$listOrders[i].create_date}</td>
+            <td>
+                {if $listOrders[i].status eq '1'}
+                    Paid, Waiting for Shipping
+                {else}
+                    Pending Payment
+                {/if}
+            </td>
+        </tr>
+        {/section}
+
+
+        {else}<!-- shipping export to excel  -->
+        <tr>
+            <td class="head" width="20%"><strong>Order ID</strong></td>
+            <td class="head"><strong>Shipping No</strong></td>
+            <td class="head"><strong>Issue Date</strong></td>
+            <td class="head"><strong>Close Date</strong></td>
+            <td class="head"><strong>Payment Status</strong></td>
+            <td class="head"><strong>Delivery Status</strong></td>
+        </tr>
+        {section name=i loop=$listShipping}
+
+            <tr>
+                <td>'{$listShipping[i].orderID}</td>
+                <td>{if $listShipping[i].shipping_no}{$listShipping[i].shipping_no}{else}N/A{/if}</td>
+                <td>{$listShipping[i].issue_date}</td>
+                <td>{if $listShipping[i].close_date}{$listShipping[i].close_date}{else}N/A{/if}</td>
+                <td>
+                    {if $listShipping[i].paymentStatus eq '1'}
+                        Paid, Waiting for Shipping
+                    {elseif $listShipping[i].paymentStatus  eq '2'}
+                        Delivered
+                    {elseif $listShipping[i].paymentStatus eq '3'}
+                        Canceled
+                    {elseif $listShipping[i].paymentStatus eq '4'}
+                        Closed
+                    {elseif $listShipping[i].paymentStatus eq '5'}
+                        Returned
+
+                    {/if}
+                </td>
+                <td>
+                    {if $listShipping[i].delivery_status eq '1'}
+                        Delivered
+                    {else}
+                        Pending
+                    {/if}
+                </td>
+                <td>{$listShipping[i].remarks}</td>
+            </tr>
+        {/section}
+        {/if}
+    </table>
+ 

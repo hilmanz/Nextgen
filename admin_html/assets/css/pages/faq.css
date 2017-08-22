@@ -1,0 +1,14 @@
+
+/*------------------------------------------------------------------
+
+[Faq Page Stylesheet]
+
+-------------------------------------------------------------------*/
+
+.btn-support-ask {
+		display: block; font-size: 23px; padding: 18px 0; font-weight: 600; margin-bottom: .75em;
+	}
+	
+	.btn-support-contact {
+		display: block; padding: 15px 0; font-size: 18px; font-weight: 600;
+	}

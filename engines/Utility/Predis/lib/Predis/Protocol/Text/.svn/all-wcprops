@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text
+END
+ResponseBulkHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text/ResponseBulkHandler.php
+END
+ResponseIntegerHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text/ResponseIntegerHandler.php
+END
+ComposableTextProtocol.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text/ComposableTextProtocol.php
+END
+TextCommandSerializer.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text/TextCommandSerializer.php
+END
+ResponseStatusHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text/ResponseStatusHandler.php
+END
+ResponseMultiBulkStreamHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text/ResponseMultiBulkStreamHandler.php
+END
+ResponseErrorSilentHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text/ResponseErrorSilentHandler.php
+END
+ResponseMultiBulkHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text/ResponseMultiBulkHandler.php
+END
+ResponseErrorHandler.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text/ResponseErrorHandler.php
+END
+TextProtocol.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text/TextProtocol.php
+END
+TextResponseReader.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Protocol/Text/TextResponseReader.php
+END

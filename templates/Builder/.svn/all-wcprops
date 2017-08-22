@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/nextgen-reg-online/!svn/ver/2/trunk/templates/Builder
+END
+edit_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/nextgen-reg-online/!svn/ver/2/trunk/templates/Builder/edit_item.html
+END
+summary_table.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/2/trunk/templates/Builder/summary_table.html
+END
+select_table.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/2/trunk/templates/Builder/select_table.html
+END
+new_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/nextgen-reg-online/!svn/ver/2/trunk/templates/Builder/new_item.html
+END

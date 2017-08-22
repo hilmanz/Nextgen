@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<item>
+		<id>{$rs.id}</id>
+		<title><![CDATA[{$rs.title|stripslashes}]]></title>
+		<description>
+			<![CDATA[{$rs.content|stripslashes}]]>
+		</description>
+		<thumb><![CDATA[contents/Picture_Gallery/{if $rs.img.thumbnail}{$rs.img.thumbnail|stripslashes}{else}noimg.jpg{/if}]]></thumb>
+		<preview><![CDATA[contents/Picture_Gallery/{if $rs.img.file}{$rs.img.file|stripslashes}{else}noimg.jpg{/if}]]></preview>
+		<rate><![CDATA[{$rs.additional1|stripslashes}]]></rate>
+		<release><![CDATA[{$rs.additional4|stripslashes}]]></release>
+		<runtime><![CDATA[{$rs.additional2|stripslashes}]]></runtime>
+		<genre><![CDATA[{$rs.additional3|stripslashes}]]></genre>
+		<fblink><![CDATA[http://www.facebook.com]]></fblink>
+		<twlink><![CDATA[http://www.twitter.com]]></twlink>
+	</item>
+</data>

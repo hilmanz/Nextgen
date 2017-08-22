@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AXISBarokah - GSM YANG BAIK</title>
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="stylesheet" type="text/css" href="css/axis.css" />
+<link rel="stylesheet" type="text/css" href="js/jqueryui/css/smoothness/jquery-ui-1.7.2.custom.css">
+<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+<script type="text/javascript" src="js/jquery-1.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.js"></script>
+<script type="text/javascript" src="js/jquery-custom-file-input.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jScrollPane.js"></script>
+<script type="text/javascript" src="js/jquery-custom-file-input.js"></script>
+<script type="text/javascript" src="js/jquery-scroller-v1.min.js"></script>
+<script type="text/javascript" src="js/scroll-startstop.events.jquery.js"></script>
+<script type="text/javascript" src="js/axis.js"></script>
+</head>
+
+<body id="landingPage">
+<div id="body">
+	<div id="top">
+    	<div class="wrapper">
+			<a href="http://www.tangkapberkahaxis.com" class="logoBarokah" style="margin:-40px 0 0 -120px;">&nbsp;</a>
+            <div class="userInfo">
+            	<a href="http://www.tangkapberkahaxis.com" class="logoAxis" style="margin:40px 0 0 0;">&nbsp;</a>
+            </div>
+        </div>
+    </div><!-- end #top -->
+    <div id="containers" class="wrapper">
+    <h1>Frequently Asked Questions    </h1>
+    <h3>Bagaimana cara join AXISBarokah? </h3>
+      <ul>
+        <li>Ada 2 cara join AXISBarokah melalui facebook fanpage atau mengakses langsung dari alamat microsite <a href="http://www.tangkapberkahaxis.com">www.tangkapberkahaxis.com</a>.</li>
+        <li>Setelah user me-like axis fanpage baru bisa bergabung dalam AXISBarokah. </li>
+        <li>User juga harus mempunyai akun facebook untuk dapat berpartisipasi dalam Program AXISBarokah.</li>
+      </ul>
+    <h3>Bagaimana cara mengupdate status? </h3>
+      <ul>
+        <li>Status bisa di update pada box berwarna ungu di bagian samping kanan screen (box terletak tepat di atas tulisan pengumuman weekly winner)..</li>
+        <li>Setelah mengetik status update, klik update untuk mengirimkan status update ke atas obrolan di atas meja. </li>
+        <li>Kamu bisa juga share status update kamu ke facebook atau Twitter kamu.</li>
+        <li>Update status hanya bisa dilakukan pada jam 10 pagi - 7 malam.</li>
+      </ul>
+    <h3>Bagaimana cara mengupload foto di atas piring di meja?</h3>
+      <ul>
+        <li>Foto di atas piring di meja dapat di upload melalui box berwarna ungu di bagian samping kanan screen (box terletak tepat di atas tulisan pengumuman weekly winner).</li>
+        <li>Klik browse untuk mengupload foto. </li>
+        <li>Foto yang hendak di upload maximum berukuran 200 Kb.</li>
+        <li>Upload foto hanya bisa dilakukan pada jam 10 pagi – 7 malam.</li>
+      </ul>
+    <h3>Bagaimana cara merubah foto user? </h3>
+      <ul>
+        <li>Foto user otomatis menggunakan foto yang terupload pada profile picture akun facebook kamu.</li>
+        <li>Bila ingin merubah foto user, dapat dilakukan melalui facebook, dengan mengganti foto facebook profile kamu.</li>
+      </ul>
+    <h3>Bila saya tidak menggunakan nomor AXIS apakah saya dapat mengikuti AXISBarokah? </h3>
+      <ul>
+        <li>Non AXIS user pun  dapat mengikuti program AXISBarokah, namun hanya terbatas pada update status dan upload foto. </li>
+        <li>Bagi Non AXIS user tidak bisa: </li>
+            <ul>
+                 <li>Rebutan Hadiah BAROKAH yang tersebar di atas meja pada jam Ngabuburit (Pukul 16:00 - 18:00 WIB).</li>
+                 <li>Download Konten  dari AXIS .</li>
+                 <li>Memenangkan Weekly Prize maupun Grand Prize.</li>
+            </ul>
+      </ul>
+    <h3>Bagaimana cara memenangkan hadiah harian Gratis dari AXISBarokah? </h3>
+      <ul>
+        <li>Selama program berlangsung, pada jam ngabuburit (16:00-18.00 WIB) AXIS akan membagi-bagikan hadiah harian di atas meja makan AXISBarokah.</li>
+        <li>User akan rebutan untuk meng-klik hadiah tersebut untuk memenangkan hadiah harian. </li>
+        <li>Begitu hadiah tersebut di-klik icon akan hilang dari atas meja.</li>
+        <li>Pemenang akan mendapatkan kode yang harus dicatat untuk meng-klaim hadiah tersebut. AXIS juga akan mengirimkan konfirmasi kode itu sekali lagi melalui e-mail user yang terdaftar pada akun Facebook.</li>
+      </ul>
+    <h3>Bagaimana cara penentuan pemenang BAROKAH  Mingguan? </h3>
+ 	 <ul>
+    <li>Bardasarkan jumlah poin yang dimiliki user, akan ditentukan setiap minggunya 5 peserta yang paling aktif  menurut AXIS.</li>
+    <li>Pengumuman pemenang Weekly Prize akan dilakukan 1 minggu sekali selama program berlangsung. Selama periode, akan dilakukan setiap hari Rabu: 
+        <ul>
+             <li>Periode 1, tanggal 1 Agustus 2012, pukul 16:00. </li>
+             <li>Periode 2, tanggal 8 Agustus 2012, pukul 16:00. </li>
+             <li>Periode3, tanggal 15 Agustus 2012, pukul 16:00. </li>
+        </ul>
+    </li>
+    <li>Pemenang akan langsung di kontak oleh AXIS untuk melengkapi data diri: 
+    <ul>
+         <li>Nama, Alamat, Nomor AXIS, scan  KTP, dan domisili kirimkan ke alamat hemat@axisworld.co.id.</li>
+         <li>Pelengkapan data diri harus dilakukan selambat-lambatnya dalam kurun waktu 1 minggu setelah pemenang di hubungi oleh AXIS.</li>
+    </ul>
+    </li>
+    <li> Semakin aktif, semakin besar kesempatan menang.</li>
+  </ul>
+    <h3>Bagaimana cara penentuan pemenang BAROKAH Lebaran? </h3>
+  <ul>
+    <li>Bardasarkan jumlah poin yang dimiliki user selama periode, akan ditentukan 1 orang  peserta yang menurut AXIS paling aktif selama program AXISBarokah berlangsung. </li>
+    <li>Orang paling aktif ini yang akan menjadi Pemenang Grand Prize.</li>
+    <li>Pengumuman pemenang akan dilakukan pada tanggal 18 Agustus 2012 .</li>
+    <li>Pemenang akan langsung di kontak oleh AXIS untuk melengkapi data diri:
+        <ul>
+             <li>Nama, Alamat, Nomor AXIS, scan  KTP, dan domisili kirimkan ke alamat hemat@axisworld.co.id .</li>
+             <li>Pelengkapan data diri harus dilakukan selambat-lambatnya dalam kurun waktu 1 minggu setelah pemenang di hubungi oleh AXIS. </li>
+        </ul>
+     </li>
+    <li>Semakin aktif, semakin besar kesempatan menang.</li>
+  </ul>
+    <h3>Bagaimana cara penghitungan Poin?</h3>
+      <ul>
+        <li>5 poin untuk login dan berpartisipasi per harinya.</li>
+        <li>10 Poin untuk setiap download Konten.</li>
+      </ul>
+    <h3>Apakah saya bisa tahu berapa jumlah poin yang sudah berhasil dikumpulkan?</h3>
+  <ul>
+    <li>Penghitungan poin hanya dilakukan 1 minggu sekali. Untuk 3 periode selama AXISBarokah berlangsung.
+        <ul>
+         <li>Periode 1 : 24-31 July 2012. </li>
+         <li>Periode 2 : 1-7 Agustus 2012.</li>
+         <li>Periode 3 : 8-15 Agustus 2012.</li>
+        </ul>
+    </li>
+    <li>Axis hanya dapat memberi tahu jumlah poin yang berhasil diperoleh selama periode 1/2/3 setelah pengumuman poin sudah dilakukan (update jumlah poin tidak realtime/daily) .</li>
+    <li>Jumlah poin yang dimumkan hanya untuk 5 pemenang utama yang berhak memenangkan AXIS BAROKAH Mingguan pada periode tersebut dan 1 Pemenang utama AXIS BAROKAH Lebaran di akhir program AXIS BAROKAH.</li>
+  </ul>
+    <h3>Bagaimana cara mendownload konten dari AXISBarokah? </h3>
+  <ul>
+    <li>Penawaran konten dari AXISBarokah ada pada sebelah  kiri bawah halaman microsite. </li>
+    <li>User dapat meng-klik tombol &quot;more&quot;  untuk melihat daftar konten lain yang dapat di download selama Barokah Program berlangsung. </li>
+    <li>Sesudah user meng-klik konten yang hendak di download, AXIS akan mengirimkan SMS berisi kode untuk mem-validasi nomor HP yang terdaftar dalam program BAROKAH.</li>
+    <li>Kode yang dikirimkan melalui SMS tersebut kemudian di input ke dalam kolom yang tersedia, lalu klik confirm (proses validasi ini hanya perlu dilakukan sekali saja).</li>
+    <li>Setelah melakukan proses validasi, untuk download konten AXIS akan mengirimkan Link URL melalui SMS yang dapat di klik untuk mengkonfirmasi proses download.</li>
+    <li>Setelah pembayaran dilakukan, konten akan terdownload secara otomatis ke dalam HP kamu.</li>
+    <li>Konten hanya dapat di download dari Handphone android, smartphones, dan feature phones. Untuk nomor AXIS yang dipasang pada Iphone, IPAD, Galaxy tabs tidak bisa mendownload Konten.</li>
+  </ul>
+    <h3>Bagaimana proses pembayaran konten yang di download dari AXISBarokah? </h3>
+  <ul>
+    <li>Pembayaran konten yang di download dari AXISBarokah akan diambil dari saldo pulsa pengguna secara otomatis sesudah user mengkonfirmasi Download dengan meng-klik pada URL yang dikirimkan melalui SMS. </li>
+    <li>Setelah itu konten akan terdownload secara otomatis ke dalam mobile phone user. </li>
+  </ul>
+    <h3>Bagaimana jika saldo pulsa dalam HP saya tidak cukup untuk membeli konten? </h3>
+  <ul>
+    <li>Konten tidak akan dapat terdownload apabila user tidak mempunyai saldo pulsa yang cukup. </li>
+    <li>Bila transaksi pembayaran tidak berhasil,  secara otomatis proses pembelian akan dibatalkan.</li>
+  </ul>
+    <h3>Mengenai  Kode Voucher Zalora </h3>
+  <ul>
+    <li>Kode dan masa berlaku akan dikirimkan lewat email user. </li>
+    <li>Ketentuan cara menggunakan kode Voucher Zalora adalah sbb: 
+        <ul>
+             <li>Nilai voucher adalah Rp 100.000, dapat digunakan tanpa pembelian minimum.</li>
+             <li>Masa aktif voucher sampai dengan 1 Oktober 2012.</li>
+             <li>Voucher hanya dapat digunakan untuk berbelanja di website :&nbsp;www.zalora.co.id dimana terlebih dahulu harus register/membuat akun sebelum bisa berbelanja.</li>
+             <li>Pilih barang yang hendak dibeli, klik beli.</li>
+             <li>Sebelum membayar, masukkan kode voucher dalam kolom kupon, kemudian klik Gunakan. </li>
+             <li>Belanjaan akan langsung dikurangi sebanyak 100.000,- rupiah. </li>
+             <li>Jika ada kendala / pertanyaan bisa hubungi Customer Service di:&nbsp;help@zalora.co.id&nbsp;atau&nbsp;021-29490100</li>
+        </ul>
+    </li>
+  </ul>
+    <h3>Mengenai  Kode Voucher Blibli.com </h3>
+    <ul>
+        <li>Kode dan masa berlaku voucher ini akan dikirimkan lewat e-mail User.</li>
+        <li>Ketentuan cara menggunakan Voucher blibli adalah sbb:
+            <ul>
+                <li>Nilai Voucher adalah RP. 100.000,- dapat digunakan untuk pembelian minimum Rp 110.000,-</li>
+                <li>Masa aktif voucher hanya sampai dengan 24 Oktober 2012.</li>
+                <li>Voucher hanya dapat digunakan untuk berbelanja di website <a href="http://www.blibli.com/home">http://www.blibli.com/home</a> dimana terlebih dahulu harus register/membuat akun sebelum bisa berbelanja. </li>
+                <li>Voucher ini berlaku untuk pembelian minimal Rp 110.000,-</li>
+                <li>Voucher ini hanya dapat digunakan sekali dan tidak dapat digabungkan dengan voucher lain. </li>
+                <li>Voucher ini hanya berlaku untuk Product non Promo. </li>
+                <li> Pilih barang yang mau kamu beli, lalu klik checkout .</li>
+                <li>Sebelum membayar, masukkan kode Promo ID di halaman shopping cart kamu,Lalu klik gunakan.</li>
+            </ul>
+  	  </li>
+  </ul>
+    <h3>Mengenai Kode Voucher Living Social </h3>
+	<ul>
+        <li>Kode dan masa berlaku voucher ini akan dikirimkan lewat e-mail User.</li>
+        <li>Ketentuan cara menggunakan Living Social adalah sbb:
+            <ul>
+             <li>Voucher hanya dapat digunakan untuk berbelanja di website : <a href="http://www.livingsocial.co.id">http://www.livingsocial.co.id</a> dimana terlebih dahulu harus register/membuat akun sebelum bisa berbelanja .</li>
+             <li>Jika belum jadi member, daftarkan diri dengan cara klik "Daftar" di pojok kanan atas. </li>
+             <li>Isi Biodata sesuai dengan kotak yang terdapat di halaman daftar. Tick kedua option di bawahnya dan klik "Daftar". </li>
+             <li>Untuk masuk ke Halaman Pribadi, kilk sign in di Pojok Kanan atas.</li>
+             <li>Setelah sign in, klik tab "Kreditku" di halaman profilmu. </li>
+             <li>Klik "Gunakan Kredit Anda" .</li>
+             <li>Masukkan Redeem Code pada kolom yang tersedia kemudian klik "Masukan Kode". </li>
+             <li>Jika berhasil, kredit saldo kamu akan bertambah sebesar Rp 100.000,-.</li>
+             <li>Perhatikan bahwa masa berlaku credit voucher ini hanya 1tahun setelah masa pengaktifan. </li>
+             <li>Kamu sudah siap belanja, pilih deal yang kamu inginkan lalu klik BELI. </li>
+             <li>Setelah Check Out, kamu bisa masukkan nominal kredit saldo yang mau kamu gunakan. </li>
+             <li>Setujui syarat dan ketentuan, lalu pilih cara pembayaran, kemudian klik "Lanjut".</li>
+            </ul>
+    	</li>
+  </ul>
+    <h3>Mengenai Facebook Credit</h3>
+    <ul>
+      <li>Untuk dapat mengklaim facebook credit, user harus  allow applikasi MOLpoints yang bisa di akses dari alamat website berikut: <a href="https://apps.facebook.com/molpoints/">https://apps.facebook.com/molpoints/</a></li>
+      <li>Klik "Allow" pada aplikasi tersebut. </li>
+      <li>Klik "Buy Facebook Credit".</li>
+      <li>Masukkan serial number dan PIN-mu dalam kolom yang disediakan.</li>
+      <li>Klik Redeem. </li>
+      <li>Saldo Facebook credit sebesar Rp 100.000,- akan bertambah secara otomatis</li>
+    </ul>
+    <h3>Apakah ada syarat dan ketentuan untuk mengupload foto?</h3>
+  <ul>
+    <li>File maksimum sebesar 200KB .</li>
+    <li>File harus dalam format JPG, JPEG atau PNG. </li>
+    <li>Foto tidak mengandung unsur SARA, pornografi dan alkohol. </li>
+    <li>Foto yang diunggah merupakan hak milik pribadi, AXIS tidak bertanggung jawab apabila dikemudian hari terjadi penggugatan atau urusan hukum lain yang berhubungan dengan foto dan karya cipta. </li>
+    <li>User yang mengakses website AXIS Barokah (www.tangkapberkahaxis.com) melalui iPhone dan iPad tidak bisa melakukan upload foto. </li>
+  </ul>
+    </div>
+    <div id="footer">
+    	<div class="footer">
+            <a class="facebook" href="http://www.facebook.com/AXISgsm" target="_blank">&nbsp;</a>
+            <a class="twitter" href="https://twitter.com/AXISgsm" target="_blank">&nbsp;</a>
+            <span class="copy">&copy; 2012 AXIS. All rights reserved. <a href="http://www.tangkapberkahaxis.com/faq.html" target="_blank">FAQ</a> | <a href="http://www.tangkapberkahaxis.com/tnc.html" target="_blank">Terms and Conditions</a></span>
+        </div>
+    </div><!-- end #footer -->
+</div><!-- end #body -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-867847-38']);
+  _gaq.push(['_setDomainName', 'tangkapberkahaxis.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

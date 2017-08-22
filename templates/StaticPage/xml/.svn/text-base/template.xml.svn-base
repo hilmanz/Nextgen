@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+{section name=i loop=$list}
+	<node name="{$list[i].title|stripslashes}" id="{$list[i].id}" tag="{$tag}" groupID="{$list[i].groupID}"/>
+{/section}
+</items>

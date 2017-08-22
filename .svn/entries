@@ -1,0 +1,61 @@
+10
+
+dir
+36
+https://acit@kana.svn.beanstalkapp.com/nextgen-reg-online/trunk
+https://acit@kana.svn.beanstalkapp.com/nextgen-reg-online
+
+
+
+2014-02-20T07:12:53.362747Z
+36
+inong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+66ded4e3-bd25-4594-9c88-5bf8d5dc64b9
+
+authentication
+dir
+
+service
+dir
+
+tools
+dir
+
+public_html
+dir
+
+config
+dir
+
+db
+dir
+
+engines
+dir
+
+dashboard_html
+dir
+
+admin_html
+dir
+
+com
+dir
+
+templates
+dir
+

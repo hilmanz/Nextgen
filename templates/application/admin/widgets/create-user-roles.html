@@ -1,0 +1,97 @@
+<div id="theContainer2" class="galleryPage">
+    <div class="theContainer2">
+        <div class="theContent2">
+        	<div class="col-content">
+                <div class="theBox">
+                    <div class="theBox-title">
+                        <h2 class="fl">CONFIG MODULE ROLES</h2>
+                       
+                    </div><!-- /.theBox-title -->
+                    <div class="theBox-content">
+                        <div class="forms">
+				<a class="Btn" href="{$basedomain}administrator/roles" >back to lists</a>
+				<form class="former" id="registerent" action="{$basedomain}administrator/addroles"  method="POST" >
+
+			
+				<div style="padding:10px;border-collapse:collapse;"> 	
+					<div class="row" > Roles Names </div>
+					<div class="row" >	<input type="text" name="rolename" value="" />		</div>
+				
+				</div>	 
+				
+				<div style="padding:10px;border-collapse:collapse;"> 	
+					<div class="row" > Definition of Roles </div>
+					<div class="row" >	<input type="text" name="definition" value="" />		</div>
+				
+				</div>	 
+				
+				<div style="padding:10px;border-collapse:collapse;">  
+					<div class="row" >	Status </div>
+					<div class="row" >	
+						<select name="n_status" >	
+											
+								<option value="1" >active</option>
+								<option value="0" >in active</option>
+								
+						</select>
+					</div>
+				</div>
+				
+				<div style="padding:10px;border-collapse:collapse;"> 			
+
+			
+				<input type="hidden" value="1" name="addroles">	
+				
+				</div>
+				
+				  <input type="submit" value="add new roles">
+				  
+				  
+				</form>
+				
+                        </div> <!-- /.forms -->
+                    </div> <!-- /.theBox-content -->
+                </div> <!-- /.theBox -->
+            </div><!-- /.col-content -->
+          
+        </div> <!-- /.theContent2 -->
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
+
+<div id="popup-message">
+    <h3></h3>
+    <a class="button close-popup-message" href="{$basedomain}administrator/roles">OK</a>
+</div>
+<div id="bg-popups"></div>
+{literal}
+
+<script>
+ 
+
+	var updateoptions = {
+						dataType : "html",
+						beforeSubmit: function(data) {
+                             $("#bg-popups").fadeIn();
+                             $("#popup-message h3").html('Loading...');
+                             $("#popup-message").fadeIn();
+                             $(".close-popup-message").hide();
+                                        //$('#kluardisini').html("<blink>loading please wait</blink>");
+                            },
+                        success : function(data) {  
+                            $("#bg-popups").fadeIn();
+                            $("#popup-message h3").html(data);
+                            $("#popup-message").fadeIn();
+                            $(".close-popup-message").show();
+                                    // $('#kluardisini').html("<p>"+data+"</p>");
+                        }
+					};					
+					
+
+$("#registerent").ajaxForm(updateoptions );
+
+ 
+
+
+</script>
+
+{/literal}

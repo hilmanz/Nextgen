@@ -1,0 +1,38 @@
+
+                <div class="darkBox">
+                	<div class="entry entouragelisting">
+						{section loop=$entourage name=i}
+                        <div class="rows4">
+                            <div class="thumb-user fl">
+                                <a href="{$basedomain}entourage/profile/{$entourage[i].id}"><img src="{$entourage[i].image_full_path}" /></a>
+                            </div><!-- /.thumb-user -->
+                            <div class="entry-user fl">
+                                <h4 class="username"><a href="{$basedomain}entourage/profile/{$entourage[i].id}">{$entourage[i].name}</a></h4>
+                              <span class="lates-date">Latest engagement: 
+							  {if $entourage[i].latestengagament.date}
+							  {$entourage[i].latestengagament.date|date_format:"%e/%m/%Y %H:%M:%S"}
+							  {else}  N/A
+							  {/if}</span>
+                           <span class="type-user">
+						   Type:
+						   {if $entourage[i].latestengagament}
+							{$entourage[i].latestengagament.engagementtype}					   
+							{else} N/A
+							{/if}</span> 
+                            </div><!-- /.entry-user -->
+                            {if $entourage[i].n_status==0} <span class="icon-pending fr">&nbsp;</span>
+						   {elseif $entourage[i].n_status==1} <span class="icon-approved fr">&nbsp;</span>
+						   {elseif $entourage[i].n_status==2} <span class="icon-rejected fr">&nbsp;</span>
+						   {else}{/if}
+                        </div>{/section} <!-- /.rows -->
+                    </div><!-- /.entry -->
+						<div class="paging" id="pagingentourage"> </div> <!-- END .paging -->	
+					 		<script>
+								var uid = "{$uid}";
+								var filter = "{$filter}";
+								var cityid = "{$cityid}";
+								var brandid = "{$brandid}";
+								var totalengagement = "{$totalengagement}";
+								getpaging(0,{$total},"pagingentourage","paging_ajax_entourage",10);
+							</script>
+					</div><!-- /.darkBox -->

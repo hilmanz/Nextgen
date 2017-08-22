@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap
+END
+class.soap_server.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/class.soap_server.php
+END
+class.wsdl.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/class.wsdl.php
+END
+nusoapmime.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/nusoapmime.php
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/changelog
+END
+class.soap_fault.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/class.soap_fault.php
+END
+class.soap_transport_http.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/class.soap_transport_http.php
+END
+class.wsdlcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/class.wsdlcache.php
+END
+class.soap_parser.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/class.soap_parser.php
+END
+class.nusoap_base.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/class.nusoap_base.php
+END
+class.soapclient.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/class.soapclient.php
+END
+class.xmlschema.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/class.xmlschema.php
+END
+nusoap.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/nusoap.php
+END
+class.soap_val.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/nuSOAP/oldsoap/class.soap_val.php
+END

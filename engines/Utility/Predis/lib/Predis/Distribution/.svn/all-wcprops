@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Distribution
+END
+IDistributionStrategy.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Distribution/IDistributionStrategy.php
+END
+EmptyRingException.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Distribution/EmptyRingException.php
+END
+INodeKeyGenerator.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Distribution/INodeKeyGenerator.php
+END
+KetamaPureRing.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Distribution/KetamaPureRing.php
+END
+HashRing.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/lib/Predis/Distribution/HashRing.php
+END

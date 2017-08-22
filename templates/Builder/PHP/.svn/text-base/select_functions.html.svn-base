@@ -1,0 +1,12 @@
+{literal}function get($id){{/literal}
+	return $this->fetch("SELECT * FROM {$table_name} WHERE id='".$id."' LIMIT 1");
+{literal}}{/literal}
+{literal}function getAll(){{/literal}
+	return $this->fetch("SELECT * FROM {$table_name}",1);
+{literal}}{/literal}
+{literal}function retrieveByPage($start,$total=30){{/literal}
+	return $this->fetch("SELECT * FROM {$table_name} LIMIT ".$start.",".$total,1);
+{literal}}{/literal}
+function insert({section name=i loop=$visible_fields}${if $smarty.section.i.index eq '0'}{$visible_fields[i].name}{else},{$visible_fields[i].name}{/if}{/section}){literal}{{/literal}
+
+{literal}}{/literal}

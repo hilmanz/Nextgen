@@ -1,0 +1,395 @@
+<script type="text/javascript">
+var top10badges = {$top10badges|@json_encode};	
+//console.log(top10badges);
+{literal}
+$(function () {
+
+	badgesData = new Array();
+	badgesLabel = new Array();
+
+	for (var venuevar in top10badges){
+		badgesData.push(parseInt(top10badges[venuevar].num));
+		badgesLabel.push(String(top10badges[venuevar].name));
+	}
+	
+	var colors= ['#FF8C00', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
+		var datas = [];
+		var dataser = [];
+	 	var dataarr = new Object();
+		var dataarrempty = new Array();
+		var nColor = 0;
+		var nIdxColors = colors.length;
+		
+		for(var idxData in badgesData){
+			for(var idxData2 in badgesData){
+				if(idxData==idxData2) dataarrempty.push(badgesData[idxData]);
+				else dataarrempty.push(0);				 
+			}
+			 dataarr[idxData] = dataarrempty;
+			 var dataarrempty = new Array();
+		}
+	 
+		//console.log(dataarr);
+		for(var idxData in badgesData){
+				
+				
+			 
+				var dataWithColor = { name:badgesLabel[idxData], data : dataarr[idxData] , color:colors[idxData] };
+			
+				datas.push(dataWithColor);
+				
+				
+			 
+				if(nIdxColors > nColor) nColor++;
+				else nColor=0;
+			 
+				
+		}
+		badgesData  = datas; 
+		
+           $('#topBagdes').highcharts({
+            chart: {
+                type: 'column',
+				marginBottom:120
+            },
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text: false,
+            },
+            xAxis: {
+                categories: badgesLabel
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text:false
+                }
+            },
+            tooltip: {
+              /*  headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,*/
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    grouping: false,
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: badgesData    
+          
+        });
+    });
+</script>
+{/literal}
+
+<script type="text/javascript">
+var top10userBadges = {$top10userBadges|@json_encode};	
+//console.log(top10badges);
+{literal}
+$(function () {
+
+	userData = new Array();
+	userLabel = new Array();
+
+	for (var uservar in top10userBadges){
+		userData.push(parseInt(top10userBadges[uservar].num));
+		userLabel.push(String(top10userBadges[uservar].name +" "+ top10userBadges[uservar].last_name));
+	}
+	
+	var colors= ['#FF8C00', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
+		var datas = [];
+		var dataser = [];
+	 	var dataarr = new Object();
+		var dataarrempty = new Array();
+		var nColor = 0;
+		var nIdxColors = colors.length;
+		
+		for(var idxData in userData){
+			for(var idxData2 in userData){
+				if(idxData==idxData2) dataarrempty.push(userData[idxData]);
+				else dataarrempty.push(0);				 
+			}
+			 dataarr[idxData] = dataarrempty;
+			 var dataarrempty = new Array();
+		}
+	 
+		//console.log(dataarr);
+		for(var idxData in userData){
+				
+				
+			 
+				var dataWithColor = { name:userLabel[idxData], data : dataarr[idxData] , color:colors[idxData] };
+			
+				datas.push(dataWithColor);
+				
+				
+			 
+				if(nIdxColors > nColor) nColor++;
+				else nColor=0;
+			 
+				
+		}
+		userData  = datas; 
+		
+           $('#top10User').highcharts({
+            chart: {
+                type: 'column',
+				marginBottom:120
+            },
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text: false,
+            },
+            xAxis: {
+                categories: userLabel
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text:false
+                }
+            },
+            tooltip: {
+              /*  headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,*/
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    grouping: false,
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: userData    
+          
+        });
+    });
+</script>
+{/literal}
+
+<script type="text/javascript">
+var top10act = {$top10act|@json_encode};	
+//console.log(top10badges);
+{literal}
+$(function () {
+
+	actData = new Array();
+	actLabel = new Array();
+
+	for (var uservar in top10act){
+		actData.push(parseInt(top10act[uservar].num));
+		actLabel.push(String(top10act[uservar].name));
+	}
+	
+	var colors= ['#FF8C00', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
+		var datas = [];
+		var dataser = [];
+	 	var dataarr = new Object();
+		var dataarrempty = new Array();
+		var nColor = 0;
+		var nIdxColors = colors.length;
+		
+		for(var idxData in actData){
+			for(var idxData2 in actData){
+				if(idxData==idxData2) dataarrempty.push(actData[idxData]);
+				else dataarrempty.push(0);				 
+			}
+			 dataarr[idxData] = dataarrempty;
+			 var dataarrempty = new Array();
+		}
+	 
+		//console.log(dataarr);
+		for(var idxData in actData){
+				
+				
+			 
+				var dataWithColor = { name:actLabel[idxData], data : dataarr[idxData] , color:colors[idxData] };
+			
+				datas.push(dataWithColor);
+				
+				
+			 
+				if(nIdxColors > nColor) nColor++;
+				else nColor=0;
+			 
+				
+		}
+		actData  = datas; 
+		
+           $('#top10Activities').highcharts({
+            chart: {
+                type: 'column',
+				marginBottom:120
+            },
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text: false,
+            },
+            xAxis: {
+                categories: actLabel
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text:false
+                }
+            },
+            tooltip: {
+              /*  headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,*/
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    grouping: false,
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: actData    
+          
+        });
+    });
+</script>
+{/literal}
+
+<div id="badges">
+<div id="theContainer2" class="homePage">
+    <div class="theContainer2">
+		<form method="GET" action="" id="shorter" >
+        <div class="shorter-menu">
+                <div class="cols-sidebar">
+                    <div class="darkBox-title2">
+                    </div><!-- /.darkBox-title -->
+                </div>
+                <div class="cols-main">
+                    <div class="darkBox-title2">
+                        <div class="short fr">
+                            		<label>Periode</label>
+                                    <input type="text" class="half-width" id="from" name="{$startdate}" value="{$startdate}">
+                                    <span>to</span>
+                                    <input type="text" class="half-width" id="to" name="{$enddate}" value="{$enddate}">
+                                    <a href="javascript:void(0)" class="calendar" >Go</a>
+                          
+                        </div><!-- /.short -->
+                    </div><!-- /.darkBox-title -->
+                </div>
+            </div>  
+        <div class="theContent">
+             <div class="bagdes-collected">
+                <div class="cols-sidebar total-badges">
+                	<div class="darkBox-title2">
+                        <h3>Total Badges Collected</h3>
+                    </div><!-- /.darkBox-title -->
+                    <div class="darkBox">
+                        <div class="darkBox-content">
+						{section name=i loop=$totalBadgesCollect}
+                            <h1>{$totalBadgesCollect[i].num}</h1>
+						{/section}
+                        </div> <!-- /.darkBox-content -->
+                    </div> <!-- /.darkBox -->
+                </div><!-- /.col3s -->
+                
+                <div class="cols-main top-bagdes">
+                	<div class="darkBox-title2">
+                        <h3 class="fl">Total 10 Bagdes</h3>
+					</div>
+                    <div class="darkBox">
+                        <div class="darkBox-content" id="topBagdes" style="height:250px;">
+                            <!--img src="{$assets_domain}content/line_balok.png" style="width:100%" /-->
+                        </div> <!-- /.darkBox-content -->
+                    </div> <!-- /.darkBox -->
+                </div><!-- /.col3s -->
+            </div><!-- /.engagement-number -->
+            
+            <div class="rows2">
+                <div class="darkBox-title">
+                    <h2 class="fl">Top 10 User Collecting Badges</h2>
+                    <div class="short labelOption fr">
+                    	<label>City:</label>
+                        <div class="selectRating fr">
+							<select class="cityDrop"  name="areaid"> 
+								<option value="0"> - Pick One - </option>
+								{section name=i loop=$getCity}
+								<option value="{$getCity[i].id}" {if $areaid==$getCity[i].id }selected{/if} > {$getCity[i].last_name|upper}</option>
+							{/section}
+							</select>
+                        </div><!-- /.selectActivity -->
+                    </div><!-- /.short -->
+                </div><!-- /.darkBox-title -->
+                <div class="darkBox">
+                    <div class="darkBox-content" id="top10User">
+                        <!--img src="{$assets_domain}content/line_balok.png" style="width:100%" /-->
+                    </div> <!-- /.darkBox-content -->
+                </div> <!-- /.darkBox -->
+            </div><!-- /.rows2 -->
+            <div class="rows2">
+                    <div class="darkBox-title">
+                        <h2 class="fl">Top 10 Activities</h2>
+                        <div class="short fr">
+                            <form id="shorter">
+                            		<label>Periode</label>
+                                    <input type="text" class="half-width" id="from1">
+                                    <span>to</span>
+                                    <input type="text" class="half-width" id="to1">
+                                    <a href="javascript:void(0)" class="calendar" >Go</a>
+                            </form>
+                        </div><!-- /.short -->
+                    </div><!-- /.darkBox-title -->
+                    <div class="darkBox">
+                        <div class="darkBox-content" id="top10Activities">
+                            <!--img src="{$assets_domain}content/line_balok.png" style="width:100%" /-->
+                        </div> <!-- /.darkBox-content -->
+                    </div> <!-- /.darkBox -->
+            </div><!-- /.rows2 -->
+            
+        </div> <!-- /.theContent -->
+		  </form>
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
+</div> <!-- /#ba-rank -->
+
+<script type="text/javascript">
+	var startdate = "{$startdate}";
+	var enddate = "{$enddate}";
+{literal}
+	
+	$(document).on('click', '.calendar', function(){
+	
+		var from = $('#from').val();
+		var to = $('#to').val();
+		
+		//window.location.href='?startdate='+from+'&enddate='+to;
+		
+		$("#shorter").submit();
+	})
+	
+</script>
+{/literal}

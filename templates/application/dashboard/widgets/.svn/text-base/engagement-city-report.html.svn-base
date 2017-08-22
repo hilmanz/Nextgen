@@ -1,0 +1,15 @@
+<table border=1>
+	<th colspan=3>Engagement Performance</th>
+	<tr> 
+		<td>Name</td> 		
+		<td>Email</td>	
+		<td>baengage</td>	
+	</tr>			
+	{section name=i loop=$weeklyCumulativeEngageReport}
+	<tr>
+		<td>{$weeklyCumulativeEngageReport[i].name} {$weeklyCumulativeEngageReport[i].last_name}</td>
+		<td>{$weeklyCumulativeEngageReport[i].email}</td>
+		<td>{$weeklyCumulativeEngageReport[i].baengagement}</td>
+	</tr>
+	{/section}
+</table>

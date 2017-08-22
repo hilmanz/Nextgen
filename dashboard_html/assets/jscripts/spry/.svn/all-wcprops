@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry
+END
+SpryDataExtensions.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryDataExtensions.js
+END
+SpryValidationSelect.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryValidationSelect.js
+END
+SpryUtils.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryUtils.js
+END
+SpryDOMUtils.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryDOMUtils.js
+END
+SpryXML.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryXML.js
+END
+SpryAccordion.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryAccordion.js
+END
+xpath.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/xpath.js
+END
+SpryValidationRadio.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryValidationRadio.js
+END
+SpryData.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryData.js
+END
+SpryImageLoader.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryImageLoader.js
+END
+SpryAutoSuggest.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryAutoSuggest.js
+END
+SpryValidationPassword.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryValidationPassword.js
+END
+SpryDataSetShell.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryDataSetShell.js
+END
+SpryNestedJSONDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryNestedJSONDataSet.js
+END
+SpryRating.js
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryRating.js
+END
+SpryHTMLPanel.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryHTMLPanel.js
+END
+SpryDebug.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryDebug.js
+END
+SpryValidationTextarea.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryValidationTextarea.js
+END
+SpryMenuBar.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryMenuBar.js
+END
+SpryTooltip.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryTooltip.js
+END
+SprySlidingPanels.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SprySlidingPanels.js
+END
+SpryValidationCheckbox.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryValidationCheckbox.js
+END
+SpryCSVDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryCSVDataSet.js
+END
+SpryValidationTextField.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryValidationTextField.js
+END
+SpryValidationConfirm.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryValidationConfirm.js
+END
+SpryNestedXMLDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryNestedXMLDataSet.js
+END
+SpryCollapsiblePanel.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryCollapsiblePanel.js
+END
+SpryHTMLDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryHTMLDataSet.js
+END
+SpryPagedView.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryPagedView.js
+END
+SpryNotifier.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryNotifier.js
+END
+SpryEffects.js
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryEffects.js
+END
+SpryJSONDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryJSONDataSet.js
+END
+SpryTSVDataSet.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryTSVDataSet.js
+END
+SpryURLUtils.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryURLUtils.js
+END
+SpryTabbedPanels.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/nextgen-reg-online/!svn/ver/28/trunk/dashboard_html/assets/jscripts/spry/SpryTabbedPanels.js
+END

@@ -1,0 +1,174 @@
+
+{literal}
+ <style>
+
+ 
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 4px;
+}
+.ui-widget-content {
+    background: repeat-x scroll 50% 50% #FFFFFF;
+    border: 1px solid #AAAAAA;
+    color: #222222;
+}
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+}
+.ui-menu {
+    display: block;
+    list-style: none outside none;
+    margin: 0;
+    outline: medium none;
+    padding: 2px;
+}
+.ui-autocomplete {
+    cursor: default;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.ui-front {
+    z-index: 100;
+}
+body {
+    font-family: "Trebuchet MS","Helvetica","Arial","Verdana","sans-serif";
+    font-size: 62.5%;
+}
+</style>
+{/literal}
+<div id="theContainer2" class="homePage performance-page">
+ <form id="shorter" method="GET" action="" >
+    <div class="theContainer2">
+        <div class="shorter-menu">
+            <div class="selectBrand fl">
+                 
+                    <select class=""  name="brandid" >
+						<option value="0"> - Brand - </option>
+						{section name=i loop=$getBrand}
+							<option value="{$getBrand[i].id}" {if $brandid==$getBrand[i].id}selected{/if}>{$getBrand[i].name|upper}</option>
+						{/section}
+                    </select>
+                 
+                </div><!-- /.selectBrand -->
+            <div class="selectArea fl">
+                  
+                    <select class="cityDrop"  name="areaid"> 
+					<option value="0"> - Area - </option>
+						{section name=i loop=$getCity}
+						<option value="{$getCity[i].id}" {if $areaid==$getCity[i].id }selected{/if} > {$getCity[i].last_name|upper}</option>
+						{/section}
+                    </select>
+                 
+                </div><!-- /.selectArea -->
+				 
+            <div class="selectBA fl">
+				
+            	         
+                    <select class="baDrop" name="sbaid">
+						<option value="0"> - Select Ba - </option>
+						{foreach from=$getSba key=k item=v}
+						<option value="{$v.ownerid}" {if $sbaid==$v.ownerid }selected{/if}  >{$v.name}</option>
+						{/foreach}
+                    </select>
+                 
+                </div><!-- /.selectBA -->
+                <div class="shortDate dateKPI">
+                   
+                            <label>Periode</label>
+                            <input type="text" class="half-width" id="from" name="startdate" value="{$startdate}">
+                            <span>to</span>
+                            <input type="text" class="half-width" id="to" name="enddate" value="{$enddate}">
+							<a href="javascript:void(0)" class="calendar" >Go</a>
+                   
+                </div><!-- /.short -->
+    
+        </div>
+        <div class="theContent">
+        	 <div class="darkBox-title">
+                <h2 class="fl">USER GPS</h2>
+            </div><!-- /.darkBox-title -->
+            <div class="darkBox">
+                <div class="darkBox-content" id="map_canvas" style="width:800px;height:500px">
+                    <!-- <img src="{$assets_domain}content/line_chart.png" style="width:100%" /> -->
+                </div> <!-- /.darkBox-content -->
+            </div> <!-- /.darkBox --> 
+        </div> <!-- /.theContent2 -->
+    </div> <!-- /.theContainer -->
+</form>
+</div> <!-- /#theContainer -->
+
+<script type="text/javascript"  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWZTca5Nth3LPhlzI9dJUsG2kZUMhFB7I&sensor=true">
+    </script>
+<script type="text/javascript">
+
+var datacitygps = {$datacitygps|@json_encode};
+ 
+{literal}
+
+var midcitylatitude = 0;
+var midcitylongitude = 0;
+var divercitycoor = datacitygps.length;
+var citymap = {};
+
+ 
+  for (var datacity in datacitygps) {
+  
+	midcitylatitude=+parseFloat(datacitygps[datacity].latitude);
+	midcitylongitude=+parseFloat(datacitygps[datacity].longitude,10);
+	
+	citymap[datacitygps[datacity].id] = {
+	  center: new google.maps.LatLng(parseFloat(datacitygps[datacity].latitude,10),parseFloat(datacitygps[datacity].longitude,10)),
+	  radius:  parseInt(datacitygps[datacity].multiples)*100
+	}; 
+ }
+
+midcitylatitude = midcitylatitude/divercitycoor;
+midcitylongitude = midcitylongitude/divercitycoor;
+
+var cityCircle;
+
+function initialize() {
+  var mapOptions = {
+    zoom: 5,
+    center: new google.maps.LatLng(-5.134715,115.612792),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  var map = new google.maps.Map(document.getElementById("map_canvas"),
+      mapOptions);
+
+  for (var city in citymap) {
+
+    var populationOptions = {
+      strokeColor: "#FF0000",
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      fillColor: "#FF0000",
+      fillOpacity: 0.35,
+      map: map,
+      center: citymap[city].center,
+      radius: citymap[city].radius 
+    };
+    cityCircle = new google.maps.Circle(populationOptions);
+  }
+}
+
+initialize();
+
+    </script>
+	{/literal}

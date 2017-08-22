@@ -1,0 +1,350 @@
+{literal}
+<script>
+$( document ).ready(function() {
+	
+
+	$(document).on('click','#tutupPopup',function(event) {
+	event.preventDefault();
+	$( '#bg-popups' ).fadeOut();
+	$( '#popup-message' ).fadeOut();
+	});
+});
+</script>
+{/literal}
+{if $venueid}
+
+ <script type="text/javascript">
+	 var word_list = {$venuedata.wordcloud|@json_encode};
+	 
+
+		{literal}		 
+	 
+ 
+     $(document).ready(function(){
+	 
+        $("#wordclouder").jQCloud(word_list);
+       
+      });
+    </script>
+
+{/literal}
+ 
+
+{/if}
+<div id="topVenue-detail">
+<div id="theContainer2" class="homePage">
+    <div class="theContainer2">
+        <div class="theContent">
+        	<div class="darkBox-title">
+            	<a href="{$basedomain}activities" class="fl icons back-page">&nbsp;</a>
+                <h2 class="fl">Top 10 Venue</h2>
+                <!--div class="short   fr">
+                    <form method="GET" id="shorter" action="">                    
+                                <select class="" name="rateType" >
+                                  <option value="" {if $rateType==''}selected{/if} > - Select Base -</option>
+                                  <option value="rating" {if $rateType=='rating'}selected{/if} >Rating</option>
+                                  <option value="prize" {if $rateType=='prize'}selected{/if} >Price</option>
+                                  <option value="smoking" {if $rateType=='smoking'}selected{/if} >Smoking</option>
+                                  <option value="wifi" {if $rateType=='wifi'}selected{/if} >Wifi</option>
+                                </select>
+                              
+							  	<a href="javascript:void(0)" class="calendar" >Go</a>
+					</form>
+                </div><!-- /.short -->
+                <!--label class="fr basedOn">Based On:</label-->
+                
+                <!--div class="short labelOption fr">
+                           <form  method="GET" action=""  id="shorter" class="">
+                                <select class="" name="rateType" >
+                                  <option value="" {if $rateType==''}selected{/if} > - Select Base -</option>
+                                  <option value="rating" {if $rateType=='rating'}selected{/if} >Rating</option>
+                                  <option value="prize" {if $rateType=='prize'}selected{/if} >Price</option>
+                                  <option value="smoking" {if $rateType=='smoking'}selected{/if} >Smoking</option>
+                                  <option value="wifi" {if $rateType=='wifi'}selected{/if} >Wifi</option>
+                                </select>
+                              </form>
+							  	<a href="javascript:void(0)" class="calendar" >Go</a>
+							
+                    </div><!-- /.short -->
+                    <!--label class="fr">Based On:</label-->
+            </div><!-- /.darkBox-title -->
+            
+                <!-- <div class="darkBox"> -->
+                    <!-- <div class="darkBox-content" id="topVenue" > -->
+                        <!-- <img src="content/line_balok.png" style="width:100%" /> -->
+                    <!-- </div> /.darkBox-content --> 
+                <!-- </div>  /.darkBox -->
+            
+            <div class="rows2">
+               <div id="table-top10venue">
+                    <table id="tablesorter-top10venue" class="tablesorter" border="0" cellpadding="0" cellspacing="1">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Venue Name</th>
+                                <th>Venue Photo</th>
+                                <th>Venue Location</th>
+                                <th>Reach</th>
+                                <th>Frequency</th>
+                                <th>Avg. Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+						{section name=i loop=$top10venue}
+                            <tr>
+                                <td>{$top10venue[i].no}</td>
+                                <td>{$top10venue[i].venuename}</td>
+                                <td><a class="" href="{$basedomain}topVenue?venueid={$top10venue[i].id}">See Photo</a></td>
+                                <td>{$top10venue[i].city|upper}</td>
+                                <td>{$top10venue[i].reach}</td>
+                                <td>{$top10venue[i].total}</td>
+                                <td>
+								{section name=foo start=0 loop=$top10venue[i].rating }							
+									<span class="star-red"></span>
+								{/section}
+								</td>
+                            </tr>
+						{/section}
+                        </tbody>
+                    </table>
+				</div>
+            </div><!-- /.rows2 -->
+            {if $venueid}
+			
+            <div class="rows2">
+                <div class="darkBox box-photo" style="width:540px;float:left;margin-right:20px; height:448px;" >
+                	<div class="photo-tittle">
+                        <h2 class="fl">{$venuedata.venue[0].venuename|@capitalize}</h2>
+                         <h2 style="color:#666;" class="fr">{$venuedata.venue[0].city|@capitalize}</h2>
+                    </div><!-- /.darkBox-title -->
+                    
+                    <div class="darkBox-content-photo">
+                        <div id="popupPhoto" style="width: 450px;  margin:0 auto ">
+                        	<div class="main-photo flexslider">
+                            	<ul class="slides">
+								{foreach from=$venuedata.venue key=k item=v}
+                                    <li>
+                                    <div class="photo-venue">
+                                    	<img src="{$v.image_full_path}" />
+                                    </div>
+									<div class="detailPhoto" style=" margin-top: 0px;">
+										<p>{$v.address|@capitalize}</p>
+                                        <div class="photo-text-slider">
+										<h2>{if $v.title}{$v.title|@capitalize}{else}< No Caption >{/if}</h2>
+                                        </div>
+										<div class="ratingstar fl">
+										{if $v.rating>0}
+											{section name=foo start=0 loop=$v.rating }							
+												<span class="star-red"></span>
+											{/section}
+										{else}
+											< No Rating >
+										{/if}
+										</div>
+								
+									</div>
+                                    </li>
+                                {/foreach}
+                                </ul> 
+                            </div>
+                           
+                        </div>
+                    </div> <!-- /.darkBox-content -->
+				   </div> <!-- /.darkBox -->
+			
+				<div class="darkBox"  style="width:540px;float:left; height:448px;" >
+					  <div class="darkBox-content">
+                        <div id="wordclouder" style="width: 450px; height: 372px; margin:0 auto "> 
+					 
+						
+						</div>
+                 </div> <!-- /.darkBox-content -->
+              </div> <!-- /.darkBox -->
+			</div><!-- /.rows2 -->
+            {/if}
+        </div> <!-- /.theContent -->
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
+</div> <!-- /#ba-rank -->
+
+
+
+<script type="text/javascript">
+/*
+	var top10venue = {$top10venue|@json_encode};	
+	var rateType = "{$rateType}";
+{literal}	
+$(function () {
+	
+	var venueData = new Array();
+	var venueDate = new Array();
+	
+	for (var venuevar in top10venue){
+		venueData.push(parseInt(top10venue[venuevar].total));
+		venueDate.push(String(top10venue[venuevar].venuename));
+	}
+		
+	gethighChart('column','test Chart','venueField',venueData,venueDate,1,true);
+	
+	//drillDownChart('column','test Chart','cont',dataCoba,cateActivityGroup,1 ,false);
+	
+	});
+	
+	$(document).on('click', '.calendar', function(){
+		
+		$("#shorter").submit();
+	
+	});
+*/
+</script>
+{/literal}
+
+<script type="text/javascript">
+
+var top10venue = {$top10venue|@json_encode};	
+
+{literal}
+
+
+
+
+$(function () {
+
+	venueData = new Array();
+	venueLabel = new Array();
+
+	for (var venuevar in top10venue){
+	/*
+		if(rateType=='rating') venueData.push(parseInt(top10venue[venuevar].rating));
+		if(rateType=='prize') venueData.push(parseInt(top10venue[venuevar].rating));
+		if(rateType=='smoking') venueData.push(parseInt(top10venue[venuevar].rating));
+		if(rateType=='wifi') venueData.push(parseInt(top10venue[venuevar].rating));
+		if(rateType=='') venueData.push(parseInt(top10venue[venuevar].total));
+	*/	
+		venueData.push(parseInt(top10venue[venuevar].total));
+		venueLabel.push(String(top10venue[venuevar].venuename));
+	}
+		
+		var colors= ['#FF8C00', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4'];
+		var datas = [];
+		var dataser = [];
+	 	var dataarr = new Object();
+		var dataarrempty = new Array();
+		var nColor = 0;
+		var nIdxColors = colors.length;
+		
+		for(var idxData in venueData){
+			for(var idxData2 in venueData){
+				if(idxData==idxData2) dataarrempty.push(venueData[idxData]);
+				else dataarrempty.push(0);				 
+			}
+			 dataarr[idxData] = dataarrempty;
+			 var dataarrempty = new Array();
+		}
+	 
+		//console.log(dataarr);
+		for(var idxData in venueData){
+				
+				
+			 
+				var dataWithColor = { name:venueLabel[idxData], data : dataarr[idxData] , color:colors[idxData] };
+			
+				datas.push(dataWithColor);
+				
+				
+			 
+				if(nIdxColors > nColor) nColor++;
+				else nColor=0;
+			 
+				
+		}
+		venueData  = datas;
+		
+        $('#topVenue').highcharts({
+            chart: {
+                type: 'column'
+            },
+			credits: {
+            	enabled: false
+        	},
+            title: {
+                text:false,
+            },
+            subtitle: {
+                text: false,
+            },
+            xAxis: {
+                categories: venueLabel
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text:false
+                }
+            },
+            tooltip: {
+             /*   headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y}</b></td></tr>',
+                footerFormat: '</table>',*/
+               // shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    grouping: false,
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: venueData    
+          
+        });
+    });
+	
+	$(document).on('click', '.calendar', function(){
+		/*
+		var from = $('#from').val();
+		var to = $('#to').val();
+		
+		window.location.href='?startdate='+from+'&enddate='+to;
+		*/
+		
+		$("#shorter").submit();
+	})	
+			
+		$(document).on("click",".showpopupcontent",function(){
+			var wordpopup = $(this).children("a").attr("href");
+							 
+			$.post(basedomain+"content/ajax",{words:wordpopup,needs:"popwordcloud"},function(data){
+				if(data){
+					var htmls ="";
+					$.each(data,function(i,e){
+						htmls += "<div style='padding:10px;border-bottom:#999 1px solid;' ><div>"+e.title+"</div> </div>";
+					
+					});
+					$(".containerContent").html(htmls);
+				 
+					$( '#bg-popups' ).fadeIn();
+					$( '#popup-message' ).fadeIn();
+					 
+				}
+					
+				
+			},"JSON");
+			
+		});	
+		 
+</script>
+{/literal}
+ 
+ <div id="popup-message">
+<a id="tutupPopup" class="closePopup" href="#" style="text-shadow: 0px 0px 1px rgb(255, 255, 255);">X</a>
+ 
+ 
+ <div class="containerContent" > 
+ 
+ </div>
+ 
+</div>
+<div id="bg-popups"></div>

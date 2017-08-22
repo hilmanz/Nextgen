@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Style
+END
+Border.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Style/Border.php
+END
+Alignment.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Style/Alignment.php
+END
+Color.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Style/Color.php
+END
+Borders.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Style/Borders.php
+END
+NumberFormat.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Style/NumberFormat.php
+END
+Conditional.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Style/Conditional.php
+END
+Fill.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Style/Fill.php
+END
+Font.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Style/Font.php
+END
+Protection.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/PHPExcel/Style/Protection.php
+END

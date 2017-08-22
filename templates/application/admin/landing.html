@@ -1,0 +1,84 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML>
+	<HEAD>
+		   <title>A Exchange</title>
+<link href="{$basedomain}assets/css/landingPage.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{$basedomain}assets/css/flexsliderLanding.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="{$basedomain}assets/css/icon.css" type="text/css"  media="all" />
+  <link rel="shortcut icon" href="{$basedomain}assets/images/favicon.png" type="image/x-icon" />
+<script src="{$basedomain}assets/js/jquery-1.7.1.min.js"></script>
+<script src="{$basedomain}assets/js/jquery.flexsliderLanding-min.js"></script>
+	</HEAD>
+	<body class="wrapper">
+	
+			<div class="mainPage">
+				<div class="headerLanding">
+                	<div class="logo"><img src="{$basedomain}assets/images/logo2.jpg" /></div>
+                    <div class="topRight">
+                    	<p>Jelajahi kemungkinan tanpa batas dengan saling belajar, berbagi dan berinteraksi di A EXCHANGE.<br />
+Bangun jaringanmu di sini dan tunjukkan ekspresi artistikmu setiap hari. <span class="red">Showcase your art and get noticed !</span></p>
+                    </div>     
+                </div> <!-- close header -->
+				<div class="content">
+                	<section class="slider">
+                        <div class="flexslider" style="overflow: hidden; position: relative; height: 474px;">
+                          <ul class="slides">
+							{section name=i loop=$banner}
+								<li>
+							
+                                {if $banner[i].slider_image}
+									{if $banner[i].banner_thumb}<img src="{$basedomain}public_assets/banner/thumb_{$banner[i].slider_image}" />
+									{else}<img src="{$basedomain}public_assets/banner/{$banner[i].slider_image}" />
+									{/if}
+								{else}
+									{if $banner[i].image}<img src="{$basedomain}public_assets/banner/{$banner[i].image}" />
+									{else}<img src="{$basedomain}assets/content/slide/slide.jpg" />
+									{/if}
+								{/if}
+							
+                                <div class="slide_tittle">
+                                	<p class="icon_cat icon_{$banner[i].typeofarticlename}">
+            						<span class="titleSlide">{$banner[i].content_name}</span>
+                					<span>{$banner[i].brief|truncate:50:"..."}</span>
+             						</p>
+                                </div>
+                                </li>
+                                {/section}
+                          </ul>
+                        </div>
+                      </section>
+                   <div class="smSubmit"><a id="linkReg" href="{$basemopurl}">Register/Login</a></div>
+                </div><!-- END. content-->
+				<DIV class=footer>
+<DIV class="text style1">Informasi dalam website ini di tujukan untuk perokok berusia 18 tahun atau lebih dan tinggal di wilayah Indonesia</DIV>
+<DIV class="text style2">Jika Anda sudah terdaftar dan diverifikasi untuk situs merek lain dibawah PT H.M. Sampoerna dan Philip Morris Indonesia.<br />
+Anda dapat menggunakan detail login Anda untuk mengakses situs ini.<br />
+Untuk pertanyaan dan menghubungi kami, Anda dapat mengirimkan email ke <a href="mailto:info@amild.com">info@amild.com</a></DIV>
+
+<DIV class=navigation>
+<UL>
+<LI ><A href="{$basemopurl}Templates/LandingPage.aspx">Halaman Utama</A> 
+<LI ><A href="{$basemopurl}Templates/Termsandconditions.aspx" target=_Blank>Syarat dan ketentuan</A> 
+<LI ><A href="{$basemopurl}Templates/RemoveMe.aspx">Hapus Saya</A>
+<LI style="display:none"><A href="{$basemopurl}demoPages/PMISite.htm" target=_Blank>PMI Corporate</A>
+<LI ><A href="{$basemopurl}Templates/FAQ.aspx" target=_Blank>Daftar Pertanyaan</A> 
+<LI ><A href="{$basemopurl}Templates/Contactus.aspx" target=_Blank>Kontak Kami</A> 
+<LI class=last id=health ><A href="https://www.pmi.com/id/smokingandhealth" target=_Blank>Perihal Merokok</A></LI></UL></DIV></DIV>
+
+			</div>
+{literal}
+			<script type="text/javascript">
+   
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+  {/literal}
+	</body>
+</HTML>

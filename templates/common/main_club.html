@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$clubName} - U Club</title>
+{literal}
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style1 {
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+}
+.style1 a{
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+}
+.style2 {font-size: 12px;color:#FFFFFF;}
+#fixme {
+	/* Netscape 4, IE 4.x-5.0/Win and other lesser browsers will use this */
+  position: absolute; left: 0px; top: 0px;width:100%;
+}
+body > div#fixme {
+  /* used by Opera 5+, Netscape6+/Mozilla, Konqueror, Safari, OmniWeb 4.5+, iCab, ICEbrowser */
+  position: fixed;
+}
+
+-->
+
+
+
+</style>
+<![if gte IE 5.5]>
+<![if lt IE 7]>
+<style type="text/css">
+div#fixme {
+  /* IE5.5+/Win - this is more specific than the IE 5.0 version */
+  left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+</style>
+<![endif]>
+<![endif]>
+{/literal}
+</head>
+
+<body>
+<div id="fixme" >
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td width="86%" bgcolor="#3399FF"><div align="right" class="style1">
+      <div align="left" class="style2"><a href="club.php">Home</a> - <a href="news.php">News</a> - Direktori - <a href="shop.php">Shop</a> - Forum </div>
+    </div></td>
+    <td width="14%" bgcolor="#3399FF"><div align="right" class="style1">Supported by <a href="http://www.umild.com" target="_blank">Umild</a> </div></td>
+  </tr>
+</table>
+</div>
+{$mainContent}
+</body>
+</html>

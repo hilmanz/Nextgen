@@ -1,0 +1,2 @@
+ul.dropdown ul li					{ display: inline; width: 100%; } 
+ul.dropdown ul li a					{ display: inline-block; } 

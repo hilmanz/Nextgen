@@ -1,0 +1,15 @@
+<table border=1>
+	<th colspan=2>BA RANK REPORT</th>
+	<tr>
+		<td>Total</td> 		
+		<td>Value</td>	
+		<td>Date</td>	
+	</tr>			
+	{section name=i loop=$topVisitedPageReport}
+	<tr>
+		<td>{$topVisitedPageReport[i].num}</td>
+		<td>{$topVisitedPageReport[i].action_value}</td>
+		<td>{$topVisitedPageReport[i].dd}</td>
+	</tr>
+	{/section}
+</table>

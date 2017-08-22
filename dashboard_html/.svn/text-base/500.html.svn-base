@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>SITTI 359 Platform - 500 Server Error</title>
+        <link href="css/sitti.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" language="javascript" src="js/iepngfix_tilebg.js"></script>
+        <script type="text/javascript" language="javascript" src="js/drop_table.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="icon" type="image/gif" href="images/animated_favicon.gif">
+    </head>
+
+    <body onload="init()">
+        <div class="wrapper">
+            <a class="logo" style="float:none; display:block; margin:20px 0 0 200px;" href="index.php">&nbsp;</a>
+            <div class="loginBlock">
+          			<p style="font-family:'Arial Black', Gadget, sans-serif; font-size:24px; color:#C00;">Server Error</p>
+                <p style="font-size:18px; line-height:25px;">Maaf, terjadi kesalahan pada aplikasi atau server kami. Untuk melaporkan hal ini, silahkan kirim email ke <a href="mailto:support@sittibelajar.com">support@sittibelajar.com</a></p>
+            </div>
+                                   
+
+                      
+        </div>
+    </body>
+</html>

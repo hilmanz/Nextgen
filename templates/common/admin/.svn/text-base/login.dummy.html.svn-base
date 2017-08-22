@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>ADMINISTRATION PAGE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body>
+<div align="center"><div align="center"> 
+  <form name="form1" method="post" action=""><input type="hidden" name="PHPSESSID" value="85a1fe34897ffd340ee39272d8a03b8c" />
+	<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center"><img src="images/logoklien.gif" width="109" height="71" /></p>
+<table width="250" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr style="background: url(images/bgnav.gif);">
+    <td width="10"><div align="left"><img src="images/borderleft.gif" width="8" height="28" /></div></td>
+    <td width="229"><div align="center"><span style="color: #FFFFFF; font-weight: bold;">WebPanel Login</span> </div></td>
+    <td width="11"><div align="right"><img src="images/borderright.gif" width="8" height="28" /></div></td>
+  </tr>
+</table>
+<br />
+<table width="250" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="10" valign="top" style="background: url(images/contentbrdrlinetop.gif) repeat-x top;"><div align="left"><img src="images/contentbrdr1.gif" width="9" height="9" /></div></td>
+    <td width="230" style="background: url(images/contentbrdrlinetop.gif) repeat-x top;"><img src="images/spacer.gif" width="1" height="1" /></td>
+    <td width="10" valign="top"><div align="right"><img src="images/contentbrdr2.gif" width="9" height="9" /></div></td>
+  </tr>
+  <tr>
+    <td style="background: url(images/contentbrdrlineleft.gif) repeat-y left;">&nbsp;</td>
+    <td><p align="center">Username<br />
+            <label> 
+            <input name="username" type="text" id="username">
+            </label>
+            <br />
+            <br />
+            Password<br />
+            <label> 
+            <input name="password" type="password" id="password" />
+            </label>
+            <br />
+            <br />
+            <label> 
+            <input name="login" type="hidden" id="login" value="true">
+            <input type="submit" name="Submit" value="Login" />
+            </label>
+          </p>
+    </td>
+    <td style="background: url(images/contentbrdrlineright.gif) repeat-y right;">&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="bottom" style="background: url(images/contentbrdrlinebottom.gif) repeat-x bottom;"><div align="left"><img src="images/contentbrdr4.gif" width="9" height="9" /></div></td>
+    <td style="background: url(images/contentbrdrlinebottom.gif) repeat-x bottom;"><img src="images/spacer.gif" width="1" height="1" /></td>
+    <td valign="bottom"><div align="right"><img src="images/contentbrdr3.gif" width="9" height="9" /></div></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+  </form>
+</div></div>
+</body>
+</html>

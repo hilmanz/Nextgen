@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common
+END
+confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/confirm.html
+END
+dialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/dialog.html
+END
+paging_js.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/paging_js.html
+END
+default.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/default.html
+END
+message.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/message.html
+END
+paging.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/paging.html
+END
+blank.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/blank.html
+END
+error.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/error.html
+END
+main_club.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/main_club.html
+END
+contact.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/nextgen-reg-online/!svn/ver/2/trunk/templates/common/contact.html
+END

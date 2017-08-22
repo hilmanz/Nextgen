@@ -1,0 +1,13 @@
+<table border=1>
+	<th colspan=2>Weekly Achievment VS KPI Report</th>
+	<tr>
+		<td>Total</td> 		
+		<td>Date</td>	
+	</tr>			
+	{section name=i loop=$weekAchievmentKpiReport}
+	<tr>
+		<td>{$weekAchievmentKpiReport[i].num}</td>
+		<td>{$weekAchievmentKpiReport[i].dd}</td>
+	</tr>
+	{/section}
+</table>

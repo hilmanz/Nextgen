@@ -1,0 +1,46 @@
+<div id="user-detail-city">
+<div id="theContainer2" class="homePage">
+    <div class="theContainer2">
+        <div class="theContent">
+        	<div class="ba-rankTable">
+            		<table class="tableDetailEngagement">
+                        <tr>
+                            <th>Entourage</th>
+                            <th>Engagement</th>
+                        </tr>
+						{section name=i loop=$entourageEngage}
+                        <tr>
+                            <td>{$entourageEngage[i].name} {$entourageEngage[i].last_name}</td>
+                            <td>{$entourageEngage[i].baengagement}</td>
+                        </tr>
+						{/section}
+                     </table>
+            </div><!-- /.ba-rankTable -->
+           			 
+                            <div class="paging" id="pagingUserEngage">
+                              
+								<script>
+								
+									getpaging(0,{$total},"pagingUserEngage","getUserEngagelist",10);
+								
+								</script>
+							
+                            </div>
+        </div> <!-- /.theContent -->
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
+</div> <!-- /#ba-rank -->
+
+<script>
+{literal}
+
+	$(document).on('click', '.calendar', function(){
+		var from = $('#from').val();
+		var to = $('#to').val();
+		
+		window.location.href='?startdate='+from+'&enddate='+to;
+	
+	})	
+
+</script>
+{/literal}

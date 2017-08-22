@@ -1,0 +1,22 @@
+<form name="form1" method="post" action="">
+  <table width="100%" border="1" cellspacing="0" cellpadding="5">
+    <tr>
+      <td width="32%"><strong>Settings</strong></td>
+      <td width="68%"><strong>Value</strong></td>
+    </tr>
+    {section name=i loop=$list}
+    <tr>
+      <td>{$list[i].name}      </td>
+      <td><input name="{$list[i].name}" type="text" id="{$list[i].name}" value="{$list[i].val}" size="50"></td>
+    </tr>
+    {/section}
+    <tr>
+      <td colspan="2"><div align="center">
+        <input name="s" type="hidden" id="s" value="admin">
+        <input name="r" type="hidden" id="r" value="update_config">
+        <input type="submit" name="UPDATE" id="UPDATE" value="UPDATE">
+      </div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</form>

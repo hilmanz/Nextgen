@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	{section name=i loop=$list}
+	<item>
+		<id>{$list[i].id}</id>
+		<title><![CDATA[{$list[i].title|stripslashes}]]></title>
+		<description>
+			<![CDATA[{$list[i].description|stripslashes}]]>
+		</description>
+		<thumb><![CDATA[contents/Picture_Gallery/{$list[i].thumbnail|stripslashes}]]></thumb>
+		<preview><![CDATA[contents/Picture_Gallery/{$list[i].file|stripslashes}]]></preview>
+	</item>
+	{/section}
+</data>

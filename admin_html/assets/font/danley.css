@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'danley_editregular';
+    src: url('danley-edit-webfont.eot');
+    src: url('danley-edit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('danley-edit-webfont.woff') format('woff'),
+         url('danley-edit-webfont.ttf') format('truetype'),
+         url('danley-edit-webfont.svg#danley_editregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

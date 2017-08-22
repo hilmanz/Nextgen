@@ -1,0 +1,51 @@
+a, a:hover,.topbar-right ul li a:hover, .accordion h4.ui-state-active, .toggle .active, .widget .latest-posts-list li a {
+	color: #e40404;
+}
+.wrapper, blockquote, .page-content table,
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected, #footer {
+}
+
+.plus, .minus, .button1, .blog-title .comment-count, .blog-title-single .comment-count, #footer-bottom,{
+	background: #e40404;
+}
+
+.flex-control-paging li a.flex-active {
+	background: #e40404 !important;
+}
+
+#twitter_icon:hover, #facebook_icon:hover, #googleplus_icon:hover, #skype_icon:hover, #flickr_icon:hover, #linkedin_icon:hover, #vimeo_icon:hover, #youtube_icon:hover, #rss_icon:hover {
+	background-color: #e40404;
+}
+
+.blog-title .comment-count .comment-point,
+.blog-title-single .comment-count .comment-point {
+	background: url(../../images/comment-point.png) #e40404 no-repeat;
+}
+
+.cart-top {
+	background: url(../../images/tagbottom.png) no-repeat bottom center #e40404;
+}
+
+.flex-direction-nav .flex-prev, .flex-direction-nav .flex-next {
+	background: url(../../images/slide-arrows.png) #e40404 no-repeat;
+}
+
+.flex-direction-nav .flex-prev {
+	background-position: 7px 6px;
+}
+
+.flex-direction-nav .flex-next {
+	background-position: -51px 6px;
+}
+#footer-bottom, #footer-bottom a:hover {
+	color: #def4aa;
+}
+
+.flex-caption p {
+	background: #e40404;
+}
+
+/* Main colour in format for IE, "7080B600" is the colour #80B600, the "70" added to the front gives 70% */
+.ie8 .flex-caption p {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7080B600,endColorstr=#7080B600);
+}

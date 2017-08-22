@@ -1,0 +1,5 @@
+<div align="center">
+  <p>{$msg|stripslashes}</p>
+  <p>[ <a href="{secureurl url=$YES_URL inline='true'}">Yes</a> ] [ <a href="{secureurl url=$NO_URL inline='true'}">No</a> ]</p>
+</div>
+

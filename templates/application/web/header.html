@@ -1,0 +1,19 @@
+<div id="header">
+	<div  >	
+    	<div class="entry1">		
+            <h1><a href="/home"  >DASHBOARD</a></h1>			
+            <div id="info-user">
+                <div class="info-details">
+                    {if $user}
+					<h4>
+					<!--<a href="{$basedomain}home/profileDetail">Hi, {$user->name} {$user->last_name}</a> -->
+					<a href="{$basedomain}home/profileDetail">Hi, {$user->name} {$user->last_name} </a>					
+					<a class="icon_flag" href="{$basedomain}home/profileDetail"> {$user->leaderdetail->pagetypename} </a>
+					<a href="{$basedomain}logout.php" style="padding-left:40px" >Log Out</a>
+					</h4>
+					{/if}
+                </div> <!-- /.info-details -->
+            </div> <!-- /#info-user -->
+		</div> <!-- /.entry -->
+	</div> <!-- /.container -->
+</div> <!-- /#header -->

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/nextgen-reg-online/!svn/ver/26/trunk/templates/application/admin
+END
+landing.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/nextgen-reg-online/!svn/ver/20/trunk/templates/application/admin/landing.html
+END
+login_message.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/nextgen-reg-online/!svn/ver/20/trunk/templates/application/admin/login_message.html
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/20/trunk/templates/application/admin/footer.html
+END
+message.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/nextgen-reg-online/!svn/ver/20/trunk/templates/application/admin/message.html
+END
+register.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/20/trunk/templates/application/admin/register.html
+END
+meta.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/26/trunk/templates/application/admin/meta.html
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/26/trunk/templates/application/admin/header.html
+END
+home.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/26/trunk/templates/application/admin/home.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/20/trunk/templates/application/admin/login.html
+END
+master.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/26/trunk/templates/application/admin/master.html
+END

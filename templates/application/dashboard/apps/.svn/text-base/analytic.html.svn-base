@@ -1,0 +1,145 @@
+<div class="section">
+	<ul class="columns-content page-content clearfix">
+    	<div class="the-title fl">
+        	<h2 class="red">Summary</h2>
+    	</div>
+    	<div class="menu_charts">
+            	<form method="GET" action="{$basedomain}analytic" id="formdate" >
+					<input type="text"  id="from" name="startdate" value="{$startdate}"><span>-</span>
+					<input type="text"  id="to" name="enddate" value="{$enddate}"/>
+					<input type="submit" value="go" class="stdbtn btn_orange" />
+				</form>
+        </div>
+        <div class="boxBig">
+        	<div class="summary_box">
+            	<div class="summary_stats">
+                	<h4>Unique Visitors</h4>
+                    <h1 class="brown">{$gaData.numUniqueVisitor}</h1>
+                </div>
+                <div class="summary_stats">
+                	<h4>Avg. Visit Duration</h4>
+                    <h1 class="brown">{$gaData.numVisitDuration}</h1>
+                </div>
+            </div><!--end>summary_box-->
+            <div class="summary_box center_box">
+            	<div class="summary_center">
+                    <div class="summary_stats">
+                        <h4>Visits</h4>
+                        <h1 class="brown">{$gaData.numVisits}</h1>
+                    </div>
+                    <div class="summary_stats">
+                        <h4>Avg. Time On Page</h4>
+                        <h1 class="brown">{$gaData.numTimeOnPage}</h1>
+                    </div>
+                </div>
+            </div><!--end>summary_box-->
+            <div class="summary_box">
+            	<div class="summary_stats">
+                	<h4>Pageviews</h4>
+                    <h1 class="brown">{$gaData.numPageViews}</h1>
+                </div>
+                <div class="summary_stats">
+                	<h4>Bounce Rate</h4>
+                    <h1 class="brown">{$gaData.numBounceRate}%</h1>
+                </div>
+            </div><!--end>summary_box-->
+        </div><!--end.boxBig-->
+        <div class="accordion">                           
+            <h3 class=""><span>Visits</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide2" href="#">hide</a> </h3>
+            <div class="acc_section">
+            	<div class="chart_section" id="visit">
+                </div>         
+            </div><!--end.acc_section-->
+            <h3 class=""><span>Pageviews</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide2" href="#">hide</a> </h3>
+            <div class="acc_section">
+            	<div class="chart_section" id="pageview">
+                </div>    
+            </div><!--end.acc_section-->
+            <h3 class=""><span>Avg. Visit Duration</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide2" href="#">hide</a> </h3>
+            <div class="acc_section">
+                <div class="chart_section" id="avgVisit">
+                </div>    
+            </div><!--end.acc_section-->
+            <h3 class=""><span>Avg. Time On Page</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide2" href="#">hide</a> </h3>
+            <div class="acc_section">
+                <div class="chart_section" id="avgTimeonpage">
+                </div>    
+            </div><!--end.acc_section-->
+            <h3 class=""><span>Bounce Rate</span>
+            <a class="icon_arrow expand" href="#">Click to Expand</a>
+            <a class="icon_arrow_grey hide2" href="#">hide</a> </h3>
+            <div class="acc_section">
+                <div class="chart_section" id="bounceRate">
+                </div>    
+            </div><!--end.acc_section-->
+    	</div><!---end.accodrion-->
+    </ul><!---end.columns-content page-content clearfix-->
+</div><!--end.section-->
+
+<script type="text/javascript">
+
+		var gaData = {$dataChart|@json_encode};
+		
+{literal}	
+$(function () {
+
+
+	var visitData = new Array();
+	var visitLabel = new Array();		
+	
+	var pageViewData = new Array();
+	var pageViewLabel = new Array();
+	
+	var avgVisitData = new Array();
+	var avgVisitLabel = new Array();
+	
+	var avgTopData = new Array();
+	var avgTopLabel = new Array();
+	
+	var BounceData = new Array();
+	var BounceLabel = new Array();
+	
+    for (var visitChart in gaData.data.visit){
+			visitData.push(parseInt(gaData.data.visit[visitChart]));
+			visitLabel.push(String(visitChart));
+		}
+		
+	for (var pageViewChart in gaData.data.page_views){
+			pageViewData.push(parseInt(gaData.data.page_views[pageViewChart]));
+			visitLabel.push(String(pageViewChart));
+		}
+	
+	for (var avgVisitChart in gaData.data.visitDuration){
+			avgVisitData.push(parseInt(gaData.data.visitDuration[avgVisitChart]));
+			avgVisitLabel.push(String(avgVisitChart));
+		}
+		
+	for (var avgtopChart in gaData.data.time_onPage){
+			avgTopData.push(parseInt(gaData.data.time_onPage[avgtopChart]));
+			avgTopLabel.push(String(avgtopChart));
+		}
+	
+	for (var bounceChart in gaData.data.bounce_rate){
+			BounceData.push(parseInt(gaData.data.bounce_rate[bounceChart]));
+			BounceLabel.push(String(bounceChart));
+		}
+	    
+	gethighChart('line','test  Chart','visit',visitData,visitLabel,1,true);
+	gethighChart('line','test  Chart','pageview',pageViewData,visitLabel,1,true);
+	gethighChart('line','test  Chart','avgVisit',avgVisitData,avgVisitLabel,1,true);
+	gethighChart('line','test  Chart','avgTimeonpage',avgTopData,avgTopLabel,1,true);
+	gethighChart('line','test  Chart','bounceRate',BounceData,BounceLabel,1,true);
+	
+	//drillDownChart('column','test Chart','container',dataCoba,cateActivityGroup,1 ,false);
+	});
+		
+</script>
+{/literal}

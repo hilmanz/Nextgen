@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/nextgen-reg-online/!svn/ver/26/trunk/templates/application/admin/apps
+END
+registrant-management.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/nextgen-reg-online/!svn/ver/26/trunk/templates/application/admin/apps/registrant-management.html
+END
+break-doubt.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nextgen-reg-online/!svn/ver/26/trunk/templates/application/admin/apps/break-doubt.html
+END
+administrator-home.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/nextgen-reg-online/!svn/ver/20/trunk/templates/application/admin/apps/administrator-home.html
+END
+list-user.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/nextgen-reg-online/!svn/ver/26/trunk/templates/application/admin/apps/list-user.html
+END
+changepassword.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/nextgen-reg-online/!svn/ver/20/trunk/templates/application/admin/apps/changepassword.html
+END
+find-what-missing.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/nextgen-reg-online/!svn/ver/26/trunk/templates/application/admin/apps/find-what-missing.html
+END
+item-management.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/nextgen-reg-online/!svn/ver/20/trunk/templates/application/admin/apps/item-management.html
+END
+facemaker-pages.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/nextgen-reg-online/!svn/ver/26/trunk/templates/application/admin/apps/facemaker-pages.html
+END

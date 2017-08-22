@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/nextgen-reg-online/!svn/ver/2/trunk/templates/xml/Avo_Content_Article
+END
+articleGroup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nextgen-reg-online/!svn/ver/2/trunk/templates/xml/Avo_Content_Article/articleGroup.xml
+END
+article.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/templates/xml/Avo_Content_Article/article.xml
+END
+articlePublished.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/nextgen-reg-online/!svn/ver/2/trunk/templates/xml/Avo_Content_Article/articlePublished.xml
+END
+articleRelated.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/2/trunk/templates/xml/Avo_Content_Article/articleRelated.xml
+END
+comments.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/nextgen-reg-online/!svn/ver/2/trunk/templates/xml/Avo_Content_Article/comments.xml
+END
+articleComment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/2/trunk/templates/xml/Avo_Content_Article/articleComment.xml
+END
+articleTotal.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/nextgen-reg-online/!svn/ver/2/trunk/templates/xml/Avo_Content_Article/articleTotal.xml
+END
+articleByGroup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/nextgen-reg-online/!svn/ver/2/trunk/templates/xml/Avo_Content_Article/articleByGroup.xml
+END
+articleById.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/nextgen-reg-online/!svn/ver/2/trunk/templates/xml/Avo_Content_Article/articleById.xml
+END

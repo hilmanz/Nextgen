@@ -1,0 +1,52 @@
+<div class="theContent">
+    {if $msg}<div class="notibar msgalert"><p>{$msg}</p></div>{/if}
+    <div class="theTitle">
+        <h2>ADMINISTRATIVE ACCOUNTS (Permission settings for &quot;{$rs.username}&quot;)</h2>
+        <a href="?s=admin&amp;r=users&amp;do=new" class="btn btn_pencil"><span>New User Account</span></a>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+        <thead>
+            <tr>        
+                <th class="head0">Section</th>
+              <th class="head1">Permission</th>
+                <th class="head1">Content Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <form action="" method="post">
+              {section name=i loop=$list}
+				<tr>
+					<td>{$list[i].description|stripslashes}</td>
+					<td>
+						<input name="{$list[i].requestID}" type="radio" value="yes" {if $list[i].isAllowed}checked{/if}>
+						<label>Yes </label>
+						<input name="{$list[i].requestID}" type="radio" value="no" {if $list[i].isAllowed}{else}checked{/if}>
+						<label>No</label> 
+					</td>
+					<td>
+						<div style="width: 500px; overflow: auto;">
+							{foreach from=$list[i].category key=k item=v}
+								{if $v}
+									{if $k == $cat_role.$k}
+									<div><input type="checkbox" value="{$k}" name="category[]" checked="checked"/>{$v}</div> 
+									{else}
+									<div><input type="checkbox" value="{$k}" name="category[]" id="uncheck">{$v} </div>
+									{/if}
+								{/if}
+							{/foreach}
+						</div>			
+					</td>
+				</tr>
+              {/section}
+              <input name="s" type="hidden" id="s" value="admin">
+              <input name="r" type="hidden" id="r" value="permission">
+              <input name="do" type="hidden" id="do" value="update">
+              <input name="id" type="hidden" id="id" value="{$rs.userID}">
+			  <input name="level" type="hidden" id="level" value="{$rs.level}"/>
+              <tr>
+            	<td colspan="3"><input type="submit" name="SAVE" id="SAVE"  class="stdbtn btn_orange"value="SAVE"></td>
+              </tr>
+            </form>
+        </tbody>
+    </table>
+</div><!--theContent-->

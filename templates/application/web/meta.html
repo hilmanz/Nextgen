@@ -1,0 +1,113 @@
+<meta charset="utf-8">
+<title>BEAT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" type="img/png" href="{$assets_domain}img/favicon.png">
+<!-- Styles -->
+<link href="{$assets_domain}css/bootstrap.css" rel="stylesheet">
+<link href="{$assets_domain}css/bootstrap-responsive.css" rel="stylesheet">
+<link href="{$assets_domain}css/bootstrap-overrides.css" rel="stylesheet">
+
+<link href="{$assets_domain}css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+
+<link href="{$assets_domain}js/plugins/msgGrowl/css/msgGrowl.css" rel="stylesheet">
+<link href="{$assets_domain}js/plugins/msgAlert/css/msgAlert.css" rel="stylesheet">
+<link href="{$assets_domain}js/plugins/timepicker/jquery.ui.timepicker.css" rel="stylesheet"> 
+<link href="{$assets_domain}js/plugins/lightbox/themes/evolution-dark/jquery.lightbox.css" rel="stylesheet">  
+<link href="{$assets_domain}js/plugins/colorpicker/css/colorpicker.css" rel="stylesheet">
+<link href="{$assets_domain}js/plugins/timepicker/jquery-ui-timepicker-addon.css" rel="stylesheet">
+
+<link href="{$assets_domain}js/plugins/datatables/DT_bootstrap.css" rel="stylesheet">
+<link href="{$assets_domain}js/plugins/responsive-tables/responsive-tables.css" rel="stylesheet"> 
+<link href="{$assets_domain}js/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+<link href="{$assets_domain}js/plugins/customform/file-input.css" rel="stylesheet">
+
+<link href="{$assets_domain}css/flexslider.css" rel="stylesheet">
+<link href="{$assets_domain}css/ie-beat.css" rel="stylesheet">
+<link href="{$assets_domain}css/beat.css" rel="stylesheet">
+<link href="{$assets_domain}css/beat-responsive.css" rel="stylesheet"> 
+<link href="{$assets_domain}css/pages/ui-elements.css" rel="stylesheet">
+<link href="{$assets_domain}css/pages/calendar.css" rel="stylesheet">
+<link href="{$assets_domain}css/icon.css" rel="stylesheet">
+
+<!-- Javascript -->
+<script src="{$assets_domain}js/jquery-1.7.2.min.js"></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js'></script>
+<script src="{$assets_domain}js/jquery.ui.touch-punch.min.js"></script>
+<script src="{$assets_domain}js/bootstrap.js"></script>
+<script src="{$assets_domain}js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/jquery.effects.core.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/jquery.effects.shake.js"></script>
+
+<script src="{$assets_domain}js/plugins/enhance/enhance.js"></script>
+<script src="{$assets_domain}js/plugins/msgGrowl/js/msgGrowl.js"></script>
+<script src="{$assets_domain}js/plugins/msgAlert/js/msgAlert.js"></script>
+<script src="{$assets_domain}js/plugins/timepicker/jquery-ui-timepicker-addon.js"></script>
+<script src="{$assets_domain}js/plugins/timepicker/jquery-ui-sliderAccess.js"></script>
+<script src="{$assets_domain}js/plugins/colorpicker/js/bootstrap-colorpicker.js"></script>
+<script src="{$assets_domain}js/plugins/lightbox/jquery.lightbox.min.js"></script>
+
+<script src="{$assets_domain}js/plugins/datatables/jquery.dataTables.js"></script>
+<script src="{$assets_domain}js/plugins/datatables/DT_bootstrap.js"></script>
+<script src="{$assets_domain}js/plugins/responsive-tables/responsive-tables.js"></script>
+
+<script src="{$assets_domain}js/plugins/excanvas/excanvas.min.js"></script>
+<script src="{$assets_domain}js/plugins/fullcalendar/fullcalendar.min.js"></script>
+<script src="{$assets_domain}js/plugins/customform/customform.js"></script>
+<script src="{$assets_domain}js/plugins/customform/jQuery.fileinput.js"></script>
+<script src="{$assets_domain}js/plugins/flexslider/jquery.flexslider-min.js"></script>
+
+<script src="{$assets_domain}js/lib/ui-elements.js"></script>
+<script src="{$assets_domain}js/lib/tables.js"></script>
+
+
+<script src="{$assets_domain}js/beat.js"></script>
+
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script type="text/javascript" src="{$assets_domain}js/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JS library -->
+<script>
+	var basedomain = "{$basedomain}" ;
+	var pages = "{$pages}" ;
+	var locale = {$locale|@json_encode};
+</script>
+<script type="text/javascript" src="{$assets_domain}js/jquery.form.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/jquery.Jcrop.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/kipagination.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/helper/contentHelper.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/helper/userHelper.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/helper/cropperHelper.js"></script>
+<script type="text/javascript" src="{$assets_domain}js/views/contentviews.js"></script> 
+
+<script type="text/javascript" src="{$assets_domain}js/chart/highcharts.js"></script> 
+
+
+<!--- END ---->
+
+{literal}
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#datepicker").datepicker({dateFormat:"yy-mm-dd"});	
+	});
+{/literal}
+</script>
+{literal}
+<script type="text/javascript">
+jQuery(document).ready(function($) {  
+	if( $('#loginBeat').length > 0){
+		$('#loginBeat').validate({
+			invalidHandler: function(form, validator) {
+				var errors = validator.numberOfInvalids();
+				if (errors) {
+					$( "#loginBeat" ).effect('shake', {times: 2, distance: 7}, 50);
+				}
+			}
+		});
+	}
+  
+});
+</script>
+{/literal}

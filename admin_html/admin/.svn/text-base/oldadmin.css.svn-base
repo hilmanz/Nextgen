@@ -1,0 +1,364 @@
+
+/*
+    @acit 12032010 update CSS amild
+*/
+
+
+img {
+	border:none;
+}
+.pink {
+	color:#ce6898;
+}
+.red {
+	color: #CC0000;
+}
+.titlepage{
+	font-size:14px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+#top {
+	width:70%; height:60px;
+	float:left;
+	padding:45px 0 0 30px;
+	margin-bottom:15px;
+}
+#topmenu ul {
+	list-style:none;
+}
+#topmenu ul li {
+	float:right;
+	margin:0 10px 0 0;
+	*margin:0 2px 0 0;
+    _margin:0 2px 0 0;
+    _margin:0 2px 0 0;
+	}
+.mainNav {
+	height:24px;
+	background:url(images/shd-mainNav.png) repeat-x bottom;
+	clear:both;
+	padding:10px 30px 0 30px;
+}
+.mainNav ul {
+	margin:0 0 0 40px;
+	padding:0;
+	list-style:none;
+}
+.mainNav ul li {
+	float:left;
+	margin-right:5px;
+}
+.mainNav ul li a {
+	color:#860040;
+	margin-right:5px;
+}
+.welcome {
+	width:150px; height:20px;
+	background:url(images/welcome.gif) bottom left no-repeat;
+	padding:0 0 20px 30px;
+	margin:20px 0 0 10px;
+}
+.quicktitle {
+	color:#be4281;
+	font-size:14px;
+	font-weight:bold;
+	margin-left:40px;
+}
+.quick {
+	background-color:#f7f7f7;
+	margin-left:30px;
+	width:340px;
+	padding:0 20px 40px 20px;
+	-moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	 border-radius: 7px;
+}
+#content {
+	margin:20px 30px 30px 30px;
+	height:auto!important;
+	display:block;
+	clear:both;
+	overflow:auto;
+}
+#MainContent {
+	background:#FFFFFF;
+}
+.tag,.tagEdit {
+	background:#f7f7f7;
+	-moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	 border-radius: 7px;
+	 padding:20px;
+	 margin-top:30px;
+}
+.tagEdit { margin:0;}
+/*------------------------------Button Style-----------------------------*/
+a.addSubPage {
+	display:block;
+	background:url(images/plus.png) no-repeat left;
+	*background:url(images/plus.gif) no-repeat left;
+	_background:url(images/plus.gif) no-repeat left;
+	_background:url(images/plus.gif) no-repeat left;
+	height:15px;
+	padding:0 0 0 15px;
+	float:left;
+	margin-right:15px;
+}
+a.deletePage {
+	display:block;
+	background:url(images/cancel.png) no-repeat left;
+	*background:url(images/cancel.gif) no-repeat left;
+	_background:url(images/cancel.gif) no-repeat left;
+	_background:url(images/cancel.gif) no-repeat left;
+	height:15px;
+	padding:0 0 0 15px;
+	float:left;
+	margin-right:15px;
+}
+a.publish {
+	display:block;
+	background:url(images/yes.png) no-repeat left;
+	*background:url(images/yes.gif) no-repeat left;
+	_background:url(images/yes.gif) no-repeat left;
+	_background:url(images/yes.gif) no-repeat left;
+	height:15px;
+	padding:0 0 0 15px;
+	float:left;
+	margin-right:15px;
+}
+a.upblish {
+	display:block;
+	background:url(images/minus.png) no-repeat left;
+	*background:url(images/minus.gif) no-repeat left;
+	_background:url(images/minus.gif) no-repeat left;
+	_background:url(images/minus.gif) no-repeat left;
+	height:15px;
+	padding:0 0 0 15px;
+	float:left;
+	margin-right:15px;
+}
+a.account {
+	background:url(images/acoount.png) left no-repeat;
+	display:block; width:105px; height:20px;
+	padding:15px 0 0 40px; color:#666666; text-decoration:underline;
+	margin:25px 0 0 0;
+}
+a.account:hover {
+	text-decoration:none;
+	color:#ce6898;
+}
+a.backAccount,a.newUserAccount,a.newGroup{
+	background: url(images/back-account-list.gif) left no-repeat;
+	display:block; width:181px; height:30px; text-decoration:none;
+}
+a.newUserAccount{
+	background: url(images/new-user-account.gif) left no-repeat;
+	margin-top:30px;
+}
+a.newGroup, a.newArticle, a.newArticleBig, a.downloadManual,a.contactSupport, a.manageUser,a.showPages,a.grouping, a.managePartner, a.productRequest, a.manageStaticpage, a.help{
+	background: url(images/new-gorup.gif) left no-repeat;
+	margin-top:20px; padding:2px 0 0 25px; height:18px;
+	font-weight:bold; text-decoration:underline;
+	display:block; color:#999999;
+}
+a.newArticle {
+	background:url(images/new-article.gif) left no-repeat;
+	padding:0 0 0 25px;
+}
+a.newGroup:hover, a.newArticle:hover, #mainright a:hover, #iconDash a:hover{
+	text-decoration:none;
+}
+a.newGroup, a.newArticle, #mainright a, #iconDash a{
+	margin-bottom:7px;
+}
+.update {
+	width:59px; height:22px; background: url(images/btn_update.gif) no-repeat;
+	display:block; border:none;
+}
+a.newArticleBig {
+	background:url(images/create-article.gif) left no-repeat;
+}
+a.downloadManual {
+	background:url(images/download_manual.gif) left no-repeat;
+}
+a.contactSupport {
+	background:url(images/contact_support.gif) left no-repeat;
+}
+a.manageUser {
+	background:url(images/user_icon.gif) left no-repeat;
+}
+a.showPages {
+	background:url(images/show_pages.gif) left no-repeat;
+}
+a.grouping {
+	background:url(images/show_group.gif) left no-repeat;
+}
+a.managePartner {
+	background:url(images/manage_partner.gif) left no-repeat;
+}
+a.productRequest {
+	background:url(images/product_request.gif) left no-repeat;
+}
+a.manageStaticpage {
+	background:url(images/manage-page.gif) left no-repeat;
+}
+a.help {
+	background:url(images/help_icon.gif) left no-repeat;
+}
+/*------------------------------Table Style-----------------------------*/
+tr.head, td.head {
+	height:27px;
+	background:url(images/table.gif) repeat-x;
+	text-shadow:1px 1px 1px #cccccc;
+	font-weight:bold;
+}
+tr.ganjil, tr.oddRow {
+	background:#F1F1F1;
+}
+tr.genap, tr.evenRow {
+	background:#FBFBFB;
+}
+table.list td,table.addlist td {	
+	border-bottom: solid 1px #eaeaea;
+	border-left: solid 1px #eaeaea;
+	padding:8px;
+}
+table.list tr:hover {
+	background-color:#e9d6d7;
+}
+table.list,table.addlist, table.zebra {
+	border: solid 1px #eaeaea;
+	border-left:none;
+	border-bottom:none;
+	width:100%;
+}
+tr.ganjil, tr.oddRow {
+	background:#F1F1F1;
+}
+tr.genap, tr.evenRow {
+	background:#FBFBFB;
+}
+table.zebra {
+	border-right:none;
+}
+table.zebra td {
+	border-right:solid 1px #eaeaea;
+}
+input[type=file] {
+}
+input[type=text], input[type=password], input.text, input.title {
+	border: solid 1px #dfdfdf; height:20px; padding:3px 3px 2px 3px;
+	background:url(images/input_bg.gif) repeat-x;
+}
+input[type=text]:focus, input[type=password]:focus, input.text:focus, input.title:focus, textarea:focus, select:focus {
+	border: solid 1px #e258bb;
+}
+textarea, select {
+	border: solid 1px #dfdfdf; padding:3px 3px 2px 3px;
+}
+#divinputfile{
+	background:url(images/upload_file.gif) no-repeat 100% 1px;
+	height:28px;
+	width:385px;
+	margin:0px;
+}
+
+#divinputfile #file{
+	opacity: 0.0;
+	-moz-opacity: 0.0;
+	filter: alpha(opacity=00);
+	font-size:18px;
+}
+
+#fakeinputfile{
+	margin-top:-20px;
+}
+
+#fakeinputfile #fakefilepc{
+	width:265px;
+	height:17px;
+	font-size:11px;
+	padding-top:5px;
+}
+#mainleft {
+	width:70%;
+	min-height:500px;
+	display:block;
+	float:left;
+	height:auto!important;
+}
+#mainright {
+	display:block;
+	width:210px;
+	min-height:500px;
+	float:right;
+	height:!important;
+}
+/*------------------------------dashboard Style-----------------------------*/
+#dashboardHead {
+	width:100%;
+	height:70px;
+	border-bottom: dotted 1px #dfdfdf;
+	margin-bottom:20px;
+}
+#webname {
+	width:350px;
+	height:60px;
+	float:left;
+}
+#webname h1 {
+	font-size:25px; margin:0;
+	color:#9e2c64;
+	text-shadow:1px 1px 1px #cccccc;
+}
+#webname h2, #recentActivity h2, #statistic h2 {
+	margin:0; font-size:12px;
+	text-indent:5px;
+	text-shadow:1px 1px 1px #cccccc;
+}
+#weblogo {
+	width:350px;
+	height:60px;
+	float:right;
+	text-align:right;
+}
+#weblogo img {
+	height:60px;
+	border:none;
+}
+#recentActivity {
+	float:left;
+	min-height:400px;
+	width:70%;
+	height:auto!important;
+/*	-moz-box-shadow:0px 2px 5px 3px  #efefef;*/
+}
+#nextPage {
+	width:100%;
+	padding:7px 0;
+	text-align:center;
+}
+#nextPage a {
+	padding:5px;
+}
+#dashboardRight {
+	float:right;
+	width:25%;
+/*	-moz-box-shadow:0px 2px 5px 3px  #efefef;*/
+}
+#statistic,#iconDash {
+	width:100%;
+}
+#iconDash {
+	/*height:100px;*/
+	margin-top:20px;
+}
+#popup_preview {
+	position:absolute;z-index:999;top:0;left:0;width:1000px;height:500px;padding:10px;;background-color:#fff;border:1px solid #000;
+}
+#preview {
+	overflow:auto;width:950px;height:450px;border:1px #000 solid;
+}

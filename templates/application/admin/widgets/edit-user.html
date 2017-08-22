@@ -1,0 +1,133 @@
+{literal}
+<style>
+#selectfid{width:170px}
+#selectfidbrand{width:170px}
+#selectfidarea{width:170px}
+#selectfidpl{width:170px}
+#selectfidba{width:170px}
+</style>
+{/literal}
+<div id="theContainer2" class="galleryPage">
+    <div class="theContainer2">
+        <div class="theContent2">
+        	<div class="col-content">
+                <div class="theBox register-box2">
+                    <div class="theBox-title">
+                        <h2 class="fl">USER UPDATE</h2>
+                       
+                    </div><!-- /.theBox-title -->
+                    <div class="theBox-content">
+                        <div class="forms">
+                        	<a class="btnback" href="{$basedomain}administrator/users" ></a>
+<form style="overflow:hidden;" class="former" id="registerent" action="{$basedomain}administrator/doregister"  method="POST" >
+				<div class="formRegister2">
+                   	<div class="col2s">
+                    	<div class="rows2">
+                        	<label class="bluecolor">ROLE</label><br />
+                            <div class="selectRegister">
+                                <select name="role" >
+									<option value="0" > - pick roles - </option>
+                                    {foreach $roles as $key => $val}
+									<option value="{$val.id}" {if $pagetype==$val.id}selected{/if} > {$val.name} </option>
+                                     {/foreach}
+                                         
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="rows2">
+                        	<label>USERNAME</label><br /><input class="inputRegister" type="text" name="username" value="{$username}" disabled="disabled" />
+                        </div>
+                        <div class="rows2">
+                        	<label>NEW PASSWORD</label><br /><input class="inputRegister" type="password" name="password" value=""  />
+                        </div>
+						<div class="rows2">
+                        	<label class="confirmPass">CONFIRM PASSWORD</label><br /><input class="inputRegister" type="password" name="repassword" />
+                        </div>
+                   	</div><!-- /.col2s -->
+                   	<div class="col2s col2s-last">
+					  <div class="rows2 passwordrows">
+                        	<label>EMAIL</label><br /><input class="inputRegister" type="text" name="emailnottoedit" value="{$email}"  disabled="disabled" />
+							
+                        </div>
+						<div class="rows2">
+                        	<label>NICKNAME</label><br /><input class="inputRegister" type="text" name="nickname" value="{$nickname}"  />
+	
+                        </div>
+                        <div class="rows2">
+                        	 <label>NAME</label><br /><input class="inputRegister" type="text" name="name" value="{$name}" />
+                        </div>
+                       
+                        <div class="rows2">
+                        	<label>LASTNAME</label><br /><input class="inputRegister" type="text" name="lastname"  value="{$last_name}" />
+                        </div>
+                        <div class="rows2">
+                        	<label>GENDER</label><br />  					
+                        	<input type="radio" name="sex" value="Male" {if $sex=='Male'}checked{/if} /> MALE 
+                        	<input type="radio" name="sex" value="Female" {if $sex=='Female'}checked{/if} /> FEMALE
+                        </div>
+                      
+                       
+                    
+                	</div><!-- /.col2s -->
+                </div> <!-- /.formRegister2 -->
+				<div style="padding:10px;border-collapse:collapse;">   
+				<input type="hidden" value="1" name="register">
+				<input  type="hidden" name="email" value="{$email}"   />
+				</div>
+				<input type="hidden" value="1" name="edit">
+                <input class="button update-button fl" type="submit" value="Update">
+                </div>
+				 
+				  
+				  
+				</form>
+				
+                        </div> <!-- /.forms -->
+                    </div> <!-- /.theBox-content -->
+                </div> <!-- /.theBox -->
+            </div><!-- /.col-content -->
+          
+        </div> <!-- /.theContent2 -->
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
+
+<div id="popup-message">
+    <h3></h3>
+    <a class="button close-popup-message" href="{$basedomain}administrator/users">OK</a>
+</div>
+<div id="bg-popups"></div>
+
+
+<script>
+ 
+
+{literal}
+ 
+	var updateoptions = {
+						dataType : "html",
+						beforeSubmit: function(data) {
+                             $("#bg-popups").fadeIn();
+                            $("#popup-message h3").html('Loading...');
+                             $("#popup-message").fadeIn();
+                             $(".close-popup-message").hide();
+                                        //$('#kluardisini').html("<blink>loading please wait</blink>");
+                            },
+                        success : function(data) {  
+                            $("#bg-popups").fadeIn();
+                            $("#popup-message h3").html(data);
+                            $("#popup-message").fadeIn();
+                            $(".close-popup-message").show();
+                                    // $('#kluardisini').html("<p>"+data+"</p>");
+                        }
+					};					
+					
+
+$("#registerent").ajaxForm(updateoptions );
+
+ 
+
+
+</script>
+
+{/literal}

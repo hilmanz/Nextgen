@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Iterators
+END
+MultiBulkResponseSimpleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Iterators/MultiBulkResponseSimpleTest.php
+END
+MultiBulkResponseTupleTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/nextgen-reg-online/!svn/ver/2/trunk/engines/Utility/Predis/tests/Predis/Iterators/MultiBulkResponseTupleTest.php
+END

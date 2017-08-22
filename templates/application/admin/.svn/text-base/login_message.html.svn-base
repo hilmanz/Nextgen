@@ -1,0 +1,4 @@
+<div class="loaders">
+<div>{$msg}</div>
+<img style="width:48px !important; height:48px !important; " src="{$basedomain}assets/images/loader.gif">
+</div>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/nextgen-reg-online/!svn/ver/20/trunk/admin_html/service
+END
+crossdomain.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/20/trunk/admin_html/service/crossdomain.xml
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/nextgen-reg-online/!svn/ver/20/trunk/admin_html/service/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/nextgen-reg-online/!svn/ver/20/trunk/admin_html/service/index.php
+END
+common.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/nextgen-reg-online/!svn/ver/20/trunk/admin_html/service/common.php
+END

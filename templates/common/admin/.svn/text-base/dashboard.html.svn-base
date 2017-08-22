@@ -1,0 +1,41 @@
+<div class="theContent">
+    <div class="theTitle">
+        <h2>DASHBOARD</h2>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable inputable">
+        <tbody>
+            <tr>
+                <td>
+                	<a href="index.php?s=article" class="btn btn_document"><span>News & Article</span></a>
+                   	<a href="index.php?s=banner" class="btn btn_flag"><span>Banner</span></a>
+                	<a href="index.php?s=article" class="btn btn_users"><span>User Contents</span></a>
+					<a href="index.php?s=article" class="btn btn_users"><span>User Uploads</span></a>
+					
+                </td>
+            </tr>
+			 <tr>
+                <td>
+                	<a href="index.php?s=event" class="btn btn_document"><span>Event & Contest</span></a>
+                   	<a href="index.php?s=galerry" class="btn btn_flag"><span>Gallery</span></a>
+                
+					
+                </td>
+            </tr>
+        </tbody>
+    </table><br /><br />
+    <div class="theTitle">
+        <h2>ARTICLE STATISTIK</h2>
+    </div><!--contenttitle-->
+    <table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable inputable">
+        <tbody>
+            <tr>
+                <td>
+					<font size="3" style="font-weight: bold;">Total Article Unpublish ({$jml_unpublish})</font>&nbsp;&nbsp;&nbsp;<font size="3" style="font-weight: bold;">|</font>&nbsp;&nbsp;&nbsp;
+					<font size="3" style="font-weight: bold;">Total Article Publish ({$jml_publish})</font>&nbsp;&nbsp;&nbsp;<font size="3" style="font-weight: bold;">|</font>&nbsp;&nbsp;&nbsp;
+					<font size="3" style="font-weight: bold;">Total Article Inactive ({$jml_inactive})</font>&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table><br /><br />
+    
+</div><!--theContent-->

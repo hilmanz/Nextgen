@@ -1,0 +1,585 @@
+/*
+Theme Name: AMUSIC NETWORK MOP
+Version: 1.0.1
+Author: ACIT JAZZ - 2012
+*/
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,300,300italic);
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url('../font/bebasneue-webfont.eot');
+	src: url('../font/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../font/bebasneue-webfont.woff') format('woff'),  
+	     url('../font/bebasneue-webfont.ttf') format('truetype'),  
+	     url('../font/bebasneue-webfont.svg#BebasNeueRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background:url(../images_mop/bg.jpg) center top #fff;
+	font-family: 'BebasNeueRegular','Oswald', "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#000;
+	font-size:16px;
+	height:100%;
+	line-height:1.4;
+	margin:0;
+}
+body.landingPage{
+	background: url(../images_mop/login_box.jpg) no-repeat #fff center top;
+}
+#lst_EmailList {
+	min-width:100px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	font-family: 'BebasNeueRegular','Oswald', "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+a {
+	outline:none;
+	color:#C00;
+}
+.intro h1,.intro h2,.intro p{
+	margin:0;
+}
+.intro h1,.intro h2{
+	font-size:50px;
+}
+.header,.content,.footer{
+	width:900px;
+	padding:0 20px;
+	margin:0 auto;
+}
+.landingPage .mainPage {
+	background:none;
+	min-height:600px;
+	width:900px;
+	padding:0 30px;
+	margin:0 auto;
+	overflow:hidden;
+	text-align:center;
+}
+#ErrorPage .mainPage {
+	min-height:600px;
+	width:900px;
+	padding:0 120px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.header{
+	padding:20px 0;
+}
+#CompleteTempUser .mainPage a {
+	color:#fff;
+	text-decoration:none;
+}
+#forgottenPassword .submit #lnkBtnSubmit {
+	margin:0;
+}
+#forgottenPassword .submit a, #reg1 .submit a, #reg2 .submit a, #ReferFriend .submit a {
+	color:#FFF;
+	text-decoration:none;
+}
+
+.r3WebcamSection a, .r3UploadSection a, .r3FaxSection a {
+	color:#FFF;
+	text-decoration:none;
+}
+.submit #lnkSubmit {
+	margin:0;
+	color:#FFF;
+}
+#forgottenPassword #lnkBtnSubmit {
+	background: none repeat scroll 0 0 #CC0000;
+	display: inline;
+	height: 28px;
+	padding: 1px 15px 7px;
+	text-decoration: none;
+	text-indent: 0;
+	position:relative;
+	right:auto;
+}
+#forgottenPassword .submit{
+	padding:10px 0;
+}
+#forgottenPassword #lnkBtnSubmit:hover {
+	background: none repeat scroll 0 0 #F00;
+}
+#forgottenPassword #lnkBtnSubmit {
+	margin:0 0 0 88px;
+}
+#lnkSubmit {
+	background: none repeat scroll 0 0 #CC0000;
+	display: inline;
+	height: 28px;
+	padding: 1px 15px 7px;
+	text-decoration: none;
+	text-indent: 0px;
+	float:right;
+}
+#lnkSubmit:hover {
+	background: none repeat scroll 0 0 #F00;
+}
+#lnkSubmit {
+	margin:0 0 0 88px;
+}
+#forgottenPassword .submit #lnkSubmit,#forgottenPassword .submit #lnkBtnSubmit {
+	margin:0;
+	width:100px;
+	text-align:center;
+	float:left;
+	height:30px;
+}
+#forgottenPassword .clear{
+	clear:both;
+}
+#forgottenPassword #lnkSubmit {
+	background:#CC0000;
+	display: inline;
+	height: 280px;
+	padding: 1px 15px 7px;
+	text-decoration: none;
+	text-indent: 0px;
+	width:900px;
+}
+#forgottenPassword #lnkSubmit:hover {
+	background: none repeat scroll 0 0 #F00;
+}
+#forgottenPassword #lnkSubmit {
+	margin:0 0 0 88px;
+}
+.landingPage .content {
+	padding:180px 0 0 0;
+}
+.formLanding {
+	width:396px;
+	height:196px;
+	margin:0 auto;
+	padding:60px 0 0 0;
+	text-align:center;
+	position:relative;
+}
+.loginBoxTitle, #mainPanel, .registerBoxTitle {
+	display:none;
+	visibility:hidden;
+}
+.loginBox .row label {
+	display:none;
+	visibility:hidden;
+}
+.loginBox .row {
+	padding:0 0;
+	margin:0 0 10px 0;
+}
+.loginBox input[type=text], .loginBox input[type=password] {
+	width:185px;
+	padding:5px;
+	border:solid 1px #ccc;
+	height:20px;
+	font-size:16px;
+	margin:5px 0;
+}
+.loginBox input[type=text]:focus, .loginBox input[type=password]:focus {
+	border:solid 1px #000;
+}
+#txtUserName{
+}
+#lnkBtnSubmit {
+	background: none repeat scroll 0 0 #CC0000;
+    color: #FFFFFF;
+    display: block;
+    height: 25px;
+    padding-top: 4px;
+    position: absolute;
+    right: 100px;
+    text-decoration: none;
+    width: 197px;
+}
+#lnkBtnSubmit:hover {
+	background:#C00;
+}
+#lnkBtnRegister {
+	width:100%;
+	height:20px;
+	display:block;
+	position:absolute;
+	left:0;
+	top:200px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:11px;
+}
+#lnkBtnRegister:hover {
+	color:#333;
+}
+.smSubmit, #divRegisterBox {
+	float:left;
+	background:none;
+	width:180px;
+}
+.contentIntro{
+	margin:0 0 20px 0;
+}
+/* anchor */
+#lnkSubmitBtn,#lnkEditBtn,.submit a {
+	background:#C00;
+	height:26px;
+	color:white;
+	text-transform:uppercase;
+	cursor:pointer;
+	padding:5px 40px 10px 40px;
+	text-decoration:none;
+	display:table;
+	margin:2px;
+	font-size:24px;
+	float:left;
+}
+#lnkSubmitBtn:hover,#lnkEditBtn:hover,.submit a:hover {
+	background: #333;
+}
+#reg2 .submit {
+	background:none;
+	width:110px;
+}
+.r3UploadSection, .r3WebcamSection p {
+	color:#333;
+	text-decoration:none;
+}
+.r3UploadSection p{
+	margin:20px 20px;
+}
+.r3UploadSection .submit {
+	height: 40px;
+	padding:20px;
+}
+.r3WebcamSection p{
+	padding:0 20px;
+}
+.r3UploadSection .submit p {
+	margin:0;
+}
+/* end anchor*/
+
+#phPDFTitle p {
+	padding:0 20px;
+}
+.r3FaxSection .submit {
+	display:inline-block;
+	height: 40px;
+	padding:20px;
+}
+.r3FaxSection p{
+	margin:20px 0 0 20px;
+}
+.r3FaxSection .submit p {
+	margin:0;
+}
+#lnkBtnCaptureContinue {
+	background: none repeat scroll 0 0 #CC0000;
+	padding: 1px 10px 7px;
+	text-decoration: none;
+}
+#lnkBtnCaptureContinue:hover {
+	background: #F00;
+}
+.r3WebcamSection .submit {
+	float:left;
+	background:none;
+}
+#lnkBtnAccessWebCam {
+	background: none repeat scroll 0 0 #CC0000;
+	padding: 1px 10px 7px;
+	text-decoration: none;
+}
+#lnkBtnAccessWebCam:hover {
+	background: #F00;
+}
+#lnkBtnForgotPwd {
+	color: #CC0000;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	height:20px;
+	position:absolute;
+	top:218px;
+	text-decoration:underline;
+	left:0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:11px;
+}
+#lnkBtnForgotPwd:hover{
+	color:#333;
+}
+.forgottenpassword, .formLanding .error {
+	text-align:center;
+	width:386px;
+	font-size:10px;
+}
+.formLanding .error {
+	margin:-16px 0 0 0;
+	color:#C00;
+}
+.footer {
+	text-align:center;
+	padding:50px 0;
+	color:#999;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+}
+.footer .text {
+	font-size:12px;
+	margin:30px 0;
+}
+
+.footer p{
+	margin:0;
+}
+.footer .navigation{
+	margin:0;
+}
+.footer ul {
+	list-style:none;
+	margin:15px 0;
+	padding:0;
+}
+.footer ul li {
+	padding:0;
+	display:inline;
+}
+.footer ul li a {
+	color:#000;
+	font-size:12px;
+	text-decoration:none;
+	padding:0 7px;
+}
+.footer ul li a:hover {
+	color:#C00;
+}
+.submit {
+	background:none;
+}
+fieldset, .r3UploadSection, .r3FaxSection {
+	margin:20px 0;
+	background:#fff;
+	border:none;
+	box-shadow:0px 2px 5px 3px rgba(0,0,0,0.2);
+	padding:0;
+}
+fieldset h2, .r3UploadSection h2, .r3FaxSection h2 {
+	line-height:50px;
+	font-size:24px;
+	text-transform:uppercase;
+	color:#fff;
+	padding:0 20px;
+	margin:0;
+	background:#C00;
+}
+fieldset.spareSections h2 p {
+	color:#343434;
+	padding-left:200px;
+}
+fieldset.spareSections .row .error {
+	position:relative;
+}
+fieldset.spareSections .row .error #lblErrorSpareText5 {
+	display: block;
+	padding-top: 30px;
+}
+fieldset h2 p, .r3UploadSection h2 p, .r3FaxSection h2 p {
+	margin:0;
+}
+.r3FaxSection ol {
+	padding:0;
+	margin:0;
+	list-style:decimal;
+	color:#666;
+}
+.r3FaxSection ol li {
+	margin-left:40px;
+	padding:10px 0;
+}
+#Form1 .row, p.r3UploadSection, p.r3FaxSection, #phUploadingID p {
+	display:block;
+	clear:both;
+	padding:15px 25px;
+	color:#666;
+	font-size:16px;
+	background:url(../images_mop/darkdots.png) bottom repeat-x;
+	margin:0;
+	overflow:hidden;
+}
+.row label, .col_left, .fullWidthLabel {
+	display:inline-block;
+	width:40%;
+	float:left;
+	margin:0;
+}
+.row span{
+	width:30%;
+	float:left;
+}
+.row span.mandatory{
+	width:10px;
+	float:none;
+}
+.button{
+ 	background: none repeat scroll 0 0 #E40404;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'BebasNeueRegular',serif;
+    font-size: 12px;
+    height: 35px;
+    padding: 0 18px;
+}
+.button:hover{
+	background: none repeat scroll 0 0 #333333;
+}
+#lst_EmailList, #txt_EmailID{
+	margin:0 10px 0 0;
+}
+#ReferFriend span {
+	display:inline-block;
+	margin:0;
+}
+.row label.radio {
+	width:60px;
+	float:none;
+}
+.row table td {
+	text-align:center;
+}
+.row table td input[type=radio] {
+	margin:0;
+}
+.row table {
+	display:inline-block;
+}
+input[type=radio] {
+	margin:0 20px 0 0;
+}
+input[type=text],input[type=password] {
+	background: #f7f7f7;
+	border: #d4d8d9 1px solid;
+	font-size: 12px;
+	padding: 10px 7px 10px 7px;
+	color: #222;
+	width:50%;
+}
+select{
+	width:52%;
+}
+input.dob {
+	width:50px;
+}
+input[type=text]:focus, input[type=password]:focus, input.text:focus, input.title:focus, textarea:focus, select:focus {
+	border:solid 1px #C00;
+}
+input[type=submit]:focus {
+	border:solid 1px #C00;
+}
+.navigation{
+	margin:10px 0;
+}
+.navigation ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.navigation ul li {
+	display:inline;
+}
+.navigation ul li a {
+	padding:0 20px 0 0;
+	text-decoration:underline;
+	color:#999999;
+}
+.error {
+	margin:0;
+	color:#F00;
+	font-size:10px;
+}
+#ConfirmAbove18 {
+	display: table;
+	padding: 0 0 0 10px;
+	width: 90%;
+	float:left;
+}
+#chkConfirmAbove18{
+	float:left;
+}
+.phoneGroup, .example {
+	display: inline-block;
+}
+.contactDetails .checkboxLabel {
+	display:inline-block;
+	width:193px;
+	margin:0;
+}
+.contactDetails label.checkbox {
+	display:inline-block;
+	width:71px;
+	margin:0;
+}
+.contactDetails input[type=checkbox] {
+	display:inline-block;
+	width:12px;
+	margin:0;
+}
+.style1 {
+	margin:10px 0;
+	font-size:14px;
+	color:#999999;
+}
+/* Button */
+
+#UpdateProfileChange a#lnkSubmitBtn {
+	background: none repeat scroll 0 0 #CC0000;
+    color: white;
+    display: block;
+    height: 38px;
+    padding: 5px 1px 1px 11px;
+    text-decoration: none;
+    width: 60px;
+}
+#UpdateProfileChange a:hover#lnkSubmitBtn {
+	background: #F00;
+}
+#LightBox {
+	background-color: White;
+	display: block;
+	height: 420px;
+	left: 30%;
+	margin: 0 auto;
+	position: absolute;
+	top: 20%;
+	width: 740px;
+	z-index: 3001;
+}
+#LightBox #lbClose {
+	height: 7%;
+	width: 100%;
+}
+#LightBox #lbClose a {
+	background-color: #000;
+	color: white;
+	display: inline-block;
+	float: right;
+	font-weight: bold;
+	height: 24px;
+	padding-top: 5px;
+	text-align: center;
+	text-decoration: none;
+	width: 29px;
+}
+#ContentID {
+	height: 93%;
+	margin-left: 18px;
+	margin-right: 20px;
+	width: auto;
+}
+#phRadBtn{
+	font-size:24px;
+	padding:10px 20px;
+	display:block;
+}

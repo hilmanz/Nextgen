@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/nextgen-reg-online/!svn/ver/26/trunk/com/admin/helper
+END
+noWhiteSpaceHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/noWhiteSpaceHelper.php
+END
+activityHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/activityHelper.php
+END
+sharebragHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/sharebragHelper.php
+END
+AccessControlHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/AccessControlHelper.php
+END
+searchHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/searchHelper.php
+END
+saveEmailHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/saveEmailHelper.php
+END
+loginHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/loginHelper.php
+END
+contentHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/contentHelper.php
+END
+listuserHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/26/trunk/com/admin/helper/listuserHelper.php
+END
+trackingGPSHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/trackingGPSHelper.php
+END
+newsHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/newsHelper.php
+END
+dateHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/dateHelper.php
+END
+eventHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/eventHelper.php
+END
+botHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/botHelper.php
+END
+administrationHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/administrationHelper.php
+END
+permissionHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/permissionHelper.php
+END
+memcache_helper.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/memcache_helper.php
+END
+passwordHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/passwordHelper.php
+END
+VikiHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/VikiHelper.php
+END
+auctionHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/auctionHelper.php
+END
+badgeHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/badgeHelper.php
+END
+leaderboardHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/leaderboardHelper.php
+END
+aspirationHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/aspirationHelper.php
+END
+cpmooHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/cpmooHelper.php
+END
+userHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/userHelper.php
+END
+merchandiseHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/merchandiseHelper.php
+END
+SessionHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/SessionHelper.php
+END
+uploadHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/uploadHelper.php
+END
+registerHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/registerHelper.php
+END
+messageHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/messageHelper.php
+END
+notificationHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/notificationHelper.php
+END
+activityReportHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/nextgen-reg-online/!svn/ver/20/trunk/com/admin/helper/activityReportHelper.php
+END

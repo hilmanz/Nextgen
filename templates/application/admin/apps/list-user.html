@@ -1,0 +1,167 @@
+<script>
+	{literal}
+	
+	$(document).on('change','#status',function(){
+		var id = $(this).attr('prop'); 
+		var photo_moderation = $(this).val(); 
+		
+		$.post(basedomain+"listuser/ajaxconfirmed" ,{photo_moderation:photo_moderation, id:id}, function(confirmedajax){			
+			
+			if (photo_moderation == 1){
+				alert('photo verified');				
+			}else if(photo_moderation==0){
+				alert('pending');
+			}else{
+				alert('failed');
+			}
+			
+		},"JSON");
+	});
+	
+	{/literal}
+</script>
+
+{if $user->leaderdetail->type==1}
+<div id="theContainer" class="inboxPage">
+    <div class="theContainer">
+		<div class="head-title">
+			<h1 class="fl">This Page For Highest User Leveling Only.</h1>
+		</div>
+	</div>
+</div>
+{else}  
+<div id="theContainer" class="inboxPage">
+    <div class="theContainer">
+        <div class="head-title">
+            <h1 class="fl">List User</h1>
+        </div> <!-- /.head-title -->
+        <div class="short2">
+            <form method="POST" action="{$basedomain}listuser" id="shorter" class="formsubmitmanualmoderation" >
+                <div class="date-range fl"> 
+					{*}
+					<select class="styled" name="notiftype"   >
+						<option value=''>- Pilih Notif -</option>
+						<option value='1' {if $notiftype=='1'}selected{/if} >Badges</option>
+						<option value='2' {if $notiftype=='2'}selected{/if} >Trade</option>
+						<option value='3' {if $notiftype=='3'}selected{/if} >Admin</option>
+					</select>&nbsp;&nbsp;
+					{/*}
+					Timespan&nbsp;&nbsp;
+					<input type="text" class="half-width" id="datepicker" name="startdate" value="{$startdate}" style="width:100px" />
+					<span>to</span>
+					<input type="text" class="half-width" id="datepicker2" name="enddate" value="{$enddate}" style="width:100px"  />
+                </div>
+                <div class="input-append fr">
+                    <input type="text" size="16" id="search" name="search" class="span2" onfocus="if(this.value=='Search...')this.value='';" onblur="if(this.value=='')this.value='Search...';" value="{if $search}{$search}{else}Search...{/if}"/>
+					<input type="hidden" name="filter" value="searchform"/>
+					<button type="submit" class="btn">Go!</button>
+                </div>
+            </form>
+        </div><!-- /.short -->
+        <div class="theContent">
+			<table cellpadding="0" cellspacing="0" border="0" id="table1" class="stdtable">
+			<colgroup>
+				<col class="con0" style="width: 4%" />
+				<col class="con1" />
+				<col class="con0" />
+				<col class="con1" />
+				<col class="con0" />
+				<col class="con1" />
+				<col class="con0" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th class="head0">No</th>
+					<th class="head0">Name</th>
+					<th class="head0">Email</th>
+					<th class="head0">City</th> 
+					<th class="head0">Register Date</th> 
+					<th class="head0">Photo</th> 
+					<!-- <th class="head0">status</th>  -->
+				</tr>
+			</thead>
+			<tbody>
+				{if $list}
+					{section name=i loop=$list}
+					<tr>
+						<td width="10">{$list[i].no}&nbsp;<input type="hidden" name="id" value="{$list[i].id}"></td>
+						<td>{$list[i].name|capitalize} {$list[i].last_name|capitalize}</td>
+						<td>{$list[i].email}</td>
+						<td>{$list[i].cityname}</td>
+						<td>{$list[i].register_date}</td> 
+						<td><a href="javascript:void(0)" class="arkPopupImages" call="{if $list[i].image_profile == ''}{$basedomainpath}public_assets/profile/default.jpg{else}{$basedomainpath}public_assets/profile/{$list[i].image_profile}{/if}">
+						{if $list[i].image_profile == ''}<img height="70px" width="70px" src="{$basedomainpath}public_assets/profile/default.jpg" />{else}<img height="70px" width="70px" src="{$basedomainpath}public_assets/profile/{$list[i].image_profile} " />{/if}</a>
+						</td> 
+						{*}
+						<td align="center">
+							<select id="status"  prop="{$list[i].id}" >
+								<option value="" class="green" > - </option>
+								<option value="0" class="blue" {if $list[i].photo_moderation == 0} selected {/if}>Pending</option>
+								<option value="1" class="red" {if $list[i].photo_moderation == 1} selected {/if}>Verified</option>
+							</select>
+						</td>
+						{/*}
+					</tr>
+					{/section}
+				{/if}
+			</tbody>
+			</table>
+			{*}
+            <div class="pagingbox">
+                <a href="#" class="prev">&laquo; PREV</a>
+                <a href="#">1</a>
+                <a href="#" class="current">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#" class="next">NEXT &raquo;</a>
+            </div><!-- END .pagingbox -->{/*}
+        </div> <!-- /.theContent -->
+		<script>
+				var startdate = "{$startdate}";
+				var enddate = "{$enddate}";
+				var search = "{$search}";
+				var publishedtype = "{$publishedtype}";
+				{literal}
+					$(document).on('change','#publishedtype',function(){
+						$(".formsubmitmanualmoderation").submit();
+					})
+				{/literal}
+		</script>
+		{if $timeline}
+			{if $act !='galleryList'}
+				<div class="paging" id="pagingpostmoderation"></div> <!-- END .paging -->			
+				<script>				 
+					getpaging(0,{$total},"pagingpostmoderation","paging_ajax_postmoderation",10);
+				</script>
+		 
+			{else}
+				<div class="paging" id="pagingpostmoderation"></div> <!-- END .paging -->			
+				<script>
+					getpaging(0,{$total},"pagingpostmoderation","paging_ajax_gallerymoderation",10);
+				</script>
+			{/if}
+		{/if}
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
+
+
+{/if}
+
+
+	<script>
+		var searchType = '{$searchType}';
+	{literal}
+		$(document).on("change","#moderationtype",function(){
+			var modetype = $(this).val();
+			window.location = basedomain+"moderation/"+modetype;
+		
+		});
+
+		$(document).ready(function(){
+			$('input.searchType').on('change',function(){
+				searchType = $(this).val();
+			});
+		});
+	{/literal}
+	</script>

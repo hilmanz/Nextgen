@@ -1,0 +1,20 @@
+
+<div class="section">
+	<ul class="columns-content page-content clearfix">
+    	
+        <li class="col-main">
+			
+			<form method="POST" action="{$basedomain}badashboard/uploads"  enctype="multipart/form-data" 	>
+       
+				<div class="menu_charts">
+					<input type="file" name="files" value="">
+					<input type="hidden" name="upload" value="badata" />        
+					 
+					<input type="submit" value="go" class="stdbtn btn_orange" />
+				</div>
+			</form>
+        	<div class="box-chart" id="allUserAct" style="overflow:auto" ><pre>{$out|@print_r}</pre></div>
+        </li>
+    </ul><!---end.columns-content page-content clearfix-->
+   
+</div><!--end.section-->

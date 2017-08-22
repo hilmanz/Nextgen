@@ -1,0 +1,84 @@
+<div id="theContainer2" class="baPage">
+    <div class="theContainer2">
+        <div class="theContent2">
+        	<div class="col-content">
+                <div class="theBox" style="margin:0 0 30px 0;">
+                    <div class="theBox-title">
+                        <h2 class="fl blue">Profile Detail</h2>
+                        <div class="navPaging fr">
+                            <a class="icons prev" href="{$basedomain}home">&nbsp;</a>
+                        </div><!-- /.navPaging -->
+                    </div><!-- /.theBox-title -->
+                    <div class="user-container">
+                        <div class="thumb-user-big">
+                        	<div class="thumb-userProfile">
+                            	<a href="{$basedomain}home/profileDetailEdit"><img src="{$userprofile.image_full_path}" /></a>
+                            </div>
+							<a class="button" href="{$basedomain}home/profileDetailEdit">Edit Photo</a>
+                        </div> <!-- /.thumb-user-big -->
+                        {*}
+                        <div class="user-info">
+							
+                            <h4 class="username">{$userprofile.name}</h4>
+							 
+						  
+                        </div> <!-- /.user-info -->
+                        {/*}
+                    </div> <!-- /.user-container -->
+                    <div class="user-container">
+                    	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+                          <tr>
+                            <td width="100">Name</td>
+                            <td width="1">:</td>
+                            <td>{$userprofile.name}</td>
+                          </tr>
+						  <tr>
+                            <td width="100">Last Name</td>
+                            <td width="1">:</td>
+                            <td>{$userprofile.last_name}</td>
+                          </tr>
+						  <tr>
+                            <td width="100">Nick Name</td>
+                            <td width="1">:</td>
+                            <td>{$userprofile.nickname}</td>
+                          </tr>
+                          <tr>
+                            <td>User Name</td>
+                            <td>:</td>
+                            <td>{$userprofile.username}</td>
+                          </tr>
+                          <tr>
+                            <td>Gender</td>
+                            <td>:</td>
+                            <td>{$userprofile.sex}</td>
+                          </tr>
+                          <tr>
+                            <td>Phone Number</td>
+                            <td>:</td>
+                            <td> {if $userprofile.phone_number== 0}  {else} {$userprofile.phone_number}{/if}</td>
+                          </tr>
+                        </table>
+						{*}
+                      <span class="lates-date">Nick Name : </span>
+                      <!-- <span class="lates-date">Register Date : {$userprofile.register_date|date_format:"%e %B %Y"}</span>-->
+                      <span class="lates-date">User Name : </span>
+                      <span class="lates-date">Gender : {$userprofile.sex}</span>
+                      <!-- <span class="lates-date">Email : {$userprofile.email}</span> -->
+                      <!-- <span class="lates-date">Street Name : {$userprofile.StreetName}</span> -->
+                      <span class="lates-date">Phone Number : {if $userprofile.phone_number== 0} N/A {elseif} {$userprofile.phone_number}{/if}</span>
+                      {/*}
+                    </div> <!-- /.user-detail -->
+                    <div class="user-detail">
+                    	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+						  <tr>
+                            <td colspan="3"><a href="{$basedomain}home/editProfile" class="button fl">Edit Profile</a>
+                            <a href="{$basedomain}home/changePassword" class="button fr">Change Password</a></td>
+                          </tr>
+                        </table>
+                    </div> <!-- /.user-detail -->
+                </div> <!-- /.theBox -->
+            </div><!-- /.col-content -->
+          
+        </div> <!-- /.theContent2 -->
+    </div> <!-- /.theContainer -->
+</div> <!-- /#theContainer -->
